@@ -1,184 +1,342 @@
-# SIL - Semantic Infrastructure Lab
+# Semantic Infrastructure Lab (SIL)
 
-**Building the semantic substrate that intelligent systems still lack.**
+**Building the semantic substrate for intelligent systems**
 
-## Overview
+[![Projects](https://img.shields.io/badge/Projects-11-blue)]()
+[![Production Ready](https://img.shields.io/badge/Production-5-green)]()
+[![Tests](https://img.shields.io/badge/Tests-3250+-brightgreen)]()
 
-The **Semantic Infrastructure Lab (SIL)** is a research lab focused on building infrastructure for explicit meaning, stable memory, inspectable reasoning, and composable tool integration in AI systems.
+---
 
-Contemporary AI systems are powerful but structurally incomplete. They lack:
-- **Explicit meaning** - concepts and relationships as stable, machine-operable structures
-- **Stable memory** - durable semantic continuity across tasks and time
-- **Inspectable reasoning** - traceable, reproducible chains of inference
-- **Tool integration** - composable operators across domains (code, CAD, simulation, workflows)
-- **Provenance** - clear lineage of transformations and assumptions
+## 🎯 What is SIL?
 
-SIL exists to build the missing layer: **a semantic foundation that makes meaning, memory, reasoning, tools, and provenance first-class**.
+The **Semantic Infrastructure Lab** builds the missing foundation that enables intelligent systems to reason with **explicit meaning**, not just statistical patterns.
 
-## The Semantic OS
+Contemporary AI systems lack:
+- **Explicit meaning** - Concepts and relationships as stable, inspectable structures
+- **Stable memory** - Durable semantic continuity across tasks and time
+- **Inspectable reasoning** - Traceable, reproducible chains of inference
+- **Tool integration** - Composable operators across domains (audio, CAD, simulation)
+- **Provenance** - Clear lineage of transformations and assumptions
 
-SIL's research centers on the **Semantic Operating System** - an infrastructure layer providing:
+**SIL exists to build this missing layer.**
 
-- **USIR** (Universal Semantic Intermediate Representation) - stable, composable semantic structures
-- **Semantic Memory** - durable, queryable knowledge graphs with versioning
-- **Domain Modules** - composable operators for code, CAD, simulation, workflows, logic
-- **SIM** (Semantic Interaction Model) - human interface for discovery and expression
-- **Agent Orchestration** - deterministic protocols for multi-agent coordination
-- **Provenance Engine** - traceable transformations and assumption tracking
+---
 
-## Canonical Document Set (v1)
+## 🚀 Quick Start - Try Our Production Systems
 
-**Status:** Complete | **Date:** 2025-11-25
+**Ready to use now:**
 
-The SIL Canonical Document Set defines the vision, architecture, principles, and research agenda for Year 1.
+| Project | What It Does | Try It |
+|---------|-------------|--------|
+| [**reveal**](https://github.com/semantic-infrastructure-lab/reveal) | Progressive code exploration (PyPI) | `pip install reveal-cli` |
+| [**morphogen**](https://github.com/semantic-infrastructure-lab/morphogen) | Cross-domain computation (audio+physics+circuits) | [Examples](https://github.com/semantic-infrastructure-lab/morphogen/examples) |
+| [**tiacad**](https://github.com/semantic-infrastructure-lab/tiacad) | Declarative parametric CAD in YAML | [Tutorial](https://github.com/semantic-infrastructure-lab/tiacad/TUTORIAL.md) |
+| [**genesisgraph**](https://github.com/semantic-infrastructure-lab/genesisgraph) | Verifiable process provenance | [5-Min Quickstart](https://github.com/semantic-infrastructure-lab/genesisgraph/docs/getting-started/quickstart.md) |
 
-### Core Documents
+**[See all 11 projects →](projects/PROJECT_INDEX.md)**
 
+---
+
+## 🏗️ The Semantic OS
+
+SIL's research centers on the **Semantic Operating System** - a 6-layer architecture:
+
+```
+Layer 5: Human Interfaces / SIM    (reveal, browserbridge)
+Layer 4: Deterministic Engines      (morphogen, riffstack)
+Layer 3: Multi-Agent Orchestration  (agent-ether)
+Layer 2: Domain Modules             (morphogen, tiacad, riffstack, sup)
+Layer 1: Universal Semantic IR      (pantheon)
+Layer 0: Semantic Memory            (semantic-memory)
+
+Cross-Cutting: Provenance           (genesisgraph, prism)
+```
+
+**[Complete Architecture Guide →](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md)**
+
+---
+
+## 📚 Essential Reading
+
+### For Newcomers
+**Start here to understand SIL:**
+
+1. **[Manifesto](docs/canonical/SIL_MANIFESTO.md)** (15 min)
+   - The problem: AI without semantic substrate
+   - Why explicit meaning matters
+   - What we're building
+
+2. **[Project Index](projects/PROJECT_INDEX.md)** (10 min)
+   - All 11 projects mapped to the Semantic OS
+   - Production systems, active development, and research
+   - What to try first
+
+3. **[Unified Architecture Guide](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md)** (20 min)
+   - The universal pattern (Intent → IR → Execution)
+   - How all projects fit together
+   - Canonical vocabulary
+
+### For Deep Dives
+
+4. **[Technical Charter](docs/canonical/SIL_TECHNICAL_CHARTER.md)** (45 min)
+   - Formal system architecture and specifications
+   - USIR specification
+   - Layer definitions and invariants
+
+5. **[Glossary](docs/canonical/SIL_GLOSSARY.md)** (20 min)
+   - 61 canonical terms
+   - Precise definitions
+   - Quick reference
+
+6. **[Principles](docs/canonical/SIL_PRINCIPLES.md)** (10 min)
+   - The 14 principles
+   - Design constraints
+   - How we build systems
+
+7. **[Research Agenda Year 1](docs/canonical/SIL_RESEARCH_AGENDA_YEAR1.md)** (30 min)
+   - Current research focus
+   - Milestones and deliverables
+   - Success criteria
+
+---
+
+## 🎓 Core Principles
+
+**Every SIL system follows 5 design principles:**
+
+1. **Clarity** - Structure is visible, not hidden
+2. **Simplicity** - Minimal essential complexity
+3. **Composability** - Components combine cleanly
+4. **Correctness** - Invariants are preserved
+5. **Verifiability** - Reasoning is provable
+
+Plus 9 more operational principles including:
+- Structure before heuristics
+- Meaning must be explicit
+- Provenance everywhere
+- Determinism when promised
+
+**[Read all 14 principles →](docs/canonical/SIL_PRINCIPLES.md)**
+
+---
+
+## 🗺️ Complete Project Ecosystem
+
+**11 projects spanning the full Semantic OS stack:**
+
+| Status | Count | Projects |
+|--------|-------|----------|
+| ✅ Production | 5 | morphogen, tiacad, genesisgraph, reveal, sil |
+| 🔬 Research | 1 | pantheon |
+| 🚧 Active Dev | 3 | riffstack, sup, browserbridge |
+| 📋 Specification | 2 | prism, agent-ether |
+| 💭 Planned | 1 | semantic-memory |
+
+**[Full Project Index with Details →](projects/PROJECT_INDEX.md)**
+
+---
+
+## 🔬 Research Themes
+
+SIL organizes around four research areas:
+
+### 1. Universal Semantic Representations
+How do we create IRs that work across domains?
+- **pantheon** - Universal Semantic IR
+- **morphogen** - Cross-domain composition
+
+### 2. Domain-Specific Compilers
+How do we compile semantic intent to execution?
+- **morphogen** - Audio/physics → MLIR
+- **riffstack** - Musical patterns → WebAudio
+- **sup** - UI intent → React/Vue
+- **tiacad** - Geometry → CAD engines
+
+### 3. Microkernel Architectures
+How do we build formally verified systems?
+- **prism** - Microkernel query engine
+
+### 4. Provenance & Verification
+How do we prove computational correctness?
+- **genesisgraph** - Verifiable provenance graphs
+
+---
+
+## 📖 Documentation Hub
+
+### Canonical Documents (The Foundation)
 Located in [`docs/canonical/`](docs/canonical/):
 
-1. **[Manifesto](docs/canonical/SIL_MANIFESTO.md)** (12K, 13 sections)
-   - The problem: AI without semantic substrate
-   - Semantic worldview and epistemic commitments
-   - What we build: Semantic OS architecture
-   - Invariants, boundaries, and principles
+| Document | Size | Purpose |
+|----------|------|---------|
+| [Manifesto](docs/canonical/SIL_MANIFESTO.md) | 12K | Why SIL exists |
+| [Technical Charter](docs/canonical/SIL_TECHNICAL_CHARTER.md) | 29K | System specification |
+| [Glossary](docs/canonical/SIL_GLOSSARY.md) | 8K | Canonical vocabulary |
+| [Principles](docs/canonical/SIL_PRINCIPLES.md) | 5K | The 14 principles |
+| [Research Agenda](docs/canonical/SIL_RESEARCH_AGENDA_YEAR1.md) | 19K | Year 1 roadmap |
 
-2. **[Technical Charter](docs/canonical/SIL_TECHNICAL_CHARTER.md)** (29K, 16 sections)
-   - Formal system architecture and layer specifications
-   - USIR (Universal Semantic IR) specification
-   - Operator model and domain modules
-   - Invariants, versioning, and security constraints
+### Architecture Guides
+Located in [`docs/architecture/`](docs/architecture/):
 
-3. **[Glossary](docs/canonical/SIL_GLOSSARY.md)** (8K, 61 terms)
-   - Canonical vocabulary for SIL and Semantic OS
-   - Precise definitions of all core concepts
-   - Alphabetically organized reference
+- [**Unified Architecture Guide**](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md) - The Rosetta Stone for all SIL projects
+- [**Design Principles**](docs/architecture/DESIGN_PRINCIPLES.md) - The 5 design principles in depth
 
-4. **[Principles](docs/canonical/SIL_PRINCIPLES.md)** (5K, 14 principles)
-   - Durable constraints for building semantic infrastructure
-   - Structure before heuristics, meaning must be explicit
-   - Provenance everywhere, invariants define correctness
+### Project Resources
+Located in [`projects/`](projects/):
 
-5. **[Research Agenda - Year 1](docs/canonical/SIL_RESEARCH_AGENDA_YEAR1.md)** (19K, 14 sections)
-   - Year 1 research phases and milestones
-   - Demonstration plan and deliverables
-   - Success criteria and validation methods
+- [**PROJECT_INDEX.md**](projects/PROJECT_INDEX.md) - Complete map of all 11 projects
 
-### Supplementary Documents
+### Supplementary
+Located in [`docs/vision/`](docs/vision/) and [`docs/meta/`](docs/meta/):
 
-- **[Vision](docs/vision/SIL_VISION_COMPLETE.md)** - Complete high-resolution founding vision
-- **[Founder Background](docs/meta/FOUNDER_BACKGROUND.md)** - Context and background
+- [Vision](docs/vision/SIL_VISION_COMPLETE.md) - Complete founding vision
+- [Founder Background](docs/meta/FOUNDER_BACKGROUND.md) - Context and background
 
-## Key Concepts
+---
 
-**USIR (Universal Semantic Intermediate Representation)**
-- Stable, composable structures for concepts, relations, and operations
-- Typed graphs with schemas, constraints, and versioning
-- Platform-independent semantic exchange format
+## 🎯 Use Cases
 
-**Semantic Memory**
-- Durable knowledge graphs with temporal lineage
-- Query interface for semantic search and retrieval
-- Provenance tracking for all transformations
+**What you can build with SIL infrastructure:**
 
-**Domain Modules**
-- Composable operators for specific domains (Python, CAD, simulation, etc.)
-- Lowering/lifting contracts for semantic ↔ domain translation
-- Cross-domain coherence through USIR
+### Cross-Domain Composition
+Use **morphogen** to couple domains that never talked before:
+```morphogen
+# Couple fluid dynamics → acoustics → audio synthesis
+use fluid, acoustics, audio
 
-**SIM (Semantic Interaction Model)**
-- Human interface for exploring and expressing semantic structures
-- Discovery, navigation, and authoring tools
-- Interpretation layer bridging human concepts and USIR
+@state flow : FluidNetwork1D = engine_exhaust()
+@state acoustic : AcousticField1D = waveguide_from_flow(flow)
 
-## Project Structure
+flow(dt=0.1ms) {
+    flow = flow.advance(engine_pulse(t))
+    acoustic = acoustic.couple_from_fluid(flow)
+    audio.play(acoustic.to_audio(mic_position=1.5m))
+}
+```
+
+### Declarative CAD
+Use **tiacad** for parametric 3D modeling in YAML:
+```yaml
+parts:
+  - name: bracket
+    type: box
+    size: [50, 30, 10]
+    operations:
+      - type: fillet
+        edges: all
+        radius: 2
+```
+
+### Verifiable Provenance
+Use **genesisgraph** to prove how things were made:
+```yaml
+process:
+  inputs:
+    - raw_data.csv
+  transformations:
+    - clean_data
+    - train_model
+  outputs:
+    - model.pkl
+  attestations:
+    - type: compliance
+      standard: "ISO-27001"
+```
+
+---
+
+## 🏛️ Repository Structure
 
 ```
 SIL/
 ├── docs/
-│   ├── canonical/          # v1 Canonical Document Set (5 docs)
-│   │   ├── SIL_MANIFESTO.md
-│   │   ├── SIL_TECHNICAL_CHARTER.md
-│   │   ├── SIL_GLOSSARY.md
-│   │   ├── SIL_PRINCIPLES.md
-│   │   └── SIL_RESEARCH_AGENDA_YEAR1.md
+│   ├── canonical/          # Core documents (manifesto, charter, principles)
+│   ├── architecture/       # Architecture guides (unified guide, design principles)
 │   ├── vision/             # Vision documents
-│   │   └── SIL_VISION_COMPLETE.md
-│   └── meta/               # Supplementary documentation
-│       └── FOUNDER_BACKGROUND.md
-├── archive/                # Archived materials
+│   └── meta/               # Background and context
+├── projects/
+│   └── PROJECT_INDEX.md    # Complete project map
+├── archive/                # Historical materials
+├── LICENSE                 # MIT License
 └── README.md               # This file
 ```
 
-## Reading Guide
+---
 
-Recommended reading order for newcomers:
+## 🤝 Contributing
 
-1. **Start here:** [Manifesto](docs/canonical/SIL_MANIFESTO.md) - Vision, problem statement, and philosophy (15 min)
-2. **Then:** [Glossary](docs/canonical/SIL_GLOSSARY.md) - Learn the vocabulary (20 min)
-3. **Deep dive:** [Technical Charter](docs/canonical/SIL_TECHNICAL_CHARTER.md) - Architecture and specifications (45 min)
-4. **Principles:** [Principles](docs/canonical/SIL_PRINCIPLES.md) - Design constraints (10 min)
-5. **Roadmap:** [Research Agenda](docs/canonical/SIL_RESEARCH_AGENDA_YEAR1.md) - Year 1 plan (30 min)
+SIL welcomes contributions! Each project has specific contribution guidelines in its repository.
 
-**Total reading time:** ~2 hours for complete context
+**General principles:**
+- Follow the 5 design principles (Clarity, Simplicity, Composability, Correctness, Verifiability)
+- Write tests for all functionality
+- Document design decisions
+- Preserve semantic invariants
 
-## Research Themes
-
-SIL's Year 1 research focuses on:
-
-**Phase 1: Foundations (Months 1-3)**
-- USIR representation design and validation
-- Memory substrate implementation
-- Operator model prototyping
-
-**Phase 2: Domain Integration (Months 4-6)**
-- Python domain module (code as semantic graphs)
-- Cross-domain coherence demonstrations
-- Provenance engine implementation
-
-**Phase 3: Demonstrations (Months 7-12)**
-- Multi-domain workflows
-- Agent orchestration scenarios
-- SIM interface prototypes
-
-## Principles in Practice
-
-SIL is governed by 14 core principles, including:
-
-1. **Structure Before Heuristics** - Explicit representation over implicit patterns
-2. **Meaning Must Be Explicit** - No hidden semantics, all structure inspectable
-3. **Provenance Everywhere** - Full lineage tracking for all transformations
-4. **Invariants Define Correctness** - Contracts enforced, not guidelines
-5. **Determinism When Promised** - Reproducibility where specified
-6. **Cross-Domain Coherence** - Semantic consistency across all domains
-7. **Operators Are the Only Way to Change State** - No side effects
-8. **Version Everything** - All artifacts versioned and traceable
-
-See [Principles](docs/canonical/SIL_PRINCIPLES.md) for complete list.
-
-## Status
-
-**Canonical Documents:** Complete (v1) ✅
-**Research Phase:** Planning → Active
-**Demonstrations:** In development
-**Public Release:** Ready for founding
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-Documentation is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-
-## Contact
-
-**Semantic Infrastructure Lab (SIL)**
-- Website: *Coming soon*
-- GitHub: [github.com/scottsen/SIL](https://github.com/scottsen/SIL) *(to be created)*
-- Email: *Contact information to be added*
-
-For inquiries about collaboration, research partnerships, or founding team opportunities, please reach out via GitHub issues or email.
+See individual project repositories for specific guidelines.
 
 ---
 
-**SIL Canonical Document Set v1**
-**Established:** 2025-11-25
-**Status:** Founding documents complete, ready for research phase
+## 📊 Project Statistics
+
+- **Total Projects:** 11
+- **Production Systems:** 5 (ready to use)
+- **Test Coverage:** 3,250+ tests across all projects
+- **Code:** ~45,000 lines (production projects)
+- **Documentation:** ~15,000 lines (canonical + guides)
+
+---
+
+## 🌐 Community
+
+**GitHub Organization:** https://github.com/semantic-infrastructure-lab
+**Website:** https://sil-lab.org *(coming soon)*
+
+**Production Projects on GitHub:**
+- [morphogen](https://github.com/semantic-infrastructure-lab/morphogen) - Universal computation
+- [tiacad](https://github.com/semantic-infrastructure-lab/tiacad) - Declarative CAD
+- [genesisgraph](https://github.com/semantic-infrastructure-lab/genesisgraph) - Verifiable provenance
+- [reveal](https://github.com/semantic-infrastructure-lab/reveal) - Code exploration (also on [PyPI](https://pypi.org/project/reveal-cli/))
+
+---
+
+## 📬 Contact
+
+For inquiries about collaboration, research partnerships, or contributions:
+
+- **GitHub Issues:** Preferred for technical questions
+- **Email:** *(contact information coming soon)*
+
+---
+
+## 📜 License
+
+**Code:** MIT License (see [LICENSE](LICENSE))
+**Documentation:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+---
+
+## ⚡ Next Steps
+
+**New to SIL?**
+1. Read the [Manifesto](docs/canonical/SIL_MANIFESTO.md) (15 min)
+2. Browse the [Project Index](projects/PROJECT_INDEX.md) (10 min)
+3. Try a production project (reveal, morphogen, tiacad, genesisgraph)
+
+**Want to understand the architecture?**
+1. Read the [Unified Architecture Guide](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (20 min)
+2. Read the [Technical Charter](docs/canonical/SIL_TECHNICAL_CHARTER.md) (45 min)
+
+**Want to contribute?**
+1. Read the [Principles](docs/canonical/SIL_PRINCIPLES.md) (10 min)
+2. Pick a project from the [Project Index](projects/PROJECT_INDEX.md)
+3. Check the project's contribution guide
+
+---
+
+**Semantic Infrastructure Lab**
+*Building the semantic substrate for intelligent systems*
+
+**Last Updated:** 2025-11-27
+**Document Version:** 2.0
