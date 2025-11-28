@@ -182,6 +182,11 @@ Located in [`docs/architecture/`](docs/architecture/):
 - [**Unified Architecture Guide**](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md) - The Rosetta Stone for all SIL projects
 - [**Design Principles**](docs/architecture/DESIGN_PRINCIPLES.md) - The 5 design principles in depth
 
+### Implementation Guides
+Located in [`docs/guides/`](docs/guides/):
+
+- [**Optimization in SIL**](docs/guides/OPTIMIZATION_IN_SIL.md) - The "free lunch" value proposition: what optimizations you get automatically
+
 ### Project Resources
 Located in [`projects/`](projects/):
 

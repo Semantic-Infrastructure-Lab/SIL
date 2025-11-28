@@ -2,9 +2,10 @@
 
 **The Complete Map of Semantic Infrastructure Lab Projects**
 
-**Last Updated:** 2025-11-27
+**Last Updated:** 2025-11-28
 **Total Projects:** 11
 **Production Ready:** 5
+**Git Initialized:** 11 (4 private development repos)
 
 ---
 
@@ -13,6 +14,14 @@
 This index maps all SIL projects to the **6-Layer Semantic OS Architecture**. Each project embodies SIL principles (Clarity, Simplicity, Composability, Correctness, Verifiability) and contributes to building the semantic substrate for intelligent systems.
 
 **Architecture Reference:** [Unified Architecture Guide](../docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md)
+
+### 🔒 Repository Status
+
+All 11 SIL projects are now git-initialized:
+- **7 Public Repos:** morphogen, tiacad, genesisgraph, reveal, SIL, riffstack, browserbridge
+- **4 Private Repos:** pantheon, agent-ether, sup, prism (marked with 🔒)
+
+Private repos are in active development and will be made public when ready for broader collaboration.
 
 ---
 
@@ -182,8 +191,8 @@ This index maps all SIL projects to the **6-Layer Semantic OS Architecture**. Ea
 
 ## 🚧 Active Development (2-4 Weeks to Production)
 
-### [Pantheon](https://github.com/semantic-infrastructure-lab/pantheon) - Universal Semantic IR
-**Status:** 🔬 **Research** | **Maturity:** Prototype
+### [Pantheon](https://github.com/scottsen/pantheon) - Universal Semantic IR
+**Status:** 🔬 **Research** | **Maturity:** Prototype | **Repo:** 🔒 Private
 
 **Layer:** 1 (USIR - Universal Semantic Intermediate Representation)
 
@@ -228,8 +237,8 @@ This index maps all SIL projects to the **6-Layer Semantic OS Architecture**. Ea
 
 ---
 
-### [SUP](https://github.com/semantic-infrastructure-lab/sup) - Semantic UI Platform
-**Status:** 🚧 **Alpha** | **Maturity:** Early development
+### [SUP](https://github.com/scottsen/sup) - Semantic UI Platform
+**Status:** 🚧 **Alpha** | **Maturity:** Early development | **Repo:** 🔒 Private
 
 **Layer:** 2 (Domain Module - UI/interaction)
 
@@ -276,8 +285,8 @@ This index maps all SIL projects to the **6-Layer Semantic OS Architecture**. Ea
 
 ## 📋 Planned / Specification Phase
 
-### [Prism](https://github.com/semantic-infrastructure-lab/prism) - Microkernel Query Engine
-**Status:** 📋 **Specification** | **Maturity:** Design phase
+### [Prism](https://github.com/scottsen/prism) - Microkernel Query Engine
+**Status:** 📋 **Specification** | **Maturity:** Design phase | **Repo:** 🔒 Private
 
 **Layer:** Cross-Cutting (Microkernel research)
 
@@ -298,8 +307,8 @@ This index maps all SIL projects to the **6-Layer Semantic OS Architecture**. Ea
 
 ---
 
-### [Agent Ether](https://github.com/semantic-infrastructure-lab/agent-ether) - Agent Protocols
-**Status:** 📋 **Specification** | **Maturity:** Planning
+### [Agent Ether](https://github.com/scottsen/agent-ether) - Agent Protocols
+**Status:** 📋 **Specification** | **Maturity:** Planning | **Repo:** 🔒 Private
 
 **Layer:** 3 (Multi-Agent Orchestration)
 

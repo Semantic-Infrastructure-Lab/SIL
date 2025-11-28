@@ -248,6 +248,8 @@ Understandable slow code beats incomprehensible fast code.
 
 **Example:** Readable AST traversal vs hand-optimized bit-twiddling (optimize later if needed).
 
+**Note:** This doesn't mean "never optimize." It means write clear semantics first, then use infrastructure to provide optimization. See [Optimization in SIL](../guides/OPTIMIZATION_IN_SIL.md) for the "free lunch" value proposition.
+
 ### 4. Verifiability scales with risk
 High-risk components (security, isolation, correctness-critical) need formal verification.
 Low-risk components (UI, CLI flags) need good tests.
@@ -381,7 +383,7 @@ These principles synthesize wisdom from:
 These principles are not static. They evolve as we learn.
 
 **Version history:**
-- v1.0 (2025-11-27): Initial formulation during violet-aurora-1127 session
+- v1.0 (2025-11-27): Initial formulation
 
 **Future refinements:**
 - Add concrete metrics (what % code coverage = "verifiable"?)
@@ -415,5 +417,4 @@ Every architecture.
 
 **Document Version:** 1.0
 **Last Updated:** 2025-11-27
-**Authors:** Session violet-aurora-1127
 **Status:** Core SIL Philosophy
