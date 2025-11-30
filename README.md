@@ -62,39 +62,44 @@ Cross-Cutting: Provenance           (genesisgraph, prism)
 ### For Newcomers
 **Start here to understand SIL:**
 
-1. **[Manifesto](docs/canonical/SIL_MANIFESTO.md)** (15 min)
+1. **[Founder's Letter](docs/canonical/FOUNDERS_LETTER.md)** (10 min) ⭐ **NEW**
+   - Why SIL exists: the architectural gap in modern AI
+   - The 6-layer Semantic OS vision
+   - Our commitment to explicit meaning and provenance
+
+2. **[Manifesto](docs/canonical/SIL_MANIFESTO.md)** (15 min)
    - The problem: AI without semantic substrate
    - Why explicit meaning matters
    - What we're building
 
-2. **[Project Index](projects/PROJECT_INDEX.md)** (10 min)
+3. **[Project Index](projects/PROJECT_INDEX.md)** (10 min)
    - All 11 projects mapped to the Semantic OS
    - Production systems, active development, and research
    - What to try first
 
-3. **[Unified Architecture Guide](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md)** (20 min)
+4. **[Unified Architecture Guide](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md)** (20 min)
    - The universal pattern (Intent → IR → Execution)
    - How all projects fit together
    - Canonical vocabulary
 
 ### For Deep Dives
 
-4. **[Technical Charter](docs/canonical/SIL_TECHNICAL_CHARTER.md)** (45 min)
+5. **[Technical Charter](docs/canonical/SIL_TECHNICAL_CHARTER.md)** (45 min)
    - Formal system architecture and specifications
    - USIR specification
    - Layer definitions and invariants
 
-5. **[Glossary](docs/canonical/SIL_GLOSSARY.md)** (20 min)
+6. **[Glossary](docs/canonical/SIL_GLOSSARY.md)** (20 min)
    - 61 canonical terms
    - Precise definitions
    - Quick reference
 
-6. **[Principles](docs/canonical/SIL_PRINCIPLES.md)** (10 min)
+7. **[Principles](docs/canonical/SIL_PRINCIPLES.md)** (10 min)
    - The 14 principles
    - Design constraints
    - How we build systems
 
-7. **[Research Agenda Year 1](docs/canonical/SIL_RESEARCH_AGENDA_YEAR1.md)** (30 min)
+8. **[Research Agenda Year 1](docs/canonical/SIL_RESEARCH_AGENDA_YEAR1.md)** (30 min)
    - Current research focus
    - Milestones and deliverables
    - Success criteria
@@ -295,8 +300,8 @@ See individual project repositories for specific guidelines.
 
 ## 🌐 Community
 
+**Website:** https://semanticinfrastructurelab.org
 **GitHub Organization:** https://github.com/semantic-infrastructure-lab
-**Website:** https://sil-lab.org *(coming soon)*
 
 **Production Projects on GitHub:**
 - [morphogen](https://github.com/semantic-infrastructure-lab/morphogen) - Universal computation
@@ -325,9 +330,10 @@ For inquiries about collaboration, research partnerships, or contributions:
 ## ⚡ Next Steps
 
 **New to SIL?**
-1. Read the [Manifesto](docs/canonical/SIL_MANIFESTO.md) (15 min)
-2. Browse the [Project Index](projects/PROJECT_INDEX.md) (10 min)
-3. Try a production project (reveal, morphogen, tiacad, genesisgraph)
+1. Read the [Founder's Letter](docs/canonical/FOUNDERS_LETTER.md) (10 min) ⭐
+2. Read the [Manifesto](docs/canonical/SIL_MANIFESTO.md) (15 min)
+3. Browse the [Project Index](projects/PROJECT_INDEX.md) (10 min)
+4. Try a production project (reveal, morphogen, tiacad, genesisgraph)
 
 **Want to understand the architecture?**
 1. Read the [Unified Architecture Guide](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (20 min)
@@ -343,5 +349,6 @@ For inquiries about collaboration, research partnerships, or contributions:
 **Semantic Infrastructure Lab**
 *Building the semantic substrate for intelligent systems*
 
-**Last Updated:** 2025-11-27
-**Document Version:** 2.0
+**Website:** https://semanticinfrastructurelab.org
+**Last Updated:** 2025-11-28
+**Document Version:** 2.1

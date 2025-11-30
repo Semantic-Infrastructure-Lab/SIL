@@ -23,6 +23,64 @@ This is the **Rosetta Stone** for SIL architecture. It:
 
 ---
 
+## 🧭 Who Should Read This & When
+
+### **You should read this document if:**
+- ✅ You're new to SIL and want to understand the architecture
+- ✅ You're implementing a new component and need to know where it fits
+- ✅ You're confused about SIL terminology (Intent vs IR vs Execution)
+- ✅ You need to decide: Adapter or Microkernel architecture?
+- ✅ You want to understand how Pantheon, Morphogen, Prism, etc. relate
+
+### **Read this BEFORE:**
+- Technical Charter (provides formal spec - this provides mental model)
+- Individual project docs (Pantheon, Morphogen, etc.)
+- Implementation guides
+
+### **Read this AFTER:**
+- `../canonical/SIL_MANIFESTO.md` (optional, 15 min - gives you context on "why")
+
+### **Time Required:** 30-45 minutes
+
+---
+
+## 📖 Related Documents Navigation
+
+### **"I need something simpler first"**
+→ Start with **`../canonical/SIL_MANIFESTO.md`** (15 min) for the high-level vision
+
+### **"I need the formal specification"**
+→ After reading this, go to **`../canonical/SIL_TECHNICAL_CHARTER.md`** (2 hours)
+
+### **"I need to look up terminology"**
+→ Keep **`../canonical/SIL_GLOSSARY.md`** open while reading this
+
+### **"I need design principles"**
+→ Read **`./DESIGN_PRINCIPLES.md`** (15 min) for evaluation criteria
+
+### **"I need to see concrete implementation"**
+→ See Pantheon's documentation for concrete 7-layer Cognitive OSI Stack implementation
+
+### **"I need the complete reading guide"**
+→ See **`../READING_GUIDE.md`** for all documentation paths
+
+### **"I'm looking for examples of how to use this"**
+→ See Part 8 (Quick Reference Examples) and Part 10 (The Meta-Pattern) below
+
+---
+
+## 🎯 What You'll Learn
+
+By the end of this document, you will:
+
+1. ✅ Understand the **Intent → IR → Execution** pattern (and see it everywhere)
+2. ✅ Know canonical vocabulary (Intent, IR, Execution, Domain, Adapter, Service, Kernel)
+3. ✅ Recognize the **two architectural styles** (Adapter vs Microkernel)
+4. ✅ Be able to **map any project** to the framework
+5. ✅ Know how to **decide where new components belong**
+
+---
+
 ## 📚 Part 1: Canonical Vocabulary
 
 ### The Universal Terms (Use These)
@@ -465,17 +523,13 @@ prism --parser=setlang --scheduler=mesh query.sql
 - [SIL Design Principles](SIL_DESIGN_PRINCIPLES.md) - The 5 principles
 - [SIL Ecosystem Project Layout](SIL_ECOSYSTEM_PROJECT_LAYOUT.md) - All projects mapped
 
-**Pantheon (Adapter Architecture):**
-- [Pantheon Architecture Overview](/home/scottsen/src/projects/pantheon/docs/architecture/OVERVIEW.md)
-- [Pantheon Unified Architecture](/home/scottsen/src/projects/pantheon/docs/UNIFIED_ARCHITECTURE.md)
+**Concrete Implementations:**
+- Pantheon - Adapter architecture (USIR implementation)
+- Prism - Microkernel architecture (semantic reasoning kernel)
+- RiffStack - Domain-specific IR for audio/music
+- Morphogen - Cross-domain computation engine
 
-**Prism (Microkernel Architecture):**
-- [Prism Microkernel Architecture](/home/scottsen/src/tia/projects/Set Stack/PRISM_MICROKERNEL_ARCHITECTURE.md)
-- [Set Stack vs SEM Resolution](/home/scottsen/src/tia/projects/Set Stack/SET_STACK_VS_SEM_RESOLUTION.md)
-
-**Domain-Specific IRs:**
-- [RiffStack Harmony DSL](/home/scottsen/src/projects/riffstack/docs/HARMONY_DSL_OVERVIEW.md)
-- [SEM Specification](/home/scottsen/src/tia/projects/Set Stack/SEM_SPECIFICATION_v1.0.md)
+See individual project repositories for detailed architecture documentation.
 
 ---
 

@@ -6,6 +6,40 @@
 
 ---
 
+## 🧭 Navigation: How to Use This Document
+
+### **This document teaches you how to evaluate designs** (15 minutes)
+
+**You should read this if:**
+- ✅ You're designing a new component or system
+- ✅ You're reviewing code or architecture
+- ✅ You're debugging and need to understand what went wrong
+- ✅ You need criteria for making design trade-offs
+
+**Read this AFTER:**
+- **`./UNIFIED_ARCHITECTURE_GUIDE.md`** ⭐ (30 min) - Get the pattern first
+- **`../canonical/SIL_MANIFESTO.md`** (optional, 15 min) - Context on why SIL exists
+
+**Use this DURING:**
+- Design reviews - Does this violate principles?
+- Code reviews - Are these principles upheld?
+- Debugging - Which principle was violated?
+- Architecture decisions - How do we resolve conflicts?
+
+**Related Documents:**
+- **Pattern:** `./UNIFIED_ARCHITECTURE_GUIDE.md` - What to build
+- **Spec:** `../canonical/SIL_TECHNICAL_CHARTER.md` - Formal contracts
+- **Foundation:** `../canonical/SIL_PRINCIPLES.md` - 14 research infrastructure constraints
+- **Examples:** See sections below for cross-project examples
+- **Navigation:** `../READING_GUIDE.md` - All documentation paths
+
+**Quick Reference:**
+- Jump to "How to Use These Principles" (line 188) for practical application
+- Jump to "Principles in Conflict" (line 233) for resolution hierarchy
+- Jump to "The Litmus Test" (line 349) for code review checklist
+
+---
+
 ## The Five Principles
 
 ```
@@ -25,6 +59,23 @@ Composability scales.
 Correctness guarantees.
 Verifiability proves.
 ```
+
+### **Relationship to SIL_PRINCIPLES**
+
+These 5 principles provide **practical engineering methodology** for building SIL projects. They answer: *"How do I build this correctly?"*
+
+They complement the [14 foundational SIL Principles](../canonical/SIL_PRINCIPLES.md), which govern the **research infrastructure** and answer: *"What must the Semantic OS guarantee?"*
+
+**How they relate:**
+- **SIL_PRINCIPLES** (14) = Infrastructure constraints (determinism, provenance, invariants)
+- **DESIGN_PRINCIPLES** (5) = Implementation guidance (clarity, simplicity, composability, correctness, verifiability)
+
+**Example:** SIL_PRINCIPLE #3 says "Provenance Everywhere" (what), DESIGN_PRINCIPLE "Verifiability" guides how to prove it works (how).
+
+**Use both:**
+- When designing: Check compliance with SIL_PRINCIPLES
+- When implementing: Apply DESIGN_PRINCIPLES
+- When reviewing: Validate both sets
 
 ---
 

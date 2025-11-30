@@ -1,5 +1,35 @@
 SIL Technical Charter (v1)
 
+---
+
+## 🧭 Navigation: Before You Read This
+
+### **This is a formal specification document** (Dense, 2+ hours)
+
+**You should read this if:**
+- ✅ You're implementing a SIL-compliant system
+- ✅ You need to understand formal contracts & guarantees
+- ✅ You're designing operators, domain modules, or engines
+- ✅ You need to know exactly what's required vs optional
+
+**Read these FIRST:**
+- **`../architecture/UNIFIED_ARCHITECTURE_GUIDE.md`** ⭐ (30 min) - Get the mental model
+- **`../canonical/SIL_GLOSSARY.md`** (15 min) - Learn the vocabulary (keep open while reading)
+- **`../architecture/DESIGN_PRINCIPLES.md`** (15 min) - Understand evaluation criteria
+
+**Read these AFTER for deeper context:**
+- **`../canonical/SIL_MANIFESTO.md`** - Why these contracts matter
+
+**Related Documents:**
+- **Glossary:** `SIL_GLOSSARY.md` - Look up terms while reading
+- **Principles:** `../architecture/DESIGN_PRINCIPLES.md` - Why these constraints exist
+- **Pattern:** `../architecture/UNIFIED_ARCHITECTURE_GUIDE.md` - High-level framework
+- **Navigation:** `../READING_GUIDE.md` - All documentation paths
+
+**Time Required:** 2-4 hours (reference document, can read sections as needed)
+
+---
+
 ## 1. Purpose of the Technical Charter
 
 This charter defines the formal structure, interfaces, constraints, and invariants of the Semantic Operating System (Semantic OS) developed by the Semantic Infrastructure Lab (SIL). It specifies what the system is, how components relate, what rules govern their interaction, and what guarantees they must uphold. This document is a specification of architectural foundations and system contracts. It is not an implementation guide and not a roadmap.
