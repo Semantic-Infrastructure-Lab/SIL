@@ -2,10 +2,12 @@
 
 **The Complete Map of Semantic Infrastructure Lab Projects**
 
-**Last Updated:** 2025-11-28
+**Last Updated:** 2025-11-29
 **Total Projects:** 11
 **Production Ready:** 5
 **Git Initialized:** 11 (4 private development repos)
+
+**See also:** For filesystem locations and git URLs, see `/home/scottsen/src/tia/projects/SIL/SIL_ECOSYSTEM_PROJECT_LAYOUT.md`
 
 ---
 
@@ -152,7 +154,7 @@ Private repos are in active development and will be made public when ready for b
 ---
 
 ### [reveal](https://github.com/semantic-infrastructure-lab/reveal) - Progressive Code Disclosure
-**Status:** ✅ **Production v0.9.0** | **Platform:** PyPI | **Downloads:** 10K+
+**Status:** ✅ **Production v0.9.0** | **Platform:** PyPI
 
 **Layer:** 5 (Human Interfaces / SIM - progressive disclosure)
 

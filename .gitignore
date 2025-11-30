@@ -55,3 +55,6 @@ temp/
 analysis/
 reports/
 data/
+
+# Internal documentation (private)
+internal/
