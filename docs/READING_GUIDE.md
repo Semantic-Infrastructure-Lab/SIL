@@ -137,6 +137,9 @@ Start with: `canonical/SIL_MANIFESTO.md` (10 min)
 ### **Canonical Founding Documents** (Start Here)
 The definitive specifications and founding principles.
 
+- **FOUNDERS_LETTER.md** (3KB) - Personal letter from the founder about SIL's mission and approach
+- **FOUNDER_PROFILE.md** (3KB) - Background and experience of Scott Senkeresty
+- **TIA_PROFILE.md** (4KB) - About Tia, SIL's Chief Semantic Agent
 - **SIL_MANIFESTO.md** (12KB) - Why SIL exists
 - **SIL_TECHNICAL_CHARTER.md** (29KB) - The formal 6-layer specification
 - **SIL_GLOSSARY.md** (8KB) - Canonical vocabulary
@@ -171,12 +174,14 @@ docs/
 ├── READING_GUIDE.md        ← You are here
 │
 ├── canonical/              # Founding documents (START HERE)
+│   ├── FOUNDERS_LETTER.md
+│   ├── FOUNDER_PROFILE.md
+│   ├── TIA_PROFILE.md
 │   ├── SIL_MANIFESTO.md
 │   ├── SIL_TECHNICAL_CHARTER.md
 │   ├── SIL_GLOSSARY.md
 │   ├── SIL_PRINCIPLES.md
-│   ├── SIL_RESEARCH_AGENDA_YEAR1.md
-│   └── FOUNDERS_LETTER.md
+│   └── SIL_RESEARCH_AGENDA_YEAR1.md
 │
 ├── architecture/           # The pattern (CRITICAL)
 │   ├── UNIFIED_ARCHITECTURE_GUIDE.md  ⭐⭐⭐
