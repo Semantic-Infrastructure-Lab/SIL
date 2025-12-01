@@ -570,3 +570,26 @@ Optimizing for large-scale performance at the expense of representational stabil
 Competing with existing ML labs on model capability benchmarks.
 
 This document constitutes the SIL Research Agenda & Demonstration Plan for Year 1.
+
+---
+
+## 15. Related Research Papers
+
+SIL publishes formal research papers on semantic infrastructure problems. These papers provide rigorous foundations for the work described in this agenda.
+
+**Current Papers:**
+
+- **RAG as Semantic Manifold Transport** (`docs/research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md`)
+  - Formalizes retrieval-augmented generation as geometric meaning transport across misaligned manifolds
+  - Directly informs Layer 0 (Semantic Memory) design for manifold-aware storage/retrieval
+  - Provides distortion metrics and alignment strategies for semantic memory queries
+  - Connection to Year 1 work: Section 4 (Semantic Memory), Section 6.4 (Code understanding domain)
+
+**Future Papers** (planned):
+
+- Universal Semantic IR specification and cross-domain invariants (USIR)
+- Provenance manifolds in multi-agent systems
+- Deterministic scheduling in cross-domain computation
+- Microkernel architecture for semantic queries
+
+See `docs/research/` for full catalog and technical details.

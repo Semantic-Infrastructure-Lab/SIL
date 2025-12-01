@@ -187,6 +187,12 @@ Located in [`docs/architecture/`](docs/architecture/):
 - [**Unified Architecture Guide**](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md) - The Rosetta Stone for all SIL projects
 - [**Design Principles**](docs/architecture/DESIGN_PRINCIPLES.md) - The 5 design principles in depth
 
+### Research Papers
+Located in [`docs/research/`](docs/research/):
+
+- [**RAG as Semantic Manifold Transport**](docs/research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md) - Formal treatment of retrieval-augmented generation as geometric meaning transport
+- See [research directory](docs/research/README.md) for full catalog
+
 ### Implementation Guides
 Located in [`docs/guides/`](docs/guides/):
 

@@ -31,6 +31,9 @@ This guide helps you navigate SIL's technical documentation efficiently. Choose 
 ### **"I want to see what's built"**
 → **`../projects/PROJECT_INDEX.md`** - 11 SIL projects mapped by layer
 
+### **"I want rigorous research papers"**
+→ **`research/`** - Formal research on semantic infrastructure problems
+
 ---
 
 ## 📖 Curated Reading Paths
@@ -125,7 +128,7 @@ Start with: **Path 1 (Quick Start)** → then **Path 2 (Implementation)**
 Go straight to: **Path 3 (Complete Mastery)**
 
 ### **Researcher/Academic**
-Focus on: `canonical/SIL_RESEARCH_AGENDA_YEAR1.md` + `canonical/SIL_TECHNICAL_CHARTER.md`
+Focus on: `canonical/SIL_RESEARCH_AGENDA_YEAR1.md` + `canonical/SIL_TECHNICAL_CHARTER.md` + `research/` papers
 
 ### **Just Curious**
 Start with: `canonical/SIL_MANIFESTO.md` (10 min)
@@ -157,6 +160,12 @@ Long-term aspirations and philosophical foundations.
 
 - **SIL_VISION_COMPLETE.md** - What the world looks like if SIL succeeds
 
+### **Research Papers** (Rigorous Deep-Dives)
+Formal research on semantic infrastructure problems.
+
+- **RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md** - RAG as geometric meaning transport across misaligned manifolds
+- See `research/README.md` for full catalog and future papers
+
 ### **Project Catalog**
 What has been built.
 
@@ -186,6 +195,10 @@ docs/
 ├── architecture/           # The pattern (CRITICAL)
 │   ├── UNIFIED_ARCHITECTURE_GUIDE.md  ⭐⭐⭐
 │   └── DESIGN_PRINCIPLES.md
+│
+├── research/               # Research papers (NEW)
+│   ├── README.md
+│   └── RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md
 │
 ├── vision/                 # Long-term vision
 │   └── SIL_VISION_COMPLETE.md
@@ -225,7 +238,6 @@ The reading paths above are sequenced intentionally. Each document builds on the
 ## 📖 Cross-References
 
 ### If you're reading this and want to know:
-- **Where projects are located on disk:** See `/home/scottsen/src/tia/projects/SIL/SIL_ECOSYSTEM_PROJECT_LAYOUT.md`
 - **How projects map to architecture layers:** See `../projects/PROJECT_INDEX.md`
 - **Relationship between PRINCIPLES and DESIGN_PRINCIPLES:** Both docs now cross-reference each other
 
@@ -240,9 +252,6 @@ The reading paths above are sequenced intentionally. Each document builds on the
 
 **Want to understand the ecosystem?**
 - See `../projects/PROJECT_INDEX.md` for all 11 SIL projects
-
-**Want to understand file locations?**
-- See `/home/scottsen/src/tia/projects/SIL/SIL_ECOSYSTEM_PROJECT_LAYOUT.md` (TIA workspace)
 
 ---
 
@@ -261,5 +270,4 @@ Start there if you're impatient or confused.
 
 ---
 
-**Last Updated:** 2025-11-29
-**Canonical Location:** `/home/scottsen/src/projects/SIL/docs/READING_GUIDE.md`
+**Last Updated:** 2025-11-30
