@@ -532,5 +532,4 @@ We are building infrastructure that will outlive us. **It must be built on princ
 **Related Documents:**
 - SIL_MANIFESTO.md - Founding vision
 - SIL_PRINCIPLES.md - Core operating principles
-- SIL_FOUNDING_TEAM_ARCHETYPES.md - Values embodied in team composition
-- TURING_DEDICATION_EXTENDED.md - Commitment to diversity and inclusion
+- ../meta/DEDICATION.md - Intellectual foundations

@@ -2,138 +2,163 @@
 
 **The foundational documents of the Semantic Infrastructure Lab**
 
-These are the authoritative, definitive documents that define SIL's mission, principles, technical architecture, and research direction. If you're new to SIL, start here.
+These are the authoritative, definitive documents that define SIL's mission, principles, technical architecture, and governance. If you're new to SIL, start here.
 
 ---
 
-## Core Foundation (Required Reading)
+## Core Foundation
 
-### [Founder's Letter](FOUNDERS_LETTER.md) ⭐ Start Here
-**10 minutes** | A personal introduction to SIL's mission and approach
-
-The founder explains why SIL exists, what gap it fills in modern AI infrastructure, and the commitment to explicit meaning and provenance.
-
-### [Manifesto](SIL_MANIFESTO.md)
+### [Manifesto](SIL_MANIFESTO.md) ⭐ Start Here
 **15 minutes** | Why semantic infrastructure matters
 
 The problem with contemporary AI systems: they lack explicit meaning, stable memory, inspectable reasoning, and provenance. SIL exists to build this missing layer.
 
+**This is the starting point** - understand the problem before exploring the solution.
+
+---
+
 ### [Principles](SIL_PRINCIPLES.md)
 **10 minutes** | The 14 principles that guide all SIL work
 
-- 5 design principles (Clarity, Simplicity, Composability, Correctness, Verifiability)
+- 5 core principles (Clarity, Simplicity, Composability, Correctness, Verifiability)
 - 9 operational principles (Structure before heuristics, Meaning must be explicit, Provenance everywhere, etc.)
 
-### [Technical Charter](SIL_TECHNICAL_CHARTER.md)
-**45 minutes** | The formal specification
+These principles guide everything we build.
 
-The complete 6-layer Semantic OS architecture, USIR specification, layer definitions, and system invariants. This is the "constitution" of SIL's technical architecture.
+---
 
 ### [Glossary](SIL_GLOSSARY.md)
-**20 minutes** | Canonical vocabulary (61 terms)
+**Reference** | Canonical vocabulary (61 terms)
 
-Precise definitions for all core concepts. Keep this open while reading other documents.
+Precise definitions for all core concepts. **Keep this open while reading other documents.**
 
-### [Research Agenda Year 1](SIL_RESEARCH_AGENDA_YEAR1.md)
-**30 minutes** | Current research focus
-
-The four research themes, milestones, deliverables, and success criteria for SIL's first year.
+This is your reference guide - if you encounter an unfamiliar term, it's defined here.
 
 ---
-
-## Founding Team
-
-### [Founder Profile](FOUNDER_PROFILE.md)
-**5 minutes** | Scott A. Senkeresty
-
-Background, experience, and approach to building SIL.
-
-### [Tia Profile](TIA_PROFILE.md)
-**5 minutes** | Chief Semantic Agent
-
-About Tia, SIL's AI collaborator and co-architect.
-
----
-
-## Extended Vision Documents
-
-These documents provide deeper exploration of SIL's organizational structure, physical design, and philosophical foundations. They are not required reading but provide valuable context.
-
-### [Two-Division Structure](SIL_TWO_DIVISION_STRUCTURE.md)
-**20 minutes** | SIL-Core and SIL-Civilization
-
-How SIL organizes into two complementary divisions: one building the semantic kernel, one building the civilization stack.
-
-### [Founding Team Archetypes](SIL_FOUNDING_TEAM_ARCHETYPES.md)
-**25 minutes** | Eight essential roles
-
-Systems Titan, Integrator, Community Architect, Human Systems Steward, Ethical Guardian, Scale Translator, Narrative Director, Built-World Architect.
-
-### [Physical Lab Design](SIL_PHYSICAL_LAB_DESIGN.md)
-**25 minutes** | Five-zone building architecture
-
-How physical space shapes intellectual possibility: Pupil, Corridors, Creative/Collaborative, Quiet Zone, Fire Ring.
 
 ### [Semantic OS Architecture](SIL_SEMANTIC_OS_ARCHITECTURE.md)
-**30 minutes** | Six-layer technical deep dive
+**30 minutes** | Six-layer technical architecture
 
-Detailed exploration of each layer in the Semantic Operating System.
+Detailed explanation of the 6-layer Semantic Operating System:
+- Layer 0: Semantic Memory
+- Layer 1: Universal Intermediate Representation (USIR)
+- Layer 2: Domain Modules
+- Layer 3: Agent Orchestration
+- Layer 4: Deterministic Computation Engines
+- Layer 5: Semantic Interface Manager (SIM)
 
-### [Morphogen Project](SIL_MORPHOGEN_PROJECT.md)
-**25 minutes** | Deterministic computation platform
+This is the technical foundation of everything SIL builds.
 
-Deep dive into Morphogen's architecture, philosophy, and role in the SIL ecosystem.
+---
 
 ### [Stewardship Manifesto](SIL_STEWARDSHIP_MANIFESTO.md)
 **20 minutes** | Values and governance
 
 How SIL approaches stewardship, decision-making, and long-term sustainability.
 
-### [Civilizational Systems Engineering](SIL_CIVILIZATIONAL_SYSTEMS_ENGINEERING.md)
-**30 minutes** | Core conceptual framework
+**Core commitments:**
+- Open research and transparent development
+- Stewardship over ownership
+- Long-term thinking
+- Accountability to the community
 
-The philosophical and systems-thinking foundations underlying SIL's approach.
+---
+
+### [Founder's Letter](FOUNDERS_LETTER.md)
+**10 minutes** | Personal perspective
+
+A personal introduction from the founder explaining why SIL exists, what gap it fills in modern AI infrastructure, and the commitment to explicit meaning and provenance.
+
+This provides the human context behind the technical work.
 
 ---
 
 ## Reading Paths
 
-### Path 1: Quick Start (1 hour)
-1. Founder's Letter (10 min)
-2. Manifesto (15 min)
-3. Principles (10 min)
-4. Glossary (quick reference)
+### Path 1: Quick Start (30 minutes)
+**Perfect for:** First-time visitors, curious developers
 
-### Path 2: Technical Understanding (2-3 hours)
-1. Founder's Letter (10 min)
-2. Manifesto (15 min)
-3. Technical Charter (45 min)
-4. Glossary (ongoing reference)
-5. Research Agenda (30 min)
+1. Manifesto (15 min) ← Why SIL exists
+2. Glossary (quick reference) ← Key terms
+3. Founder's Letter (10 min) ← Personal context
 
-### Path 3: Complete Mastery (6+ hours)
-Read all documents in order listed above.
+**Output:** You understand what SIL is and why it matters.
+
+---
+
+### Path 2: Technical Understanding (1.5 hours)
+**Perfect for:** Engineers, architects who want depth
+
+1. Manifesto (15 min)
+2. Principles (10 min)
+3. Semantic OS Architecture (30 min)
+4. Stewardship Manifesto (20 min)
+5. Glossary (ongoing reference)
+
+**Output:** You understand SIL's technical architecture and governance model.
+
+---
+
+### Path 3: Complete Mastery (2 hours)
+**Perfect for:** Core contributors, stewards
+
+Read all 6 documents in order listed above, then explore:
+- [Tools](../tools/) - See SIL principles in production code
+- [Research](../research/) - Formal research papers
+- [Architecture](../architecture/) - The universal pattern
+- [Projects](../../projects/) - What's been built
+
+**Output:** Complete understanding of SIL's foundation.
 
 ---
 
 ## Document Organization
 
-**Core 8 (Required):**
-- Founder's Letter, Manifesto, Principles, Technical Charter, Glossary, Research Agenda, Founder Profile, Tia Profile
+**Core Documents (6):**
+1. SIL_MANIFESTO.md - The problem and vision
+2. SIL_PRINCIPLES.md - The 14 guiding principles
+3. SIL_GLOSSARY.md - Canonical vocabulary
+4. SIL_SEMANTIC_OS_ARCHITECTURE.md - The 6-layer stack
+5. SIL_STEWARDSHIP_MANIFESTO.md - Values and governance
+6. FOUNDERS_LETTER.md - Personal context
 
-**Extended 7 (Deeper Context):**
-- Two-Division Structure, Founding Team Archetypes, Physical Lab Design, Semantic OS Architecture, Morphogen Project, Stewardship Manifesto, Civilizational Systems Engineering
+**Total Reading Time:** ~2 hours (all core docs)
+
+---
+
+## Why These Documents?
+
+**Manifesto** → The "why" - understand the problem
+**Principles** → The "how" - our design philosophy
+**Glossary** → The "what" - shared vocabulary
+**Semantic OS** → The "architecture" - technical foundation
+**Stewardship** → The "governance" - how we operate
+**Founder's Letter** → The "context" - human perspective
+
+Together, these six documents provide everything you need to understand SIL's foundation.
 
 ---
 
 ## Navigation
 
 - **Parent:** [Documentation Hub](../READING_GUIDE.md)
-- **Next:** [Architecture Guides](../architecture/)
-- **Related:** [Vision Documents](../vision/), [Research Papers](../research/)
+- **Next Steps:**
+  - Try production tools: [Tools](../tools/)
+  - Read research papers: [Research](../research/)
+  - Understand the pattern: [Architecture](../architecture/)
+  - See what's built: [Projects](../../projects/)
+
+---
+
+## Related Content
+
+Want to go deeper after reading core docs?
+
+- **Additional research, technical details, and vision documents** are available in staging tiers
+- **Contact via GitHub** if you're interested in collaboration or accessing extended content
 
 ---
 
 **Last Updated:** 2025-11-30
-**Total Documents:** 15
-**Total Reading Time:** ~6 hours (all documents), ~1 hour (core only)
+**Total Documents:** 6 core canonical docs
+**Total Reading Time:** ~2 hours for complete mastery of foundation

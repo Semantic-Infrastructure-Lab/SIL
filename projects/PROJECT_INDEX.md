@@ -33,7 +33,7 @@ Private repos are in active development and will be made public when ready for b
 ┌─────────────────────────────────────────────────────────────┐
 │  Layer 5: Human Interfaces / SIM                            │
 │  Progressive disclosure, exploration, visualization          │
-│  • reveal (✅ Production v0.9.0)                             │
+│  • reveal (✅ Production v0.13.1)                            │
 │  • browserbridge (🚧 Alpha)                                  │
 └─────────────────────────────────────────────────────────────┘
                             ▲
@@ -154,7 +154,7 @@ Private repos are in active development and will be made public when ready for b
 ---
 
 ### [reveal](https://github.com/semantic-infrastructure-lab/reveal) - Progressive Code Disclosure
-**Status:** ✅ **Production v0.9.0** | **Platform:** PyPI
+**Status:** ✅ **Production v0.13.1** | **Platform:** PyPI
 
 **Layer:** 5 (Human Interfaces / SIM - progressive disclosure)
 

@@ -2,7 +2,7 @@
 
 **Understanding SIL's system design and architectural principles**
 
-These guides explain **how to think architecturally** about semantic systems. They provide the mental models, frameworks, and decision criteria for designing SIL-compliant components.
+This guide explains **how to think architecturally** about semantic systems. It provides the mental models, frameworks, and decision criteria for designing SIL-compliant components.
 
 ---
 
@@ -28,131 +28,112 @@ These guides explain **how to think architecturally** about semantic systems. Th
 
 ---
 
-### [Design Principles](DESIGN_PRINCIPLES.md)
-**15 minutes** | The 5 principles for evaluating designs
-
-Every SIL system follows these design principles:
-
-1. **Clarity** - Structure is visible, not hidden
-2. **Simplicity** - Minimal essential complexity
-3. **Composability** - Components combine cleanly
-4. **Correctness** - Invariants are preserved
-5. **Verifiability** - Reasoning is provable
-
-This document explains **how to use these principles** to evaluate design decisions. It's not abstract philosophy—it's a practical decision framework.
-
-**Use this when:**
-- Reviewing architecture proposals
-- Debugging why a design feels wrong
-- Teaching SIL principles to new contributors
-- Deciding between multiple implementation approaches
-
----
-
-## How These Documents Relate
+## How This Relates to Other Docs
 
 ```
 UNIFIED_ARCHITECTURE_GUIDE.md (The Pattern)
-    ↓ Uses
-DESIGN_PRINCIPLES.md (The Criteria)
-    ↓ Applied to
-Individual project architectures
-    ↓ Formalized in
-../canonical/SIL_TECHNICAL_CHARTER.md (The Specification)
+    ↓ Applies
+../canonical/SIL_PRINCIPLES.md (The Principles)
+    ↓ Implements
+../canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md (The 6-Layer Stack)
+    ↓ Realized in
+../../projects/PROJECT_INDEX.md (Concrete Implementations)
 ```
 
 **Reading order:**
-1. **Unified Architecture Guide** - Learn the pattern
-2. **Design Principles** - Learn the evaluation criteria
-3. **Technical Charter** - See the formal specification
+1. **Unified Architecture Guide** - Learn the universal pattern
+2. **SIL Principles** - Learn the design philosophy
+3. **Semantic OS Architecture** - Understand the 6-layer stack
 4. Individual project docs - See concrete implementations
 
 ---
 
 ## Connection to Other Docs
 
-### These are guides, not specs
+### This is a guide, not a spec
 
-**Architecture guides** (this directory):
+**Architecture guide** (this directory):
 - Mental models and frameworks
 - Decision criteria
-- "How to think about X"
+- "How to think about semantic systems"
 
 **Canonical documents** (`../canonical/`):
 - Formal specifications
 - Definitive reference
-- "What X is precisely"
+- Principles and foundations
+
+**Tools** (`../tools/`):
+- Production implementations
+- See principles in action
 
 **Research papers** (`../research/`):
 - Why things are designed this way
 - Theoretical foundations
-- "Why X matters"
 
 ---
 
 ## For Different Audiences
 
 ### New Engineer/Contributor
-**Read:** Unified Architecture Guide → Design Principles
+**Read:** Unified Architecture Guide → SIL Principles
 **Time:** 1 hour
-**Outcome:** Understand the pattern and principles
+**Outcome:** Understand the pattern and philosophy
 
 ### Architect/Steward
-**Read:** Both documents deeply + Technical Charter
-**Time:** 2-3 hours
+**Read:** Unified Architecture Guide + all Canonical docs
+**Time:** 3-4 hours
 **Outcome:** Can design SIL-compliant systems
 
 ### Researcher
 **Read:** Unified Architecture Guide + Research Papers
 **Time:** Variable
-**Outcome:** Understand architectural foundations and open problems
+**Outcome:** Understand architectural foundations
 
 ---
 
-## Key Concepts Explained Here
+## Key Concepts Explained
 
 **From Unified Architecture Guide:**
 - Intent → IR → Execution pattern
 - Adapter vs Microkernel architectures
 - When to use which architectural style
 - How all 11 SIL projects map to the framework
+- Universal vocabulary for all projects
 
-**From Design Principles:**
-- What "Clarity" means in practice (4 sub-principles)
-- How to evaluate "Simplicity" (3 criteria)
-- When "Composability" is achieved (3 invariants)
-- How to ensure "Correctness" (4 techniques)
-- What makes systems "Verifiable" (3 requirements)
+**This is the Rosetta Stone** - it makes everything else make sense.
 
 ---
 
 ## Next Steps
 
-After reading these guides:
+After reading this guide:
 
-**To understand the formal spec:**
-→ Read [Technical Charter](../canonical/SIL_TECHNICAL_CHARTER.md)
+**To understand the principles:**
+→ Read [SIL Principles](../canonical/SIL_PRINCIPLES.md)
+
+**To understand the 6-layer stack:**
+→ Read [Semantic OS Architecture](../canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md)
 
 **To see concrete implementations:**
 → Read [Project Index](../../projects/PROJECT_INDEX.md)
 
+**To try working tools:**
+→ Try [Reveal](../tools/REVEAL.md)
+
 **To understand the research:**
 → Read [Research Papers](../research/)
-
-**To learn operational details:**
-→ Read [Guides](../guides/)
 
 ---
 
 ## Navigation
 
 - **Parent:** [Documentation Hub](../READING_GUIDE.md)
-- **Related:** [Canonical Documents](../canonical/), [Guides](../guides/)
+- **Related:** [Canonical Documents](../canonical/), [Tools](../tools/)
 - **Projects:** [Project Index](../../projects/PROJECT_INDEX.md)
 
 ---
 
 **Last Updated:** 2025-11-30
-**Documents:** 2
-**Reading Time:** ~1 hour (both documents)
+**Documents:** 1 (Unified Architecture Guide)
+**Reading Time:** ~45 minutes
 **Status:** Complete and stable

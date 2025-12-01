@@ -1,10 +1,10 @@
 # SIL Documentation - Reading Guide
 
-**Welcome to the Semantic Infrastructure Lab documentation.**
+**Welcome to the Semantic Infrastructure Lab.**
 
-This guide helps you navigate SIL's technical documentation efficiently. Choose your reading path based on your goal.
+This guide helps you navigate SIL's documentation efficiently. Choose your reading path based on your goal.
 
-**Last Updated:** 2025-11-29
+**Last Updated:** 2025-11-30
 
 ---
 
@@ -13,77 +13,95 @@ This guide helps you navigate SIL's technical documentation efficiently. Choose 
 ### **"I want a 5-minute overview"**
 → **`canonical/SIL_MANIFESTO.md`** - Why SIL exists, what we're building
 
+### **"I want to try working tools TODAY"**
+→ **`tools/`** - Production tools you can use now (Reveal on PyPI)
+
 ### **"I want the complete technical architecture"**
 → **`architecture/UNIFIED_ARCHITECTURE_GUIDE.md`** ⭐ **THE ROSETTA STONE**
 
 ### **"I need to look up a term"**
 → **`canonical/SIL_GLOSSARY.md`** - Keep this open while reading
 
-### **"I want the formal specification"**
-→ **`canonical/SIL_TECHNICAL_CHARTER.md`** - Complete 6-layer spec
-
 ### **"I want design principles"**
-→ **`architecture/DESIGN_PRINCIPLES.md`** - How to evaluate designs
-
-### **"I want the complete vision"**
-→ **`vision/SIL_VISION_COMPLETE.md`** - Long-term aspirations
+→ **`canonical/SIL_PRINCIPLES.md`** - The 14 research infrastructure principles
 
 ### **"I want to see what's built"**
 → **`../projects/PROJECT_INDEX.md`** - 11 SIL projects mapped by layer
 
-### **"I want rigorous research papers"**
-→ **`research/`** - Formal research on semantic infrastructure problems
+### **"I want research papers"**
+→ **`research/`** - Formal research + standards (RAG, agent-help implemented in Reveal v0.13+)
 
 ---
 
 ## 📖 Curated Reading Paths
 
-### **Path 1: "Quick Start" (1 hour)**
-**Perfect for:** New team members, potential collaborators
+### **Path 1: "Skeptical Engineer" (30 minutes)**
+**Perfect for:** Developers who want proof, not promises
+
+```
+1. tools/README.md (5 min)
+   ↓ See real tools that work today
+
+2. tools/REVEAL.md (10 min)
+   ↓ Try: pip install reveal-cli
+
+3. canonical/SIL_MANIFESTO.md (10 min)
+   ↓ Understand the vision
+
+4. ../projects/PROJECT_INDEX.md (5 min)
+   ↓ See all 11 projects, 3,250+ tests
+```
+
+**Output:** You've tried working code and understand what SIL is building.
+
+---
+
+### **Path 2: "Research Collaborator" (2 hours)**
+**Perfect for:** Academics, researchers who want technical depth
 
 ```
 1. canonical/SIL_MANIFESTO.md (10 min)
-   ↓ Understand why SIL exists
+   ↓ Understand the problem
 
 2. architecture/UNIFIED_ARCHITECTURE_GUIDE.md (30 min) ⭐
    ↓ Learn the universal pattern
 
-3. architecture/DESIGN_PRINCIPLES.md (15 min)
-   ↓ Understand how we build
-
-4. ../projects/PROJECT_INDEX.md (5 min)
-   ↓ See what exists
-```
-
-**Output:** You understand the vision, the pattern, the principles, and what's built.
-
----
-
-### **Path 2: "Implementation" (2-3 hours)**
-**Perfect for:** Engineers building on SIL
-
-```
-1. architecture/UNIFIED_ARCHITECTURE_GUIDE.md (30 min) ⭐
-   ↓ Learn the pattern
-
-2. canonical/SIL_GLOSSARY.md (15 min - keep open)
+3. canonical/SIL_GLOSSARY.md (15 min - keep open)
    ↓ Learn the vocabulary
 
-3. architecture/DESIGN_PRINCIPLES.md (15 min)
-   ↓ Learn how to evaluate designs
+4. canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md (20 min)
+   ↓ Understand the 6-layer stack
 
-4. canonical/SIL_TECHNICAL_CHARTER.md (1-2 hours)
-   ↓ Understand the formal contracts
+5. research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md (30 min)
+   ↓ See rigorous research
 
-5. ../projects/PROJECT_INDEX.md (10 min)
-   ↓ See concrete implementations
+6. research/AGENT_HELP_STANDARD.md (15 min)
+   ↓ See implemented standard (validated in Reveal v0.13+)
 ```
 
-**Output:** You can design and implement SIL-compliant systems.
+**Output:** You understand SIL's technical foundation and research direction.
 
 ---
 
-### **Path 3: "Complete Mastery" (4-6 hours)**
+### **Path 3: "Curious Outsider" (20 minutes)**
+**Perfect for:** Non-technical visitors who want the big picture
+
+```
+1. canonical/SIL_MANIFESTO.md (10 min)
+   ↓ Why does SIL exist?
+
+2. tools/README.md (5 min)
+   ↓ What have they built?
+
+3. canonical/FOUNDERS_LETTER.md (5 min)
+   ↓ Personal perspective
+```
+
+**Output:** You understand what SIL is and why it matters.
+
+---
+
+### **Path 4: "Complete Mastery" (3-4 hours)**
 **Perfect for:** Core team, stewards, deep contributors
 
 ```
@@ -91,7 +109,7 @@ This guide helps you navigate SIL's technical documentation efficiently. Choose 
    ↓ Start with the "why"
 
 2. architecture/UNIFIED_ARCHITECTURE_GUIDE.md (30 min) ⭐
-   ↓ Learn the pattern
+   ↓ The Rosetta Stone - universal pattern
 
 3. canonical/SIL_GLOSSARY.md (15 min - keep open)
    ↓ Vocabulary reference
@@ -99,80 +117,83 @@ This guide helps you navigate SIL's technical documentation efficiently. Choose 
 4. canonical/SIL_PRINCIPLES.md (10 min)
    ↓ The 14 research infrastructure principles
 
-5. architecture/DESIGN_PRINCIPLES.md (15 min)
-   ↓ The 5 engineering principles
+5. canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md (30 min)
+   ↓ The 6-layer Semantic OS
 
-6. canonical/SIL_TECHNICAL_CHARTER.md (2 hours)
-   ↓ The complete formal specification
+6. tools/ (30 min)
+   ↓ Understand production tools (Reveal)
 
-7. canonical/SIL_RESEARCH_AGENDA_YEAR1.md (30 min)
-   ↓ Research roadmap
+7. research/ (1 hour)
+   ↓ RAG paper + agent-help standard
 
-8. vision/SIL_VISION_COMPLETE.md (15 min)
-   ↓ Long-term aspirations
-
-9. ../projects/PROJECT_INDEX.md (30 min)
+8. ../projects/PROJECT_INDEX.md (30 min)
    ↓ All 11 projects in depth
+
+9. canonical/SIL_STEWARDSHIP_MANIFESTO.md (15 min)
+   ↓ How SIL operates and governs itself
 ```
 
-**Output:** Complete understanding of SIL's philosophy, architecture, and roadmap.
+**Output:** Complete understanding of SIL's philosophy, architecture, tools, and governance.
 
 ---
 
 ## 👤 By Role
 
-### **New Engineer/Contributor**
-Start with: **Path 1 (Quick Start)** → then **Path 2 (Implementation)**
+### **Software Developer**
+→ **Path 1 (Skeptical Engineer)** - See tools first, then vision
 
 ### **Architect/Steward**
-Go straight to: **Path 3 (Complete Mastery)**
+→ **Path 4 (Complete Mastery)** - Deep dive into everything
 
 ### **Researcher/Academic**
-Focus on: `canonical/SIL_RESEARCH_AGENDA_YEAR1.md` + `canonical/SIL_TECHNICAL_CHARTER.md` + `research/` papers
+→ **Path 2 (Research Collaborator)** - Focus on technical depth and papers
 
 ### **Just Curious**
-Start with: `canonical/SIL_MANIFESTO.md` (10 min)
+→ **Path 3 (Curious Outsider)** - Start with Manifesto
 
 ---
 
 ## 📚 Document Categories
 
-### **Canonical Founding Documents** (Start Here)
-The definitive specifications and founding principles.
+### **Core Identity** (Start Here)
+The foundation - who we are and why we exist.
 
-- **FOUNDERS_LETTER.md** (3KB) - Personal letter from the founder about SIL's mission and approach
-- **FOUNDER_PROFILE.md** (3KB) - Background and experience of Scott Senkeresty
-- **TIA_PROFILE.md** (4KB) - About Tia, SIL's Chief Semantic Agent
 - **SIL_MANIFESTO.md** (12KB) - Why SIL exists
-- **SIL_TECHNICAL_CHARTER.md** (29KB) - The formal 6-layer specification
-- **SIL_GLOSSARY.md** (8KB) - Canonical vocabulary
 - **SIL_PRINCIPLES.md** (5KB) - 14 research infrastructure principles
-- **SIL_RESEARCH_AGENDA_YEAR1.md** (19KB) - Research roadmap
+- **SIL_GLOSSARY.md** (8KB) - Canonical vocabulary (keep this open!)
+- **FOUNDERS_LETTER.md** (3KB) - Personal perspective from the founder
 
-### **Architecture Guides** (The Pattern)
+### **Technical Foundation** (The Architecture)
 How to think architecturally about semantic systems.
 
 - **UNIFIED_ARCHITECTURE_GUIDE.md** ⭐⭐⭐ - The Rosetta Stone (THE most important doc)
-- **DESIGN_PRINCIPLES.md** - The 5 principles for evaluating designs
+- **SIL_SEMANTIC_OS_ARCHITECTURE.md** - The 6-layer Semantic OS stack
 
-### **Vision & Philosophy**
-Long-term aspirations and philosophical foundations.
+### **Tools** (Try This Today)
+Production-ready tools demonstrating SIL principles.
 
-- **SIL_VISION_COMPLETE.md** - What the world looks like if SIL succeeds
+- **tools/README.md** - Tools overview and economic impact
+- **tools/REVEAL.md** - Reveal code explorer (pip install reveal-cli)
 
-### **Research Papers** (Rigorous Deep-Dives)
+### **Research** (Rigorous Deep-Dives)
 Formal research on semantic infrastructure problems.
 
-- **RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md** - RAG as geometric meaning transport across misaligned manifolds
-- See `research/README.md` for full catalog and future papers
+- **RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md** - RAG as geometric meaning transport
+- **AGENT_HELP_STANDARD.md** - Agent-help standard (implemented & validated in Reveal v0.13+)
+- See `research/README.md` for future papers
 
-### **Project Catalog**
-What has been built.
+### **Governance** (How We Operate)
+Values and accountability.
 
-- **../projects/PROJECT_INDEX.md** - All 11 SIL projects mapped to 6-layer architecture
+- **SIL_STEWARDSHIP_MANIFESTO.md** - How SIL governs itself
 
-### **Guides & Meta**
-- **FOUNDER_BACKGROUND.md** - Who built this and why
+### **Projects** (What's Built)
+The ecosystem of 11 SIL projects.
+
+- **../projects/PROJECT_INDEX.md** - All projects mapped to 6-layer architecture
+
+### **Meta** (Context)
+- **DEDICATION.md** - Tribute to Alan Turing
 
 ---
 
@@ -180,38 +201,36 @@ What has been built.
 
 ```
 docs/
-├── READING_GUIDE.md        ← You are here
+├── READING_GUIDE.md           ← You are here
 │
-├── canonical/              # Founding documents (START HERE)
-│   ├── FOUNDERS_LETTER.md
-│   ├── FOUNDER_PROFILE.md
-│   ├── TIA_PROFILE.md
-│   ├── SIL_MANIFESTO.md
-│   ├── SIL_TECHNICAL_CHARTER.md
-│   ├── SIL_GLOSSARY.md
+├── canonical/                 # Core identity
+│   ├── SIL_MANIFESTO.md       ⭐⭐⭐ Start here
 │   ├── SIL_PRINCIPLES.md
-│   └── SIL_RESEARCH_AGENDA_YEAR1.md
+│   ├── SIL_GLOSSARY.md        ⭐ Keep this open
+│   ├── SIL_SEMANTIC_OS_ARCHITECTURE.md
+│   ├── SIL_STEWARDSHIP_MANIFESTO.md
+│   ├── FOUNDERS_LETTER.md
+│   └── README.md
 │
-├── architecture/           # The pattern (CRITICAL)
-│   ├── UNIFIED_ARCHITECTURE_GUIDE.md  ⭐⭐⭐
-│   └── DESIGN_PRINCIPLES.md
+├── architecture/              # The pattern
+│   ├── UNIFIED_ARCHITECTURE_GUIDE.md  ⭐⭐⭐ The Rosetta Stone
+│   └── README.md
 │
-├── research/               # Research papers (NEW)
-│   ├── README.md
-│   └── RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md
+├── tools/                     # Production tools (NEW!)
+│   ├── README.md              ⭐⭐ Economic impact + overview
+│   └── REVEAL.md              ⭐⭐⭐ Try: pip install reveal-cli
 │
-├── vision/                 # Long-term vision
-│   └── SIL_VISION_COMPLETE.md
+├── research/                  # Research papers
+│   ├── RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md
+│   ├── AGENT_HELP_STANDARD.md  ⭐ Implemented in Reveal v0.13+
+│   └── README.md
 │
-├── guides/                 # How-to guides
-│   └── OPTIMIZATION_IN_SIL.md
+├── meta/                      # Meta-documentation
+│   ├── DEDICATION.md
+│   └── README.md
 │
-├── operations/             # Operational docs
-│   └── DEPLOYMENT_STANDARDS.md
-│
-└── meta/                   # Meta-documentation
-    ├── FOUNDER_BACKGROUND.md
-    └── EXTRACTION_MANIFEST.md
+└── ../projects/               # Project catalog
+    └── PROJECT_INDEX.md       ⭐⭐ See what's built
 ```
 
 ---
@@ -224,14 +243,35 @@ docs/
 ### 2. **Start with UNIFIED_ARCHITECTURE_GUIDE**
 If you can only read ONE document, make it `architecture/UNIFIED_ARCHITECTURE_GUIDE.md`. It's the Rosetta Stone that makes everything else click.
 
-### 3. **Don't Skip the Manifesto**
+### 3. **Try the Tools**
+Don't just read ABOUT SIL - try Reveal: `pip install reveal-cli`
+See progressive disclosure in action.
+
+### 4. **Don't Skip the Manifesto**
 `canonical/SIL_MANIFESTO.md` explains WHY we're building this. Understanding the problem is essential to understanding the solution.
 
-### 4. **Read in Order**
+### 5. **Read in Order**
 The reading paths above are sequenced intentionally. Each document builds on the previous one.
 
-### 5. **Take Your Time with the Charter**
-`canonical/SIL_TECHNICAL_CHARTER.md` is dense (29KB, 2-4 hours). Don't rush it. It's the complete formal specification.
+---
+
+## 💰 Why the Economic Framing?
+
+You'll notice SIL documentation emphasizes cost savings and energy efficiency. This isn't marketing - it's core to our mission:
+
+**The Problem:**
+- AI agents waste billions of tokens on inefficient patterns
+- Estimated $110M+ wasted annually across the industry
+- Massive energy consumption from preventable loops
+
+**SIL's Solution:**
+- Progressive disclosure (Reveal): 86% cost reduction
+- Agent-help standard: 50-86% reduction in workflows
+- At scale: Billions of dollars + kWh saved
+
+**This is about economic and environmental responsibility, not just elegant code.**
+
+See `tools/README.md` for the detailed math.
 
 ---
 
@@ -239,7 +279,9 @@ The reading paths above are sequenced intentionally. Each document builds on the
 
 ### If you're reading this and want to know:
 - **How projects map to architecture layers:** See `../projects/PROJECT_INDEX.md`
-- **Relationship between PRINCIPLES and DESIGN_PRINCIPLES:** Both docs now cross-reference each other
+- **How to use Reveal effectively:** See `tools/REVEAL.md`
+- **Why agent-help matters:** See `research/AGENT_HELP_STANDARD.md` (implemented & validated)
+- **SIL's governance model:** See `canonical/SIL_STEWARDSHIP_MANIFESTO.md`
 
 ---
 
@@ -247,11 +289,17 @@ The reading paths above are sequenced intentionally. Each document builds on the
 
 **Can't find what you need?**
 1. Check `canonical/SIL_GLOSSARY.md` for term definitions
-2. Search the docs directory: `grep -r "your search term" docs/`
+2. Try the glossary search (if website has it)
 3. See `../projects/PROJECT_INDEX.md` for project-specific docs
 
 **Want to understand the ecosystem?**
 - See `../projects/PROJECT_INDEX.md` for all 11 SIL projects
+- See `tools/` for production-ready tools
+
+**Want to contribute?**
+- Install Reveal: `pip install reveal-cli`
+- Read `research/AGENT_HELP_STANDARD.md` for proposed standards
+- Check project GitHub repos for contribution guidelines
 
 ---
 
@@ -259,8 +307,27 @@ The reading paths above are sequenced intentionally. Each document builds on the
 
 While working with SIL:
 1. **`canonical/SIL_GLOSSARY.md`** - Term definitions
-2. **`architecture/DESIGN_PRINCIPLES.md`** - Evaluation criteria
+2. **`canonical/SIL_PRINCIPLES.md`** - Design philosophy
 3. **`architecture/UNIFIED_ARCHITECTURE_GUIDE.md`** - The pattern
+
+---
+
+## 🚀 Next Steps After Reading
+
+### If you're a Developer:
+→ Install Reveal: `pip install reveal-cli`
+→ Explore the 11 projects: `../projects/PROJECT_INDEX.md`
+→ See `--agent-help` implementation in Reveal (research/AGENT_HELP_STANDARD.md)
+
+### If you're a Researcher:
+→ Read the RAG paper: `research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md`
+→ Review implemented standards: `research/AGENT_HELP_STANDARD.md`
+→ Check SIL's research agenda (coming in Tier 2)
+
+### If you're a Potential Collaborator:
+→ Read stewardship model: `canonical/SIL_STEWARDSHIP_MANIFESTO.md`
+→ See what's built: `../projects/PROJECT_INDEX.md`
+→ Reach out via GitHub
 
 ---
 
@@ -271,3 +338,4 @@ Start there if you're impatient or confused.
 ---
 
 **Last Updated:** 2025-11-30
+**Launch Content:** This guide reflects Tier 1 launch content (10-13 docs)

@@ -12,19 +12,9 @@ They exist to keep the Semantic OS coherent, inspectable, reproducible, and exte
 
 They apply to every layer, every domain, every operator, and every contribution.
 
-### **Relationship to DESIGN_PRINCIPLES**
+### **Scope of These Principles**
 
-These 14 principles govern the **research infrastructure and Semantic OS architecture**. They are foundational constraints for the entire system.
-
-For **practical engineering guidance** when implementing SIL projects (Pantheon, Morphogen, TiaCAD, etc.), see [DESIGN_PRINCIPLES.md](../architecture/DESIGN_PRINCIPLES.md), which distills engineering methodology into 5 operational principles:
-
-1. **Clarity** - See the system
-2. **Simplicity** - Model the system
-3. **Composability** - Extend the system
-4. **Correctness** - Keep the system safe
-5. **Verifiability** - Trust the system
-
-Both sets of principles are complementary: these 14 constrain the *what* (the infrastructure), while the 5 guide the *how* (the implementation).
+These 14 principles govern the **research infrastructure and Semantic OS architecture**. They are foundational constraints for the entire system that apply to every layer, every domain, every operator, and every contribution.
 
 ---
 

@@ -46,6 +46,25 @@ a semantic foundation that makes meaning, memory, reasoning, tools, and provenan
 
 SIL exists to build that missing layer.
 
+### The Material Transition
+
+If AI today is wood—powerful, organic, useful, but structurally unreliable, prone to warping, splintering, and internal stresses invisible until failure—then SIL is building the steel infrastructure laboratory.
+
+We're not just improving carpentry. We're designing:
+
+- **The structural primitives** (semantic types that don't hallucinate)
+- **The alloys** (composition operators for cross-domain work)
+- **The fasteners** (provenance-preserving connections)
+- **The building codes** (invariants and constraints that prevent collapse)
+- **The inspection protocols** (verification systems for semantic validity)
+- **The stress testing** (deterministic execution with reproducibility)
+
+**This is not an incremental improvement. This is a material transition.**
+
+When a fundamental building material becomes corrupted or structurally insufficient, you cannot fix houses, builders, tools, or carpenters. You must rebuild the substrate itself—the material and the entire supply chain around it.
+
+That is what SIL is building: the steel for the age of intelligent systems.
+
 ## 2. The Semantic Worldview — Epistemic Commitments
 
 SIL is grounded in a simple stance: 
@@ -345,7 +364,30 @@ Representations and operators outlast any model.
 
 A real semantic substrate becomes durable infrastructure others can build on.
 
-## 11. Founder Stance (Explicitly, Simply)
+## 11. What We've Built — The SIL Ecosystem
+
+SIL is not aspirational. It is operational.
+
+The lab has developed **11 projects** spanning the six layers of the Semantic OS, with **5 production-ready systems** and over **3,250 tests** ensuring reliability:
+
+**Production-Ready Today:**
+- **Reveal** (v0.13.1 on PyPI) — Code exploration with 86% token reduction, `--agent-help` standard implemented
+- **Morphogen** (v0.11) — Cross-domain deterministic computation
+- **TiaCAD** (v3.1.1) — Declarative parametric CAD in YAML
+- **GenesisGraph** (v0.3.0) — Verifiable provenance with selective disclosure
+- **SIL** (v2.1) — Documentation and research hub
+
+**Active Development:**
+- RiffStack (musical MLIR), Sup (semantic UI), BrowserBridge (web agent bridge)
+
+**Research & Specification:**
+- Pantheon (universal IR), Agent Ether (multi-agent protocols), Prism (query microkernel)
+
+This is not a roadmap. These are working systems with real users, validated economics ($47K/year savings per 1000 agents), and test coverage that proves maturity.
+
+**[See the full Project Index →](../projects/PROJECT_INDEX.md)**
+
+## 12. Founder Stance (Explicitly, Simply)
 
 SIL is built from interest and skill alignment: a systems-oriented builder working on semantic infrastructure because it is meaningful work.
 
@@ -353,7 +395,7 @@ No destiny framing. No myth-making.
 
 Just commitment to building a rigorous substrate that helps humans understand, create, and discover.
 
-## 12. The Declaration
+## 13. The Declaration
 
 SIL builds the semantic substrate that current AI systems lack: persistent semantic memory, a unified intermediate representation, structured domain modules, reproducible orchestration, deterministic engines, and human interfaces for inspectable reasoning.
 

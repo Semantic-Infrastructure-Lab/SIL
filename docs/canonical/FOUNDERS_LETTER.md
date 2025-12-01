@@ -5,6 +5,8 @@
 
 Most of today's AI systems are powerful, but structurally incomplete. They produce impressive results, yet their internal reasoning remains opaque, fragile, and fundamentally uninspectable. We are able to ask more ambitious questions than ever before, but the systems answering them cannot show their work, preserve their meaning, or guarantee that their outputs are grounded in anything stable.
 
+A helpful analogy: If AI today is wood—powerful and useful, but structurally unreliable—then SIL is the steel infrastructure laboratory. We're building the structural materials, building codes, and inspection protocols for civilization-scale intelligent systems. This is not an upgrade; it's a material transition.
+
 The Semantic Infrastructure Lab exists to address this gap.
 
 AI requires more than models. It requires **semantic infrastructure**—a substrate where representations are explicit, transformations are traceable, and reasoning paths can be inspected, challenged, and composed with human judgment. Without that substrate, progress becomes a sequence of clever heuristics. With it, we have the basis for transparent machine cognition.
