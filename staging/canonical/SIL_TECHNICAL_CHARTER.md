@@ -14,15 +14,15 @@ SIL Technical Charter (v1)
 
 **Read these FIRST:**
 - **`../architecture/UNIFIED_ARCHITECTURE_GUIDE.md`** ⭐ (30 min) - Get the mental model
-- **`./SIL_GLOSSARY.md`** (15 min) - Learn the vocabulary (keep open while reading)
-- **`./SIL_PRINCIPLES.md`** (15 min) - Understand evaluation criteria
+- **`../canonical/SIL_GLOSSARY.md`** (15 min) - Learn the vocabulary (keep open while reading)
+- **`../architecture/DESIGN_PRINCIPLES.md`** (15 min) - Understand evaluation criteria
 
 **Read these AFTER for deeper context:**
-- **`./SIL_MANIFESTO.md`** - Why these contracts matter
+- **`../canonical/SIL_MANIFESTO.md`** - Why these contracts matter
 
 **Related Documents:**
-- **Glossary:** `./SIL_GLOSSARY.md` - Look up terms while reading
-- **Principles:** `./SIL_PRINCIPLES.md` - Why these constraints exist
+- **Glossary:** `SIL_GLOSSARY.md` - Look up terms while reading
+- **Principles:** `../architecture/DESIGN_PRINCIPLES.md` - Why these constraints exist
 - **Pattern:** `../architecture/UNIFIED_ARCHITECTURE_GUIDE.md` - High-level framework
 - **Navigation:** `../READING_GUIDE.md` - All documentation paths
 

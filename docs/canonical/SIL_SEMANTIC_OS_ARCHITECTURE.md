@@ -8,6 +8,31 @@
 
 ---
 
+## TL;DR (2-minute overview)
+
+**What is the Semantic OS?** A 6-layer architecture for knowledge work—like Linux for computation, but for meaning.
+
+**The core insight:** Just as an OS manages processes, memory, and devices, the Semantic OS manages **knowledge, agents, and deterministic computation**.
+
+```
+Layer 5: Human Interfaces     ← CLIs, GUIs, conversational agents
+Layer 4: Deterministic Engines ← Morphogen, hermetic builds, verification
+Layer 3: Agent Ether          ← Multi-agent coordination & protocols
+Layer 2: Domain Modules       ← Water, Healthcare, Education, etc.
+Layer 1: Pantheon IR          ← Universal semantic types (the "assembly language")
+Layer 0: Semantic Memory      ← Knowledge graphs, provenance, persistence
+```
+
+**Key innovations:**
+- **Persistent semantic memory** that survives beyond single prompts
+- **Universal IR** enabling cross-domain interoperability
+- **Deterministic execution** for reproducible workflows
+- **Multi-agent protocols** for inspectable collaboration
+
+**Want the full architecture?** Read the detailed layer descriptions below ↓
+
+---
+
 ## Overview
 
 The **Semantic Operating System** is the core technical infrastructure being developed by SIL-Core. It is a modular, layered architecture for knowledge work—analogous to how Linux provides an operating system for computation.
@@ -20,39 +45,39 @@ Just as an operating system manages processes, memory, files, and devices, the S
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  Layer 6: Human Interfaces                              │
+│  Layer 5: Human Interfaces                              │
 │  (CLIs, GUIs, APIs, conversational agents)              │
 └─────────────────────────────────────────────────────────┘
                            ↕
 ┌─────────────────────────────────────────────────────────┐
-│  Layer 5: Deterministic Execution Engines               │
+│  Layer 4: Deterministic Execution Engines               │
 │  (Morphogen, Nix-like hermetic builds, verification)    │
 └─────────────────────────────────────────────────────────┘
                            ↕
 ┌─────────────────────────────────────────────────────────┐
-│  Layer 4: Agent Ether (Multi-Agent Protocols)           │
+│  Layer 3: Agent Ether (Multi-Agent Protocols)           │
 │  (Coordination, negotiation, discovery, composition)    │
 └─────────────────────────────────────────────────────────┘
                            ↕
 ┌─────────────────────────────────────────────────────────┐
-│  Layer 3: Domain-Specific Modules                       │
+│  Layer 2: Domain-Specific Modules                       │
 │  (Water, Healthcare, Education, Governance, etc.)       │
 └─────────────────────────────────────────────────────────┘
                            ↕
 ┌─────────────────────────────────────────────────────────┐
-│  Layer 2: Pantheon IR (Intermediate Representation)     │
+│  Layer 1: Pantheon IR (Intermediate Representation)     │
 │  (Universal semantic types, composition, translation)   │
 └─────────────────────────────────────────────────────────┘
                            ↕
 ┌─────────────────────────────────────────────────────────┐
-│  Layer 1: Semantic Memory (Foundation)                  │
+│  Layer 0: Semantic Memory (Foundation)                  │
 │  (Knowledge graphs, provenance, persistence, query)     │
 └─────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Layer 1: Semantic Memory (The Foundation)
+## Layer 0: Semantic Memory (The Foundation)
 
 ### Purpose
 
@@ -121,7 +146,7 @@ Semantic Memory is the **persistent knowledge substrate**—the "file system" fo
 
 ---
 
-## Layer 2: Pantheon IR (Intermediate Representation)
+## Layer 1: Pantheon IR (Intermediate Representation)
 
 ### Purpose
 
@@ -189,7 +214,7 @@ Named after the Pantheon in Rome—a building that unifies diverse architectural
 
 ---
 
-## Layer 3: Domain-Specific Modules
+## Layer 2: Domain-Specific Modules
 
 ### Purpose
 
@@ -269,7 +294,7 @@ Each domain module provides:
 
 ---
 
-## Layer 4: Agent Ether (Multi-Agent Protocols)
+## Layer 3: Agent Ether (Multi-Agent Protocols)
 
 ### Purpose
 
@@ -342,7 +367,7 @@ Agent Ether is the **coordination layer** for multi-agent systems. It provides p
 
 ---
 
-## Layer 5: Deterministic Execution Engines (Morphogen)
+## Layer 4: Deterministic Execution Engines (Morphogen)
 
 ### Purpose
 
@@ -412,7 +437,7 @@ Morphogen is SIL's flagship deterministic computation platform (named after Alan
 
 ---
 
-## Layer 6: Human Interfaces
+## Layer 5: Human Interfaces
 
 ### Purpose
 
@@ -647,7 +672,7 @@ This is the technical core of SIL's mission.
 ---
 
 **Related Documents:**
-- SIL_TECHNICAL_CHARTER.md - Technical vision and standards
-- SIL_TWO_DIVISION_STRUCTURE.md - How SIL-Core builds this, SIL-Civilization uses it
-- SIL_MORPHOGEN_PROJECT.md - Deep dive on deterministic computation
 - SIL_GLOSSARY.md - Definitions of key terms
+- SIL_PRINCIPLES.md - The 14 guiding principles
+- ../architecture/UNIFIED_ARCHITECTURE_GUIDE.md - The universal pattern
+- ../../projects/PROJECT_INDEX.md - See how projects map to these layers
