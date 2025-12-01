@@ -329,8 +329,10 @@ For inquiries about collaboration, research partnerships, or contributions:
 
 ## 📜 License
 
-**Code:** MIT License (see [LICENSE](LICENSE))
+**Code:** Apache 2.0 License (see [LICENSE](LICENSE))
 **Documentation:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+Copyright 2025 Semantic Infrastructure Lab Contributors
 
 ---
 
