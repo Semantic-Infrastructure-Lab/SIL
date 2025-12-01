@@ -33,7 +33,7 @@ Private repos are in active development and will be made public when ready for b
 ┌─────────────────────────────────────────────────────────────┐
 │  Layer 5: Human Interfaces / SIM                            │
 │  Progressive disclosure, exploration, visualization          │
-│  • reveal (✅ Production v0.13.1)                            │
+│  • reveal (✅ Production v0.13.3)                            │
 │  • browserbridge (🚧 Alpha)                                  │
 └─────────────────────────────────────────────────────────────┘
                             ▲
@@ -153,25 +153,35 @@ Private repos are in active development and will be made public when ready for b
 
 ---
 
-### [reveal](https://github.com/semantic-infrastructure-lab/reveal) - Progressive Code Disclosure
-**Status:** ✅ **Production v0.13.1** | **Platform:** PyPI
+### [reveal](https://github.com/semantic-infrastructure-lab/reveal) - Universal Resource Explorer
+**Status:** ✅ **Production v0.13.3** | **Platform:** PyPI | **Downloads:** 100+/day
 
 **Layer:** 5 (Human Interfaces / SIM - progressive disclosure)
 
-**What it does:** Semantic exploration tool for codebases. Smart, progressive disclosure of code structure without reading entire files. Optimized for AI agents and developers.
+**What it does:** Universal resource explorer with semantic understanding. Progressive disclosure pattern applies to ANY structured resource: code, environment variables, databases (planned), APIs (planned), containers (planned).
 
 **Key innovations:**
-- Progressive disclosure (structure → elements → implementation)
-- Zero configuration (smart defaults)
-- 18 file types supported (Python, JS, TS, Rust, Go, etc.)
-- Perfect Unix integration (`filename:line` format for vim, git, grep)
+- **Progressive disclosure** - Structure → Elements → Implementation (universal pattern)
+- **Pattern detection** - Code quality checking (bugs, security, complexity)
+- **AI agent-first design** - Built-in `--agent-help` following llms.txt pattern
+- **URI adapters** - Explore env://, postgres:// (planned), docker:// (planned), https:// (planned)
+- **Zero configuration** - Smart defaults, auto-discovery, 18 file types
+- **Perfect composability** - `filename:line` format integrates with vim, git, grep, etc.
 
-**Use cases:** Codebase exploration, AI agent context optimization, rapid code understanding, token-efficient file reading
+**Use cases:** Codebase exploration, AI agent context optimization, code quality checking, infrastructure inspection, token-efficient file reading (10x savings), Unix workflows
+
+**Demonstrates SIL Principles:**
+- ✅ **Structure Before Heuristics** - Shows structure first, then content
+- ✅ **Meaning Must Be Explicit** - Explicit code structure, not statistical inference
+- ✅ **Provenance Everywhere** - `filename:line` format is lightweight provenance
+- ✅ **Composability** - Seamless Unix tool integration (doesn't replace, augments)
+- ✅ **Simplicity** - Zero configuration, smart defaults enabled by semantic types
 
 **Links:**
 - Repository: `semantic-infrastructure-lab/reveal`
 - [PyPI Package](https://pypi.org/project/reveal-cli/)
-- [Documentation](https://github.com/semantic-infrastructure-lab/reveal/docs)
+- [AI Agent Guide](https://github.com/semantic-infrastructure-lab/reveal#ai-agent-support)
+- [Pattern Detection](https://github.com/semantic-infrastructure-lab/reveal#pattern-detection)
 
 ---
 

@@ -5,6 +5,7 @@
 [![Projects](https://img.shields.io/badge/Projects-11-blue)]()
 [![Production Ready](https://img.shields.io/badge/Production-5-green)]()
 [![Tests](https://img.shields.io/badge/Tests-3250+-brightgreen)]()
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ---
 
