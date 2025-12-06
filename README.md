@@ -39,7 +39,7 @@ reveal your_code.py
 
 See structure first (50 tokens) instead of reading entire files (500+ tokens). Progressive disclosure applied to code.
 
-**[More production tools →](docs/tools/)** - morphogen, tiacad, genesisgraph
+**[More production tools →](docs/innovations/)** - morphogen, tiacad, genesisgraph
 
 ---
 
