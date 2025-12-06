@@ -20,8 +20,8 @@ This index maps all SIL projects to the **6-Layer Semantic OS Architecture**. Ea
 ### 🔒 Repository Status
 
 All 12 SIL projects are now in the Semantic-Infrastructure-Lab GitHub organization:
-- **6 Public Repos:** SIL, reveal, morphogen, tiacad, genesisgraph, riffstack
-- **6 Private Repos:** pantheon, philbrick, browserbridge, sup, prism, agent-ether (marked with 🔒)
+- **7 Public Repos:** SIL, reveal, morphogen, tiacad, genesisgraph, riffstack, philbrick
+- **5 Private Repos:** pantheon, browserbridge, sup, prism, agent-ether (marked with 🔒)
 
 Private repos are in active development and will be made public when ready for broader collaboration.
 
@@ -33,7 +33,7 @@ Private repos are in active development and will be made public when ready for b
 ┌─────────────────────────────────────────────────────────────┐
 │  Layer 5: Human Interfaces / SIM                            │
 │  Progressive disclosure, exploration, visualization          │
-│  • reveal (✅ Production v0.13.3)                            │
+│  • reveal (✅ Production v0.16.0)                            │
 │  • browserbridge (🚧 Alpha)                                  │
 └─────────────────────────────────────────────────────────────┘
                             ▲
@@ -110,7 +110,7 @@ Private repos are in active development and will be made public when ready for b
 ---
 
 ### [Philbrick](https://github.com/semantic-infrastructure-lab/philbrick) - Analog/Digital Hybrid Computing
-**Status:** 🔬 **Research** | **Maturity:** Design phase | **Repo:** 🔒 Private
+**Status:** 🔬 **Research** | **Maturity:** Design phase | **Repo:** Public
 
 **Layer:** 4 (Deterministic Engine - hardware implementation)
 
@@ -176,7 +176,7 @@ Private repos are in active development and will be made public when ready for b
 ---
 
 ### [reveal](https://github.com/semantic-infrastructure-lab/reveal) - Universal Resource Explorer
-**Status:** ✅ **Production v0.13.3** | **Platform:** PyPI | **Downloads:** 100+/day
+**Status:** ✅ **Production v0.16.0** | **Platform:** PyPI | **Downloads:** 100+/day
 
 **Layer:** 5 (Human Interfaces / SIM - progressive disclosure)
 
