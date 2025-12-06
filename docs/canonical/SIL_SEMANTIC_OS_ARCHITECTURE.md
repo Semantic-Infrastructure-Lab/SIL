@@ -519,32 +519,32 @@ Human Interfaces are how people interact with the Semantic OS—CLIs, GUIs, conv
 ### 1. Provenance (GenesisGraph)
 
 Provenance flows through all layers:
-- Layer 1 (Semantic Memory): Stores provenance metadata
-- Layer 2 (Pantheon IR): Provenance as first-class type
-- Layer 3 (Domain Modules): Domain-specific provenance (e.g., sensor lineage)
-- Layer 4 (Agent Ether): Message provenance (who sent, why)
-- Layer 5 (Morphogen): Computation provenance (inputs → outputs)
-- Layer 6 (Human Interfaces): Provenance visualization
+- Layer 0 (Semantic Memory): Stores provenance metadata
+- Layer 1 (Pantheon IR): Provenance as first-class type
+- Layer 2 (Domain Modules): Domain-specific provenance (e.g., sensor lineage)
+- Layer 3 (Agent Ether): Message provenance (who sent, why)
+- Layer 4 (Morphogen): Computation provenance (inputs → outputs)
+- Layer 5 (Human Interfaces): Provenance visualization
 
 ### 2. Security and Privacy
 
 Security considerations at each layer:
-- Layer 1: Access control to knowledge graphs
-- Layer 2: Type-level privacy constraints
-- Layer 3: Domain-specific privacy rules (HIPAA, GDPR)
-- Layer 4: Encrypted agent communication
-- Layer 5: Sandboxed execution, no data leakage
-- Layer 6: Authentication, authorization, audit logs
+- Layer 0: Access control to knowledge graphs
+- Layer 1: Type-level privacy constraints
+- Layer 2: Domain-specific privacy rules (HIPAA, GDPR)
+- Layer 3: Encrypted agent communication
+- Layer 4: Sandboxed execution, no data leakage
+- Layer 5: Authentication, authorization, audit logs
 
 ### 3. Performance and Scalability
 
 Scalability strategies:
-- Layer 1: Distributed graph databases, sharding
-- Layer 2: Efficient compilation to Pantheon IR
-- Layer 3: Domain-specific optimizations
-- Layer 4: Decentralized agent coordination
-- Layer 5: Distributed execution, caching
-- Layer 6: Client-side rendering, edge computing
+- Layer 0: Distributed graph databases, sharding
+- Layer 1: Efficient compilation to Pantheon IR
+- Layer 2: Domain-specific optimizations
+- Layer 3: Decentralized agent coordination
+- Layer 4: Distributed execution, caching
+- Layer 5: Client-side rendering, edge computing
 
 ---
 
@@ -588,7 +588,7 @@ Scalability strategies:
 
 ### Phase 4: Human Interfaces (Years 5-7)
 
-**Priority: Layer 6**
+**Priority: Layer 5**
 - Design exceptional user experiences for all modalities
 - Build accessible, explainable interfaces
 - Enable broad adoption beyond specialists

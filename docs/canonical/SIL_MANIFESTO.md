@@ -71,9 +71,9 @@ Before describing what SIL intends to build, recognize what already exists.
 
 **The semantic substrate isn't hypothetical. It's operational. In production. Solving real problems.**
 
-### reveal: Semantic Infrastructure in Action
+### Reveal: Semantic Infrastructure in Action
 
-**reveal** (v0.13.x, 100+ downloads/day, PyPI) demonstrates that when you prioritize structure, meaning, and provenance, you get systems that work better—and the benefits compound.
+**reveal** (v0.16.0 on PyPI, 100+ downloads/day as of Dec 2025) demonstrates that when you prioritize structure, meaning, and provenance, you get systems that work better—and the benefits compound.
 
 **The Problem reveal Solves:**
 
@@ -477,7 +477,7 @@ Engines exist to turn semantics into reliable computation.
 
 Layer 5 — Human Interfaces (including SIM)
 
-SIL builds interfaces that make semantics visible and navigable:
+SIL builds interfaces that make semantics visible and navigable through **SIM (Semantic Information Mesh)** - an interactive exploration environment:
 
 semantic visualization of graphs, invariants, and provenance
 
@@ -630,10 +630,10 @@ A real semantic substrate becomes durable infrastructure others can build on.
 
 SIL is not aspirational. It is operational.
 
-The lab has developed **11 projects** spanning the six layers of the Semantic OS, with **5 production-ready systems** and over **3,250 tests** ensuring reliability:
+The lab has developed **12 projects** spanning the six layers of the Semantic OS, with **4 production-ready systems** and over **3,100 tests** ensuring reliability:
 
 **Production-Ready Today:**
-- **Reveal** (v0.13.1 on PyPI) — Code exploration with 86% token reduction, `--agent-help` standard implemented
+- **Reveal** (v0.16.0 on PyPI) — Code exploration with 86% token reduction, `--agent-help` standard implemented
 - **Morphogen** (v0.11) — Cross-domain deterministic computation
 - **TiaCAD** (v3.1.1) — Declarative parametric CAD in YAML
 - **GenesisGraph** (v0.3.0) — Verifiable provenance with selective disclosure
@@ -645,7 +645,7 @@ The lab has developed **11 projects** spanning the six layers of the Semantic OS
 **Research & Specification:**
 - Pantheon (universal IR), Agent Ether (multi-agent protocols), Prism (query microkernel)
 
-This is not a roadmap. These are working systems with real users, validated economics ($47K/year savings per 1000 agents), and test coverage that proves maturity.
+This is not a roadmap. These are working systems with real users, validated economics ($470K/year savings per 1000 agents - [see calculation](../FAQ.md#11-how-does-sil-save-47k-per-year-for-agents)), and test coverage that proves maturity.
 
 **[See the full Project Index →](../projects/PROJECT_INDEX.md)**
 
@@ -679,7 +679,7 @@ That is the work.
 - [Technical Charter](./SIL_TECHNICAL_CHARTER.md) - Formal specification (45 min read)
 
 **If you want to see it in action:**
-- [Project Index](../../projects/PROJECT_INDEX.md) - All 11 projects explained
+- [Project Index](../../projects/PROJECT_INDEX.md) - All 12 projects explained
 - [Tools Documentation](../tools/README.md) - Production systems with economic impact data
 - [Quickstart](../QUICKSTART.md) - Try reveal in 10 minutes
 

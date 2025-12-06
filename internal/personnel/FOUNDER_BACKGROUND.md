@@ -1,4 +1,4 @@
-# Founder Profile: Scott A. Senkeresty
+# Founder Profile: Scott Senkeresty
 
 *Founder, Semantic Infrastructure Lab (SIL)*
 *Systems-Oriented Builder | 42 Years Infrastructure Work*

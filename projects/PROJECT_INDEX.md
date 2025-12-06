@@ -2,10 +2,10 @@
 
 **The Complete Map of Semantic Infrastructure Lab Projects**
 
-**Last Updated:** 2025-11-29
-**Total Projects:** 11
-**Production Ready:** 5
-**Git Initialized:** 11 (4 private development repos)
+**Last Updated:** 2025-12-05
+**Total Projects:** 12
+**Production Ready:** 4
+**Git Initialized:** 12 (all in SIL GitHub org, 7 private)
 
 **See also:** For filesystem locations and git URLs, see `/home/scottsen/src/tia/projects/SIL/SIL_ECOSYSTEM_PROJECT_LAYOUT.md`
 
@@ -19,9 +19,9 @@ This index maps all SIL projects to the **6-Layer Semantic OS Architecture**. Ea
 
 ### 🔒 Repository Status
 
-All 11 SIL projects are now git-initialized:
-- **7 Public Repos:** morphogen, tiacad, genesisgraph, reveal, SIL, riffstack, browserbridge
-- **4 Private Repos:** pantheon, agent-ether, sup, prism (marked with 🔒)
+All 12 SIL projects are now in the Semantic-Infrastructure-Lab GitHub organization:
+- **6 Public Repos:** SIL, reveal, morphogen, tiacad, genesisgraph, riffstack
+- **6 Private Repos:** pantheon, philbrick, browserbridge, sup, prism, agent-ether (marked with 🔒)
 
 Private repos are in active development and will be made public when ready for broader collaboration.
 
@@ -106,6 +106,28 @@ Private repos are in active development and will be made public when ready for b
 - Repository: `semantic-infrastructure-lab/morphogen`
 - [Documentation](https://github.com/semantic-infrastructure-lab/morphogen/docs)
 - [Examples](https://github.com/semantic-infrastructure-lab/morphogen/examples)
+
+---
+
+### [Philbrick](https://github.com/semantic-infrastructure-lab/philbrick) - Analog/Digital Hybrid Computing
+**Status:** 🔬 **Research** | **Maturity:** Design phase | **Repo:** 🔒 Private
+
+**Layer:** 4 (Deterministic Engine - hardware implementation)
+
+**What it does:** Sister project to Morphogen implementing the same deep architecture in analog/digital hybrid hardware. Four primitive operations (sum, integrate, nonlinearity, events) bridge software and physical computing.
+
+**Key innovations:**
+- Hardware realization of universal computation primitives
+- Analog/digital hybrid architecture
+- Direct correspondence to Morphogen software model
+- Event-driven synchronization between domains
+
+**Use cases:** Physical computing, analog computation, hardware/software co-design, neuromorphic systems
+
+**Relationship:** Demonstrates that Morphogen's architecture isn't software-specific - same primitives work in silicon/analog domain
+
+**Links:**
+- Repository: `Semantic-Infrastructure-Lab/philbrick` (private)
 
 ---
 
@@ -203,7 +225,7 @@ Private repos are in active development and will be made public when ready for b
 
 ## 🚧 Active Development (2-4 Weeks to Production)
 
-### [Pantheon](https://github.com/scottsen/pantheon) - Universal Semantic IR
+### [Pantheon](https://github.com/semantic-infrastructure-lab/pantheon) - Universal Semantic IR
 **Status:** 🔬 **Research** | **Maturity:** Prototype | **Repo:** 🔒 Private
 
 **Layer:** 1 (USIR - Universal Semantic Intermediate Representation)
@@ -249,7 +271,7 @@ Private repos are in active development and will be made public when ready for b
 
 ---
 
-### [SUP](https://github.com/scottsen/sup) - Semantic UI Platform
+### [SUP](https://github.com/semantic-infrastructure-lab/sup) - Semantic UI Platform
 **Status:** 🚧 **Alpha** | **Maturity:** Early development | **Repo:** 🔒 Private
 
 **Layer:** 2 (Domain Module - UI/interaction)
@@ -295,9 +317,31 @@ Private repos are in active development and will be made public when ready for b
 
 ---
 
+### [TIA Browser Reveal](https://github.com/semantic-infrastructure-lab/tia-browser-reveal) - Browser Extension
+**Status:** ✅ **Production-Ready** | **Maturity:** v0.1.0 | **Repo:** 🔒 Private
+
+**Layer:** 5 (Human Interfaces - browser integration)
+
+**What it does:** Browser extension for extracting semantic content from web pages. Native messaging integration with TIA command-line tools. Validates BrowserBridge architectural concepts in production.
+
+**Key innovations:**
+- Native messaging architecture (browser ↔ command line)
+- Site-specific extraction presets (ChatGPT, generic pages)
+- DOM query capabilities
+- Full automation and testing (8/8 tests passing)
+
+**Relationship to BrowserBridge:** Proof-of-concept that validates browser extension + command-line integration works in practice. Foundation for BrowserBridge extension package.
+
+**Use cases:** Web content extraction, ChatGPT conversation capture, page structure analysis, browser-CLI integration
+
+**Links:**
+- Repository: `Semantic-Infrastructure-Lab/tia-browser-reveal` (private)
+
+---
+
 ## 📋 Planned / Specification Phase
 
-### [Prism](https://github.com/scottsen/prism) - Microkernel Query Engine
+### [Prism](https://github.com/semantic-infrastructure-lab/prism) - Microkernel Query Engine
 **Status:** 📋 **Specification** | **Maturity:** Design phase | **Repo:** 🔒 Private
 
 **Layer:** Cross-Cutting (Microkernel research)
@@ -456,9 +500,9 @@ SIL projects cluster around four core research themes:
 
 ## 📊 Statistics
 
-**Total Projects:** 11
-**Production Ready:** 5 (morphogen, tiacad, genesisgraph, reveal, sil)
-**Active Development:** 4 (pantheon, riffstack, sup, browserbridge)
+**Total Projects:** 12
+**Production Ready:** 6 (morphogen, tiacad, genesisgraph, reveal, sil, tia-browser-reveal)
+**Active Development:** 4 (pantheon, philbrick, riffstack, sup, browserbridge)
 **Specification Phase:** 2 (prism, agent-ether)
 **Planned:** 1 (semantic-memory)
 
@@ -489,6 +533,6 @@ See individual project repositories for specific contribution guides.
 
 ---
 
-**Last Updated:** 2025-11-27
-**Document Version:** 1.0
+**Last Updated:** 2025-12-05
+**Document Version:** 1.1
 **Maintainer:** Semantic Infrastructure Lab

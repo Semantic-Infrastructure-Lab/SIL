@@ -2,9 +2,9 @@
 
 **Building the semantic substrate for intelligent systems**
 
-[![Projects](https://img.shields.io/badge/Projects-11-blue)]()
-[![Production Ready](https://img.shields.io/badge/Production-5-green)]()
-[![Tests](https://img.shields.io/badge/Tests-3250+-brightgreen)]()
+[![Projects](https://img.shields.io/badge/Projects-12-blue)]()
+[![Production Ready](https://img.shields.io/badge/Production-4-green)]()
+[![Tests](https://img.shields.io/badge/Tests-3100+-brightgreen)]()
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ---
@@ -35,7 +35,7 @@ Contemporary AI systems lack:
 | [**tiacad**](https://github.com/semantic-infrastructure-lab/tiacad) | Declarative parametric CAD in YAML | ✅ Production | [Tutorial](https://github.com/semantic-infrastructure-lab/tiacad/TUTORIAL.md) |
 | [**genesisgraph**](https://github.com/semantic-infrastructure-lab/genesisgraph) | Verifiable process provenance | ✅ Production | [5-Min Quickstart](https://github.com/semantic-infrastructure-lab/genesisgraph/docs/getting-started/quickstart.md) |
 
-**[See all 11 projects →](projects/PROJECT_INDEX.md)**
+**[See all 12 projects →](projects/PROJECT_INDEX.md)**
 
 ---
 

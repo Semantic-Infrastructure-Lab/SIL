@@ -4,7 +4,7 @@
 
 ---
 
-## **0. Purpose of the Principles**
+## 0. Purpose of the Principles
 
 These principles define how SIL conducts research, designs systems, and evaluates correctness.
 They are constraints, not values.
@@ -18,7 +18,7 @@ These 14 principles govern the **research infrastructure and Semantic OS archite
 
 ---
 
-## **1. Principles**
+## 1. Principles
 
 ### **1. Structure Before Heuristics**
 
@@ -52,7 +52,7 @@ No domain is allowed to form an isolated island.
 
 ### **7. Operators Are the Only Way to Change State**
 
-All mutations of semantic objects, USIR graphs, and workflows must occur through declared operators.
+All mutations of semantic objects, [USIR](./SIL_GLOSSARY.md#usir-universal-semantic-intermediate-representation) graphs, and workflows must occur through declared operators.
 No direct writes, no bypasses, no implicit edits.
 
 ### **8. Version Everything**
@@ -92,27 +92,27 @@ Schema and operator longevity matters more than short-term convenience or trends
 
 ---
 
-## **Why These Principles Matter**
+## Why These Principles Matter
 
-**For Researchers:**
+### For Researchers
 These principles define what "good" semantic infrastructure looks like. They're constraints that ensure SIL systems remain interpretable, composable, and verifiable over decades—not just demos that work once.
 
-**For Developers:**
+### For Developers
 They explain why SIL systems behave the way they do. When you wonder "Why does this require explicit types?" or "Why can't I just use a heuristic here?", these principles provide the answer. They're not bureaucracy—they're the invariants that make composition possible.
 
-**For Organizations:**
+### For Organizations
 They predict how SIL tools will compose with your existing systems. Tools built on these principles don't create integration nightmares—they expose structure, track provenance, and fail explicitly rather than silently corrupting downstream data.
 
-**The Core Promise:**
+### The Core Promise
 Following these 14 principles means SIL infrastructure will still be coherent, inspectable, and composable in 2035. The semantic substrate doesn't rot.
 
 ---
 
-## **Principles in Practice: reveal as Living Example**
+## Principles in Practice: reveal as Living Example
 
 SIL principles are not aspirational—they're operational in production tools today.
 
-**reveal** (v0.13.x, 100+ downloads/day, PyPI) demonstrates how these principles manifest in working software. It's proof that semantic infrastructure isn't hypothetical—it's solving real problems for developers and AI agents.
+**reveal** (v0.16.0 on PyPI, 100+ downloads/day as of Dec 2025) demonstrates how these principles manifest in working software. It's proof that semantic infrastructure isn't hypothetical—it's solving real problems for developers and AI agents.
 
 ### **Principle #1: Structure Before Heuristics**
 
@@ -313,7 +313,7 @@ That's what SIL is building: semantic substrate where these principles apply eve
 
 ---
 
-## **2. Boundary Notes (Clarifications)**
+## 2. Boundary Notes (Clarifications)
 
 * These principles do **not** prohibit the use of ML models—only untraceable reasoning.
 * They do **not** require perfect determinism—only clear declaration of limits.
@@ -322,7 +322,7 @@ That's what SIL is building: semantic substrate where these principles apply eve
 
 ---
 
-## **3. Change Policy**
+## 3. Change Policy
 
 These principles evolve only when:
 

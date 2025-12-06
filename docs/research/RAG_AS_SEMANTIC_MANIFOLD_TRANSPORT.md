@@ -2,7 +2,7 @@
 
 **A Geometric Framework for Retrieval-Augmented Generation**
 
-**Authors:** Scott A. Senkeresty, Tia (Chief Semantic Agent)
+**Authors:** Scott Senkeresty (Chief Architect, Semantic OS), Tia (Chief Semantic Agent)
 **Affiliation:** Semantic Infrastructure Lab
 **Date:** 2025-11-30
 **Status:** Research Framework
@@ -819,7 +819,7 @@ Build the semantic substrate (Semantic Memory, USIR, Multi-Agent Orchestration, 
 
 ## Acknowledgments
 
-This framework emerged from collaborative research between Scott A. Senkeresty and Tia (SIL's Chief Semantic Agent). The geometric perspective was developed through analysis of production RAG failures and formal semantic architecture design.
+This framework emerged from collaborative research between Scott Senkeresty (Chief Architect, Semantic OS) and Tia (Chief Semantic Agent). The geometric perspective was developed through analysis of production RAG failures and formal semantic architecture design.
 
 ---
 

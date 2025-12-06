@@ -4,7 +4,7 @@
 
 ---
 
-## **A**
+## A
 
 ### **Agent**
 
@@ -21,7 +21,7 @@ A declared, typed parameter or condition associated with an operator invocation 
 
 ---
 
-## **C**
+## C
 
 ### **Constraint**
 
@@ -38,7 +38,7 @@ A system-wide condition where representations across domains interoperate throug
 
 ---
 
-## **D**
+## D
 
 ### **Decision Artifact**
 
@@ -58,7 +58,7 @@ A semantic object defined within a domain module schema and validated by domain 
 
 ---
 
-## **E**
+## E
 
 ### **Engine**
 
@@ -75,7 +75,7 @@ Typed metadata describing the environment, engine/tool configuration, and state 
 
 ---
 
-## **G**
+## G
 
 ### **Graph (USIR)**
 
@@ -83,7 +83,7 @@ A typed directed multigraph representing semantic structures, operator applicati
 
 ---
 
-## **I**
+## I
 
 ### **Invariant**
 
@@ -100,7 +100,7 @@ A semantic exploration and inspection environment that exposes USIR, semantic me
 
 ---
 
-## **L**
+## L
 
 ### **Lineage (Temporal)**
 
@@ -112,7 +112,7 @@ A structured transformation from a more abstract representation to a more concre
 
 ---
 
-## **M**
+## M
 
 ### **Memory Access Protocol**
 
@@ -132,7 +132,7 @@ An operator-mediated modification to semantic objects. All mutations must be rec
 
 ---
 
-## **O**
+## O
 
 ### **Operator**
 
@@ -148,7 +148,11 @@ The deterministic execution environment governing workflows, agent lifecycle, me
 
 ---
 
-## **P**
+## P
+
+### **Pantheon IR**
+
+The Universal Semantic Intermediate Representation - a typed intermediate representation (IR) designed for cross-domain semantic transformations. Pantheon IR serves as the "assembly language for meaning," providing a common substrate for representing concepts, relationships, and operators across different domains (code, infrastructure, knowledge, computation).
 
 ### **Parameter (Typed)**
 
@@ -164,7 +168,7 @@ A structured record capturing lineage, operator invocation details, inputs/outpu
 
 ---
 
-## **R**
+## R
 
 ### **Relation (USIR)**
 
@@ -180,7 +184,7 @@ A contract defining the expected stability of outputs for a given operator or en
 
 ---
 
-## **S**
+## S
 
 ### **Schema**
 
@@ -215,7 +219,7 @@ A versioned capture of relevant semantic memory and execution context used for r
 
 ---
 
-## **T**
+## T
 
 ### **Transformation**
 
@@ -231,7 +235,7 @@ A relation with declared source and target types, validation rules, and semantic
 
 ---
 
-## **U**
+## U
 
 ### **USIR (Universal Semantic Intermediate Representation)**
 
@@ -239,7 +243,7 @@ A typed, explicit, graph-structured intermediate representation unifying cross-d
 
 ---
 
-## **V**
+## V
 
 ### **Validation**
 
@@ -251,7 +255,7 @@ A stable pair consisting of (id, version) used for semantic objects, schemas, op
 
 ---
 
-## **W**
+## W
 
 ### **Workflow**
 

@@ -73,6 +73,43 @@ This provides the human context behind the technical work.
 
 ---
 
+## Research Contributions
+
+These canonical documents present specific research contributions and theoretical frameworks emerging from SIL work.
+
+### [Semantic Feedback Loops](SEMANTIC_FEEDBACK_LOOPS.md)
+**40 minutes** | Closed-loop control for semantic systems
+
+How semantic systems achieve precision through reflection-measurement-correction loops, analogous to op-amps in electronics. Establishes feedback loops as first-class primitives in semantic infrastructure.
+
+---
+
+### [Semantic Observability](SEMANTIC_OBSERVABILITY.md) ⭐ NEW
+**45 minutes** | Automated intent-execution alignment detection
+
+Framework for measuring semantic system health through vector embeddings, multi-dimensional fitness metrics, and automated classification of user signals. Enables continuous optimization without manual intervention.
+
+**Key innovations:**
+- Intent-execution mismatch as primary health signal
+- Automated frustration/satisfaction classification via embeddings
+- Multi-dimensional fitness: f(alignment, efficiency, satisfaction)
+
+---
+
+### [Multi-Agent Protocol Principles](MULTI_AGENT_PROTOCOL_PRINCIPLES.md)
+**30 minutes** | Communication patterns for agent coordination
+
+Principles for designing multi-agent communication protocols that enable composable, transparent agent collaboration.
+
+---
+
+### [Founder's Note: Multi-Shot Agent Learning](FOUNDERS_NOTE_MULTISHOT_AGENT_LEARNING.md)
+**35 minutes** | Learning across agent interactions
+
+How agents can learn and improve through multiple interaction cycles, building institutional memory.
+
+---
+
 ## Reading Paths
 
 ### Path 1: Quick Start (30 minutes)
@@ -159,6 +196,6 @@ Want to go deeper after reading core docs?
 
 ---
 
-**Last Updated:** 2025-11-30
-**Total Documents:** 6 core canonical docs
-**Total Reading Time:** ~2 hours for complete mastery of foundation
+**Last Updated:** 2025-12-04
+**Total Documents:** 6 core + 4 research contributions = 10 canonical docs
+**Total Reading Time:** ~2 hours for foundation + 2.5 hours for research = 4.5 hours total
