@@ -70,7 +70,7 @@ How the Semantic OS is designed and how projects compose into a unified system.
 Formal research papers and standards developed at SIL.
 
 - **[RAG as Semantic Manifold Transport](research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md)** - Mathematical treatment of retrieval-augmented generation as geometric meaning transport
-- **[Agent Help Standard](research/AGENT_HELP_STANDARD.md)** - Two-tier help system for AI agents (implemented in reveal v0.13+)
+- **[Agent Help Standard](research/AGENT_HELP_STANDARD.md)** - Two-tier help system for AI agents (implemented in reveal v0.16+)
 - **[AI Documentation Standards](research/AI_DOCUMENTATION_STANDARDS.md)** - How to document systems for AI consumption
 - **[Identity Mapping](research/IDENTITY_MAPPING.md)** - Identity and naming in semantic systems
 

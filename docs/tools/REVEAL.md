@@ -2,9 +2,9 @@
 
 **Tagline:** The simplest way to understand code. Point it at a directory, file, or function. Get exactly what you need.
 
-**Status:** ✅ Production v0.13.1 | Available on [PyPI](https://pypi.org/project/reveal-cli/)
+**Status:** ✅ Production v0.16.0 | Available on [PyPI](https://pypi.org/project/reveal-cli/)
 
-**Latest:** v0.13.0+ implements pattern detection (`--check`) and validates the [agent-help standard](../research/AGENT_HELP_STANDARD.md) with two-tier system.
+**Latest:** v0.16.0+ implements pattern detection (`--check`) and validates the [agent-help standard](../research/AGENT_HELP_STANDARD.md) with two-tier system.
 
 ---
 
@@ -124,7 +124,7 @@ Run `reveal --list-supported` to see the current list.
 
 ## Advanced Features
 
-### Pattern Detection (v0.13.0+)
+### Pattern Detection (v0.16.0+)
 Check code quality with industry-aligned rules:
 
 ```bash
@@ -151,7 +151,7 @@ See [Reveal Roadmap](https://github.com/semantic-infrastructure-lab/reveal/blob/
 
 ---
 
-## Agent-Help Implementation (v0.13.0+)
+## Agent-Help Implementation (v0.16.0+)
 
 Reveal validates SIL's proposed [agent-help standard](../research/AGENT_HELP_STANDARD.md) with a production two-tier implementation:
 
@@ -182,7 +182,7 @@ reveal --recommend-prompt    # Best practices by agent type
 
 ### Production Validated
 
-After 2 months in production (v0.13.0 released Nov 2025):
+After 2 months in production (v0.16.0 released Nov 2025):
 - ✅ Agents adopt reveal-first pattern (check structure before reading)
 - ✅ Token reduction matches predictions (7-150x measured in practice)
 - ✅ Two-tier system preferred by agents (brief for decisions, full for complex tasks)

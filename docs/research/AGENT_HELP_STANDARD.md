@@ -2,7 +2,7 @@
 
 **Authors:** Semantic Infrastructure Lab
 **Date:** 2025-11-30
-**Status:** Implemented & Validated (Reveal v0.13.0+)
+**Status:** Implemented & Validated (Reveal v0.16.0+)
 **Adoption Phase:** Production proof-of-concept, seeking community adoption
 
 ---
@@ -143,11 +143,11 @@ reveal file.py --format=json | jq '.functions[] | select(.depth > 3)'
 
 ---
 
-## Implementation Status: Reveal v0.13.0+
+## Implementation Status: Reveal v0.16.0+
 
 **The standard is implemented and validated in production.**
 
-Reveal v0.13.0+ implements a two-tier agent-help system that goes beyond the initial proposal:
+Reveal v0.16.0+ implements a two-tier agent-help system that goes beyond the initial proposal:
 
 ### Tier 1: Quick Strategic Guide (`--agent-help`)
 - Brief decision trees (~50 lines)
@@ -176,7 +176,7 @@ Reveal v0.13.0+ implements a two-tier agent-help system that goes beyond the ini
 
 ### Production Results
 
-After 2 months in production (v0.13.0 released Nov 2025):
+After 2 months in production (v0.16.0 released Nov 2025):
 - ✅ Agents use reveal **before** reading files (pattern adoption confirmed)
 - ✅ Token reduction matches predictions (7-150x measured in practice)
 - ✅ Two-tier system preferred (agents invoke `--agent-help` first, `--agent-help-full` for complex tasks)

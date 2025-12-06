@@ -229,7 +229,7 @@ Exact line range. Verifiable. Reproducible.
 
 ### **Universal Resource Exploration: Principles Transcend Domains**
 
-reveal's URI adapter system (v0.11.0+) proves these principles generalize beyond code:
+reveal's URI adapter system (v0.16.0+) proves these principles generalize beyond code:
 
 **Same progressive disclosure pattern, different resources:**
 
@@ -238,7 +238,7 @@ reveal's URI adapter system (v0.11.0+) proves these principles generalize beyond
 $ reveal app.py
 Functions: 5, Classes: 2, Imports: 3
 
-# Environment variables (v0.11.0)
+# Environment variables (v0.16.0)
 $ reveal env://
 env://
 ├── PATH (753 chars, 8 directories)

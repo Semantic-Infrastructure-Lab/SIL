@@ -124,7 +124,7 @@ app.py:15-27 | load_config
 
 ### Pattern Detection: Semantic Rules, Not Heuristics
 
-reveal (v0.13.0+) doesn't just show code structure—it understands code quality patterns.
+reveal (v0.16.0+) doesn't just show code structure—it understands code quality patterns.
 
 ```bash
 $ reveal app.py --check --select B,S
@@ -149,7 +149,7 @@ This IS semantic understanding: structure + explicit meaning → actionable insi
 
 ### Universal Resource Exploration: Principles Transcend Code
 
-reveal's URI adapter system (v0.11.0+) proves semantic patterns apply to ANY structured resource.
+reveal's URI adapter system (v0.16.0+) proves semantic patterns apply to ANY structured resource.
 
 **Same progressive disclosure, different resource types:**
 
@@ -158,7 +158,7 @@ reveal's URI adapter system (v0.11.0+) proves semantic patterns apply to ANY str
 $ reveal app.py
 Functions: 5, Classes: 2
 
-# Environment variables (v0.11.0 - shipped!)
+# Environment variables (v0.16.0 - shipped!)
 $ reveal env://
 env://
 ├── PATH (753 chars, 8 directories)
