@@ -266,7 +266,7 @@ python -m pytest tests/  # See round-trip fidelity tests
   - Safety checks prevent invalid compositions
 
 **Composes With:**
-- **Morphogen (Layer 1/4):** ✅ **PROVEN** - Bidirectional adapter complete, round-trip fidelity tests passing
+- **Morphogen (Layer 1/4):** ✅ **WORKING** (1 of 5+ adapters needed) - Bidirectional adapter complete, round-trip fidelity tests passing
   - Audio synthesis and physics simulation → Pantheon IR
   - Proves universal IR pattern works with production code
 
@@ -341,7 +341,7 @@ This solves the fragmentation that forces professional workflows to span 3-5 inc
    - Reproducible workflows (capture entire pipeline in Pantheon IR)
 
 **Adoption Path (v1.0 Goals):**
-- 5+ domain adapters production-ready (Morphogen ✅, TiaCAD, GenesisGraph, SUP, Philbrick)
+- 5+ domain adapters needed: Morphogen ✅ (complete), TiaCAD (in progress), GenesisGraph (planned), SUP (planned), Philbrick (planned)
 - 10+ cross-domain example workflows
 - Industry adoption in audio production, CAD/CAM, AI/ML tooling
 

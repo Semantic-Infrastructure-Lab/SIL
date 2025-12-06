@@ -1,170 +1,94 @@
-# SIL Documentation
+# Semantic Infrastructure Lab
 
-**Welcome to the Semantic Infrastructure Lab documentation.**
+**Making AI systems transparent and reliable through open infrastructure**
 
-This is the complete reference for SIL's philosophy, architecture, research, and production systems.
-
----
-
-## 🚀 Start Here
-
-**Never seen SIL before?**
-→ [Founder's Letter](canonical/FOUNDERS_LETTER.md) (5 min) - Why SIL exists
-
-**Want to understand the vision?**
-→ [Manifesto](canonical/SIL_MANIFESTO.md) (15 min) - What we're building
-
-**Need technical depth?**
-→ [Unified Architecture Guide](architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (30 min) - How it all fits together
-
-**Want to try working code?**
-→ [Tools](tools/) - Production systems (reveal, morphogen, tiacad, genesisgraph)
-
-**Have questions?**
-→ [FAQ](meta/FAQ.md) - Common questions answered
+[![Projects](https://img.shields.io/badge/Projects-12-blue)]()
+[![Production Ready](https://img.shields.io/badge/Production-4-green)]()
+[![Tests](https://img.shields.io/badge/Tests-3100+-brightgreen)]()
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ---
 
-## 📚 Documentation Sections
+## Try It Now
 
-### Core Philosophy ([canonical/](canonical/))
+**reveal** - Progressive code exploration that reduces AI agent token usage by 86%:
 
-The foundational documents that define SIL's identity, principles, and approach.
+```bash
+pip install reveal-cli
+reveal your_code.py
+```
 
-- **[Manifesto](canonical/SIL_MANIFESTO.md)** - Why SIL exists, what we're building
-- **[Principles](canonical/SIL_PRINCIPLES.md)** - The 14 design principles guiding all work
-- **[Technical Charter](canonical/SIL_TECHNICAL_CHARTER.md)** - Formal specification of the Semantic OS
-- **[Glossary](canonical/SIL_GLOSSARY.md)** - Canonical vocabulary (keep this open while reading)
-- **[Semantic OS Architecture](canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md)** - The 6-layer stack explained
-- **[Research Agenda Year 1](canonical/SIL_RESEARCH_AGENDA_YEAR1.md)** - Current research focus
-- **[Stewardship Manifesto](canonical/SIL_STEWARDSHIP_MANIFESTO.md)** - How we govern this work
-- **[Founder's Letter](canonical/FOUNDERS_LETTER.md)** - Personal perspective on founding SIL
-- **[Founder Profile](canonical/FOUNDER_PROFILE.md)** - Background and approach
-- **[Design Principles](canonical/SIL_DESIGN_PRINCIPLES.md)** - Deep dive on principles
-- **[Safety Thresholds](canonical/SIL_SAFETY_THRESHOLDS.md)** - Safety and risk considerations
+See structure first (50 tokens) instead of reading entire files (500+ tokens). Progressive disclosure applied to code.
 
-**Advanced:**
-- [Progressive Disclosure Guide](canonical/PROGRESSIVE_DISCLOSURE_GUIDE.md) - The reveal pattern in depth
-- [Hierarchical Agency Framework](canonical/HIERARCHICAL_AGENCY_FRAMEWORK.md) - Multi-agent coordination theory
-- [Multi-Agent Protocol Principles](canonical/MULTI_AGENT_PROTOCOL_PRINCIPLES.md) - Agent interaction design
-- [Semantic Feedback Loops](canonical/SEMANTIC_FEEDBACK_LOOPS.md) - System observability
-- [Semantic Observability](canonical/SEMANTIC_OBSERVABILITY.md) - Intent-execution alignment
-- [Founders Note: Multishot Agent Learning](canonical/FOUNDERS_NOTE_MULTISHOT_AGENT_LEARNING.md) - Agent learning patterns
-
-**[→ Browse all canonical docs](canonical/)**
+**[More production tools →](docs/innovations/)** - morphogen, tiacad, genesisgraph
 
 ---
 
-### Architecture ([architecture/](architecture/))
+## What is SIL?
 
-How the Semantic OS is designed and how projects compose into a unified system.
+The **Semantic Infrastructure Lab** builds open infrastructure that makes intelligent systems inspectable and reliable.
 
-- **[Unified Architecture Guide](architecture/UNIFIED_ARCHITECTURE_GUIDE.md)** ⭐ **Start here** - The Rosetta Stone for all SIL projects. Explains the universal pattern (Intent → IR → Execution) and canonical vocabulary.
+Contemporary AI systems are powerful but lack:
+- **Explicit meaning** - Stable, inspectable semantic structures
+- **Persistent memory** - Durable continuity across tasks
+- **Inspectable reasoning** - Traceable chains of inference
+- **Cross-domain composition** - Audio, CAD, simulation working together
+- **Verifiable provenance** - Clear lineage of transformations
 
-**[→ Browse all architecture docs](architecture/)**
+**SIL builds this missing layer: the Semantic Operating System** - a 6-layer architecture providing semantic memory, universal representations, deterministic execution, multi-agent coordination, and transparent interfaces.
 
----
-
-### Research ([research/](research/))
-
-Formal research papers and standards developed at SIL.
-
-- **[RAG as Semantic Manifold Transport](research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md)** - Mathematical treatment of retrieval-augmented generation as geometric meaning transport
-- **[Agent Help Standard](research/AGENT_HELP_STANDARD.md)** - Two-tier help system for AI agents (implemented in reveal v0.16+)
-- **[AI Documentation Standards](research/AI_DOCUMENTATION_STANDARDS.md)** - How to document systems for AI consumption
-- **[Identity Mapping](research/IDENTITY_MAPPING.md)** - Identity and naming in semantic systems
-
-**[→ Browse all research papers](research/)**
+**Status:** 12 projects, 4 in production, 3,100+ tests, used daily in real workflows.
 
 ---
 
-### Innovations ([innovations/](innovations/))
+## Learn More
 
-Deep dives into specific projects and their novel contributions.
+### Documentation
+**[→ Complete Documentation](docs/)** - Philosophy, architecture, research, and guides
 
-- **[Morphogen](innovations/MORPHOGEN.md)** - Universal deterministic computation across domains
-- **[GenesisGraph](innovations/GENESISGRAPH.md)** - Verifiable provenance with selective disclosure
-- **[Progressive Disclosure](innovations/PROGRESSIVE_DISCLOSURE.md)** - The reveal pattern and its impact
-- **[Pantheon](innovations/PANTHEON.md)** - Universal Semantic Intermediate Representation
-- **[Agent Ether](innovations/AGENT_ETHER.md)** - Multi-agent coordination protocols
-- **[Innovations Index](innovations/INNOVATIONS.md)** - Overview of all innovations
+**Quick links:**
+- [Founder's Letter](docs/canonical/FOUNDERS_LETTER.md) (5 min) - Why SIL exists
+- [Manifesto](docs/canonical/SIL_MANIFESTO.md) (15 min) - What we're building
+- [FAQ](docs/meta/FAQ.md) - Common questions answered
+- [Unified Architecture Guide](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (30 min) - How it all fits together
 
-**[→ Browse all innovation docs](innovations/)**
+### Projects
+**[→ Project Index](projects/PROJECT_INDEX.md)** - All 12 projects mapped to the Semantic OS architecture
 
----
-
-### Tools ([tools/](tools/))
-
-Production systems you can use today.
-
-- **[reveal](tools/REVEAL.md)** - Progressive code exploration (on PyPI)
-  - 86% token reduction for AI agents
-  - 100+ downloads/day
-  - `pip install reveal-cli`
-
-**[→ Browse all production tools](tools/)**
+### Contributing
+**[→ Contributing Guide](CONTRIBUTING.md)** - How to get involved
 
 ---
 
-### Getting Started ([meta/](meta/))
+## The Semantic OS Architecture
 
-Entry points and guides for newcomers.
+```
+Layer 5: Human Interfaces        reveal, browserbridge
+Layer 4: Deterministic Engines    morphogen, riffstack
+Layer 3: Agent Orchestration      agent-ether
+Layer 2: Domain Modules           morphogen, tiacad, riffstack, sup
+Layer 1: Universal Semantic IR    pantheon
+Layer 0: Semantic Memory          semantic-memory
 
-- **[FAQ](meta/FAQ.md)** - Frequently asked questions
-- **[Dedication](meta/DEDICATION.md)** - SIL's dedication to Alan Turing
+Cross-Cutting: Provenance         genesisgraph, prism
+```
 
----
-
-## 📖 Reference
-
-**Keep these open while reading:**
-- [Glossary](canonical/SIL_GLOSSARY.md) - Canonical terms and definitions
-- [FAQ](meta/FAQ.md) - Common questions
-
-**For contributors:**
-- [Contributing Guide](../CONTRIBUTING.md) - How to get involved
-
-**For project details:**
-- [Project Index](../projects/PROJECT_INDEX.md) - All 12 projects with status
+**[Read the complete architecture →](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md)**
 
 ---
 
-## 🎯 Recommended Reading Paths
+## License
 
-**If you have 30 minutes:**
-1. [Founder's Letter](canonical/FOUNDERS_LETTER.md) (5 min)
-2. [Manifesto](canonical/SIL_MANIFESTO.md) (15 min)
-3. [Unified Architecture Guide](architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (30 min)
-
-**If you have 2 hours:**
-1. [Manifesto](canonical/SIL_MANIFESTO.md) (15 min)
-2. [Unified Architecture Guide](architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (30 min)
-3. [Glossary](canonical/SIL_GLOSSARY.md) (15 min) - Keep open
-4. [Semantic OS Architecture](canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md) (20 min)
-5. [Technical Charter](canonical/SIL_TECHNICAL_CHARTER.md) (45 min)
-
-**If you want to try code:**
-1. [Tools](tools/) (5 min)
-2. Try reveal: `pip install reveal-cli`
-3. [Manifesto](canonical/SIL_MANIFESTO.md) (15 min)
-4. [Projects Index](../projects/PROJECT_INDEX.md) (10 min)
+- **Code:** [Apache 2.0](LICENSE) - Use commercially, fork, modify
+- **Documentation:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) - Share freely with attribution
 
 ---
 
-## 💡 Tips
+## Contact
 
-**1. Keep the Glossary open**
-The [Glossary](canonical/SIL_GLOSSARY.md) defines canonical terms. Reference it while reading.
-
-**2. Start with the Unified Architecture Guide**
-The [Unified Architecture Guide](architecture/UNIFIED_ARCHITECTURE_GUIDE.md) is the Rosetta Stone - it explains how everything connects.
-
-**3. Try the tools**
-Installing reveal and seeing progressive disclosure in action makes the philosophy concrete.
-
-**4. Read in order**
-Documents build on each other. Manifesto → Architecture → Deep dives.
+- **GitHub:** [github.com/semantic-infrastructure-lab](https://github.com/semantic-infrastructure-lab)
+- **Website:** [semanticinfrastructurelab.org](https://semanticinfrastructurelab.org)
 
 ---
 
-**Questions?** See the [FAQ](meta/FAQ.md) or open an issue on GitHub.
+*Make meaning explicit. Make reasoning traceable. Build structures that last.*
