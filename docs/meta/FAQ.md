@@ -40,13 +40,12 @@ We're not building another LLM or agent framework. We're building the **semantic
 
 ### 3. Is SIL production-ready?
 
-**Yes - 5 projects are in production:**
+**Yes - 4 projects are in production:**
 
 1. **[reveal](https://pypi.org/project/reveal-cli/)** (v0.16.0 on PyPI) - Code exploration, 86% token reduction
 2. **morphogen** - Cross-domain computation (audio + physics + circuits)
 3. **tiacad** - Declarative parametric CAD in YAML
 4. **genesisgraph** (v0.3.0) - Verifiable process provenance
-5. **sup** - Computational notebook system
 
 **Production means:**
 - Available on PyPI or GitHub releases

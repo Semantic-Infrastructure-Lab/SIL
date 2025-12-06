@@ -88,7 +88,7 @@ Private repos are in active development and will be made public when ready for b
 ## 🎯 Production Systems (Ready to Use)
 
 ### [Morphogen](https://github.com/semantic-infrastructure-lab/morphogen) - Universal Deterministic Computation
-**Status:** ✅ **Production v0.11** | **Tests:** 900+ | **Coverage:** 85%
+**Status:** ✅ **Production v0.11** | **Tests:** 1,600+ | **Coverage:** 85%
 
 **Layers:** 2 (Domain Module) + 4 (Deterministic Engine)
 
@@ -479,34 +479,16 @@ SIL projects cluster around four core research themes:
 
 ---
 
-## 🔗 Quick Links
-
-### For Newcomers
-1. Start: [SIL Manifesto](../docs/canonical/SIL_MANIFESTO.md) - Why SIL exists
-2. Learn: [Unified Architecture Guide](../docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md) - The framework
-3. Explore: Try a production project (morphogen, tiacad, genesisgraph, reveal)
-
-### For Contributors
-1. [Principles](../docs/canonical/SIL_PRINCIPLES.md) - The 14 principles
-2. [Technical Charter](../docs/canonical/SIL_TECHNICAL_CHARTER.md) - System specification
-3. [Research Agenda Year 1](../docs/canonical/SIL_RESEARCH_AGENDA_YEAR1.md) - Current priorities
-
-### For Researchers
-1. [Unified Architecture Guide](../docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md) - Canonical framework
-2. [Design Principles](../docs/architecture/DESIGN_PRINCIPLES.md) - The 5 design principles
-3. Individual project documentation
-
----
 
 ## 📊 Statistics
 
 **Total Projects:** 12
-**Production Ready:** 6 (morphogen, tiacad, genesisgraph, reveal, sil, tia-browser-reveal)
-**Active Development:** 4 (pantheon, philbrick, riffstack, sup, browserbridge)
+**Production Ready:** 4 (morphogen, tiacad, genesisgraph, reveal)
+**Active Development:** 5 (pantheon, philbrick, riffstack, sup, browserbridge)
 **Specification Phase:** 2 (prism, agent-ether)
 **Planned:** 1 (semantic-memory)
 
-**Total Test Coverage:** 3,250+ tests across all projects
+**Total Test Coverage:** 3,100+ tests across all projects
 **Lines of Code:** ~45,000 (production projects)
 **Documentation:** ~15,000 lines (canonical + guides)
 

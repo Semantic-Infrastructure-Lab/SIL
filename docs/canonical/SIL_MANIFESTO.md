@@ -294,7 +294,7 @@ Not: "Can semantic infrastructure work?"
 
 - Code exploration: ✅ **Working** (reveal)
 - Session management: ✅ **Working** (TIA - 1000+ sessions, semantic search, context continuity)
-- Deterministic computation: ✅ **Working** (Morphogen - cross-domain, MLIR-based, 900 tests)
+- Deterministic computation: ✅ **Working** (Morphogen - cross-domain, MLIR-based, 1,600+ tests)
 
 **Next:**
 - Knowledge graphs (Semantic Memory - Layer 1)

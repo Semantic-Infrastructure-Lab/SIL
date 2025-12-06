@@ -1,4 +1,4 @@
-# Semantic Infrastructure Lab (SIL)
+# Semantic Infrastructure Lab
 
 **Building the semantic substrate for intelligent systems**
 
@@ -9,355 +9,88 @@
 
 ---
 
-## 🎯 What is SIL?
+## What is SIL?
 
 The **Semantic Infrastructure Lab** builds the missing foundation that enables intelligent systems to reason with **explicit meaning**, not just statistical patterns.
 
-Contemporary AI systems lack:
-- **Explicit meaning** - Concepts and relationships as stable, inspectable structures
-- **Stable memory** - Durable semantic continuity across tasks and time
-- **Inspectable reasoning** - Traceable, reproducible chains of inference
-- **Tool integration** - Composable operators across domains (audio, CAD, simulation)
-- **Provenance** - Clear lineage of transformations and assumptions
+Contemporary AI systems are powerful but structurally incomplete. They lack:
+- **Explicit meaning** - Stable, inspectable semantic structures
+- **Persistent memory** - Durable continuity across tasks
+- **Inspectable reasoning** - Traceable chains of inference
+- **Cross-domain composition** - Audio, CAD, simulation working together
+- **Verifiable provenance** - Clear lineage of transformations
 
-**SIL exists to build this missing layer.**
+**SIL builds this missing layer: the Semantic Operating System.**
 
----
+Think of it like Linux for computation, but for meaning. A 6-layer architecture providing semantic memory, universal representations, deterministic execution, multi-agent coordination, and transparent interfaces.
 
-## 🚀 Quick Start - Try Our Production Systems
-
-**Ready to use now:**
-
-| Project | What It Does | Status | Try It |
-|---------|-------------|--------|--------|
-| [**reveal**](https://github.com/semantic-infrastructure-lab/reveal) | Progressive code exploration | ✅ v0.13.1 on PyPI | `pip install reveal-cli` |
-| [**morphogen**](https://github.com/semantic-infrastructure-lab/morphogen) | Cross-domain computation (audio+physics+circuits) | ✅ Production | [Examples](https://github.com/semantic-infrastructure-lab/morphogen/examples) |
-| [**tiacad**](https://github.com/semantic-infrastructure-lab/tiacad) | Declarative parametric CAD in YAML | ✅ Production | [Tutorial](https://github.com/semantic-infrastructure-lab/tiacad/TUTORIAL.md) |
-| [**genesisgraph**](https://github.com/semantic-infrastructure-lab/genesisgraph) | Verifiable process provenance | ✅ Production | [5-Min Quickstart](https://github.com/semantic-infrastructure-lab/genesisgraph/docs/getting-started/quickstart.md) |
-
-**[See all 12 projects →](projects/PROJECT_INDEX.md)**
+**Status:** 12 projects, 4 in production, 3,100+ tests, used daily in real workflows.
 
 ---
 
-## 🏗️ The Semantic OS
+## Try It Now
 
-SIL's research centers on the **Semantic Operating System** - a 6-layer architecture:
+**reveal** - Progressive code exploration that reduces AI agent token usage by 86%:
 
-```
-Layer 5: Human Interfaces / SIM    (reveal, browserbridge)
-Layer 4: Deterministic Engines      (morphogen, riffstack)
-Layer 3: Multi-Agent Orchestration  (agent-ether)
-Layer 2: Domain Modules             (morphogen, tiacad, riffstack, sup)
-Layer 1: Universal Semantic IR      (pantheon)
-Layer 0: Semantic Memory            (semantic-memory)
-
-Cross-Cutting: Provenance           (genesisgraph, prism)
+```bash
+pip install reveal-cli
+reveal your_code.py
 ```
 
-**[Complete Architecture Guide →](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md)**
+See structure first (50 tokens) instead of reading entire files (500+ tokens). Progressive disclosure applied to code.
+
+**[More production tools →](docs/tools/)** - morphogen, tiacad, genesisgraph
 
 ---
 
-## 📚 Essential Reading
+## Learn More
 
-### For Newcomers
-**Start here to understand SIL:**
+### Documentation
+**[→ Complete Documentation](docs/)** - Philosophy, architecture, research, and guides
 
-1. **[Founder's Letter](docs/canonical/FOUNDERS_LETTER.md)** (10 min) ⭐ **NEW**
-   - Why SIL exists: the architectural gap in modern AI
-   - The 6-layer Semantic OS vision
-   - Our commitment to explicit meaning and provenance
+**Quick links:**
+- [Founder's Letter](docs/canonical/FOUNDERS_LETTER.md) (5 min) - Why SIL exists
+- [Manifesto](docs/canonical/SIL_MANIFESTO.md) (15 min) - What we're building
+- [FAQ](docs/meta/FAQ.md) - Common questions answered
+- [Unified Architecture Guide](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (30 min) - How it all fits together
 
-2. **[Manifesto](docs/canonical/SIL_MANIFESTO.md)** (15 min)
-   - The problem: AI without semantic substrate
-   - Why explicit meaning matters
-   - What we're building
+### Projects
+**[→ Project Index](projects/PROJECT_INDEX.md)** - All 12 projects mapped to the Semantic OS architecture
 
-3. **[Project Index](projects/PROJECT_INDEX.md)** (10 min)
-   - All 11 projects mapped to the Semantic OS
-   - Production systems, active development, and research
-   - What to try first
-
-4. **[Unified Architecture Guide](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md)** (20 min)
-   - The universal pattern (Intent → IR → Execution)
-   - How all projects fit together
-   - Canonical vocabulary
-
-### For Deep Dives
-
-5. **[Technical Charter](docs/canonical/SIL_TECHNICAL_CHARTER.md)** (45 min)
-   - Formal system architecture and specifications
-   - USIR specification
-   - Layer definitions and invariants
-
-6. **[Glossary](docs/canonical/SIL_GLOSSARY.md)** (20 min)
-   - 61 canonical terms
-   - Precise definitions
-   - Quick reference
-
-7. **[Principles](docs/canonical/SIL_PRINCIPLES.md)** (10 min)
-   - The 14 principles
-   - Design constraints
-   - How we build systems
-
-8. **[Research Agenda Year 1](docs/canonical/SIL_RESEARCH_AGENDA_YEAR1.md)** (30 min)
-   - Current research focus
-   - Milestones and deliverables
-   - Success criteria
+### Contributing
+**[→ Contributing Guide](CONTRIBUTING.md)** - How to get involved
 
 ---
 
-## 🎓 Core Principles
-
-**Every SIL system follows 5 design principles:**
-
-1. **Clarity** - Structure is visible, not hidden
-2. **Simplicity** - Minimal essential complexity
-3. **Composability** - Components combine cleanly
-4. **Correctness** - Invariants are preserved
-5. **Verifiability** - Reasoning is provable
-
-Plus 9 more operational principles including:
-- Structure before heuristics
-- Meaning must be explicit
-- Provenance everywhere
-- Determinism when promised
-
-**[Read all 14 principles →](docs/canonical/SIL_PRINCIPLES.md)**
-
----
-
-## 🗺️ Complete Project Ecosystem
-
-**11 projects spanning the full Semantic OS stack:**
-
-| Status | Count | Projects |
-|--------|-------|----------|
-| ✅ Production | 5 | morphogen, tiacad, genesisgraph, reveal, sil |
-| 🔬 Research | 1 | pantheon |
-| 🚧 Active Dev | 3 | riffstack, sup, browserbridge |
-| 📋 Specification | 2 | prism, agent-ether |
-| 💭 Planned | 1 | semantic-memory |
-
-**[Full Project Index with Details →](projects/PROJECT_INDEX.md)**
-
----
-
-## 🔬 Research Themes
-
-SIL organizes around four research areas:
-
-### 1. Universal Semantic Representations
-How do we create IRs that work across domains?
-- **pantheon** - Universal Semantic IR
-- **morphogen** - Cross-domain composition
-
-### 2. Domain-Specific Compilers
-How do we compile semantic intent to execution?
-- **morphogen** - Audio/physics → MLIR
-- **riffstack** - Musical patterns → WebAudio
-- **sup** - UI intent → React/Vue
-- **tiacad** - Geometry → CAD engines
-
-### 3. Microkernel Architectures
-How do we build formally verified systems?
-- **prism** - Microkernel query engine
-
-### 4. Provenance & Verification
-How do we prove computational correctness?
-- **genesisgraph** - Verifiable provenance graphs
-
----
-
-## 📖 Documentation Hub
-
-### Canonical Documents (The Foundation)
-Located in [`docs/canonical/`](docs/canonical/):
-
-| Document | Size | Purpose |
-|----------|------|---------|
-| [Manifesto](docs/canonical/SIL_MANIFESTO.md) | 12K | Why SIL exists |
-| [Technical Charter](docs/canonical/SIL_TECHNICAL_CHARTER.md) | 29K | System specification |
-| [Glossary](docs/canonical/SIL_GLOSSARY.md) | 8K | Canonical vocabulary |
-| [Principles](docs/canonical/SIL_PRINCIPLES.md) | 5K | The 14 principles |
-| [Research Agenda](docs/canonical/SIL_RESEARCH_AGENDA_YEAR1.md) | 19K | Year 1 roadmap |
-
-### Architecture Guides
-Located in [`docs/architecture/`](docs/architecture/):
-
-- [**Unified Architecture Guide**](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md) - The Rosetta Stone for all SIL projects
-- [**Design Principles**](docs/architecture/DESIGN_PRINCIPLES.md) - The 5 design principles in depth
-
-### Research Papers
-Located in [`docs/research/`](docs/research/):
-
-- [**RAG as Semantic Manifold Transport**](docs/research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md) - Formal treatment of retrieval-augmented generation as geometric meaning transport
-- See [research directory](docs/research/README.md) for full catalog
-
-### Implementation Guides
-Located in [`docs/guides/`](docs/guides/):
-
-- [**Optimization in SIL**](docs/guides/OPTIMIZATION_IN_SIL.md) - The "free lunch" value proposition: what optimizations you get automatically
-
-### Project Resources
-Located in [`projects/`](projects/):
-
-- [**PROJECT_INDEX.md**](projects/PROJECT_INDEX.md) - Complete map of all 11 projects
-
-### Supplementary
-Located in [`docs/vision/`](docs/vision/) and [`docs/meta/`](docs/meta/):
-
-- [Vision](docs/vision/SIL_VISION_COMPLETE.md) - Complete founding vision
-- [Founder Background](docs/meta/FOUNDER_BACKGROUND.md) - Context and background
-
----
-
-## 🎯 Use Cases
-
-**What you can build with SIL infrastructure:**
-
-### Cross-Domain Composition
-Use **morphogen** to couple domains that never talked before:
-```morphogen
-# Couple fluid dynamics → acoustics → audio synthesis
-use fluid, acoustics, audio
-
-@state flow : FluidNetwork1D = engine_exhaust()
-@state acoustic : AcousticField1D = waveguide_from_flow(flow)
-
-flow(dt=0.1ms) {
-    flow = flow.advance(engine_pulse(t))
-    acoustic = acoustic.couple_from_fluid(flow)
-    audio.play(acoustic.to_audio(mic_position=1.5m))
-}
-```
-
-### Declarative CAD
-Use **tiacad** for parametric 3D modeling in YAML:
-```yaml
-parts:
-  - name: bracket
-    type: box
-    size: [50, 30, 10]
-    operations:
-      - type: fillet
-        edges: all
-        radius: 2
-```
-
-### Verifiable Provenance
-Use **genesisgraph** to prove how things were made:
-```yaml
-process:
-  inputs:
-    - raw_data.csv
-  transformations:
-    - clean_data
-    - train_model
-  outputs:
-    - model.pkl
-  attestations:
-    - type: compliance
-      standard: "ISO-27001"
-```
-
----
-
-## 🏛️ Repository Structure
+## The Semantic OS Architecture
 
 ```
-SIL/
-├── docs/
-│   ├── canonical/          # Core documents (manifesto, charter, principles)
-│   ├── architecture/       # Architecture guides (unified guide, design principles)
-│   ├── vision/             # Vision documents
-│   └── meta/               # Background and context
-├── projects/
-│   └── PROJECT_INDEX.md    # Complete project map
-├── archive/                # Historical materials
-├── LICENSE                 # MIT License
-└── README.md               # This file
+Layer 5: Human Interfaces        reveal, browserbridge
+Layer 4: Deterministic Engines    morphogen, riffstack
+Layer 3: Agent Orchestration      agent-ether
+Layer 2: Domain Modules           morphogen, tiacad, riffstack, sup
+Layer 1: Universal Semantic IR    pantheon
+Layer 0: Semantic Memory          semantic-memory
+
+Cross-Cutting: Provenance         genesisgraph, prism
 ```
 
----
-
-## 🤝 Contributing
-
-SIL welcomes contributions! Each project has specific contribution guidelines in its repository.
-
-**General principles:**
-- Follow the 5 design principles (Clarity, Simplicity, Composability, Correctness, Verifiability)
-- Write tests for all functionality
-- Document design decisions
-- Preserve semantic invariants
-
-See individual project repositories for specific guidelines.
+**[Read the complete architecture →](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md)**
 
 ---
 
-## 📊 Project Statistics
+## License
 
-- **Total Projects:** 11
-- **Production Systems:** 5 (ready to use)
-- **Test Coverage:** 3,250+ tests across all projects
-- **Code:** ~45,000 lines (production projects)
-- **Documentation:** ~15,000 lines (canonical + guides)
+- **Code:** [Apache 2.0](LICENSE) - Use commercially, fork, modify
+- **Documentation:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) - Share freely with attribution
 
 ---
 
-## 🌐 Community
+## Contact
 
-**Website:** https://semanticinfrastructurelab.org
-**GitHub Organization:** https://github.com/semantic-infrastructure-lab
-
-**Production Projects on GitHub:**
-- [morphogen](https://github.com/semantic-infrastructure-lab/morphogen) - Universal computation
-- [tiacad](https://github.com/semantic-infrastructure-lab/tiacad) - Declarative CAD
-- [genesisgraph](https://github.com/semantic-infrastructure-lab/genesisgraph) - Verifiable provenance
-- [reveal](https://github.com/semantic-infrastructure-lab/reveal) - Code exploration (also on [PyPI](https://pypi.org/project/reveal-cli/))
+- **GitHub:** [github.com/semantic-infrastructure-lab](https://github.com/semantic-infrastructure-lab)
+- **Website:** [semanticinfrastructurelab.org](https://semanticinfrastructurelab.org)
 
 ---
 
-## 📬 Contact
-
-For inquiries about collaboration, research partnerships, or contributions:
-
-- **GitHub Issues:** Preferred for technical questions
-- **Email:** *(contact information coming soon)*
-
----
-
-## 📜 License
-
-**Code:** Apache 2.0 License (see [LICENSE](LICENSE))
-**Documentation:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-
-Copyright 2025 Semantic Infrastructure Lab Contributors
-
----
-
-## 🔗 Quick Links
-
-**Start Here:**
-- [Founder's Letter](docs/canonical/FOUNDERS_LETTER.md) ⭐ - Why SIL exists (10 min)
-- [Try Reveal](https://pypi.org/project/reveal-cli/) - Production code exploration: `pip install reveal-cli`
-- [Reading Guide](docs/READING_GUIDE.md) - Choose your learning path
-
-**Learn More:**
-- [Manifesto](docs/canonical/SIL_MANIFESTO.md) - Core philosophy & vision (15 min)
-- [Technical Charter](docs/canonical/SIL_TECHNICAL_CHARTER.md) - Formal specification (45 min)
-- [Project Index](projects/PROJECT_INDEX.md) - All 11 projects explained
-
-**Get Involved:**
-- [Design Principles](docs/canonical/SIL_PRINCIPLES.md) - How we build (10 min)
-- [GitHub Organization](https://github.com/semantic-infrastructure-lab) - Browse project repositories
-- Individual project contribution guides (see project READMEs)
-
----
-
-**Semantic Infrastructure Lab**
-*Building the semantic substrate for intelligent systems*
-
-**Website:** https://semanticinfrastructurelab.org
-**Last Updated:** 2025-11-28
-**Document Version:** 2.1
+*Make meaning explicit. Make reasoning traceable. Build structures that last.*
