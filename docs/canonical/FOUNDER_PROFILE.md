@@ -72,11 +72,12 @@ Same principle as SIL: actionability, not just representation. Make systems that
 - **Layer 5:** Human Interfaces (visualization, reasoning inspection)
 
 **Working systems (not vaporware):**
-- USIR (intermediate representation unifying symbolic, numeric, geometric structures)
-- Morphogen (multi-domain simulation engine, 1,600+ tests)
-- Knowledge Mesh (distributed semantic routing)
-- TIA (semantic search, 12K+ files indexed)
-- Reveal (semantic code exploration, published to PyPI)
+- **Reveal** - Progressive disclosure for code (published to PyPI, ~2,000 downloads/month, 86% token reduction)
+- **Morphogen** - Multi-domain deterministic execution (1,600+ tests, 85% coverage, bitwise-identical results)
+- **TiaCAD** - Semantic CAD (1,027 tests, 92% coverage)
+- **GenesisGraph** - Cryptographic provenance (363 tests)
+- **TIA** - Research infrastructure (14,549 files indexed, 25x average token reduction)
+- **Beth** - Semantic memory substrate (<400ms search, 1,402 topics)
 
 **Design principles (from manifesto):**
 - Interpretability as first-class property
@@ -87,6 +88,8 @@ Same principle as SIL: actionability, not just representation. Make systems that
 
 **Why this matters:**
 Contemporary AI systems are powerful but structurally incomplete. They lack explicit meaning, inspectable reasoning, stable memory, provenance. SIL exists to build the missing layer.
+
+Not because of destiny. Because it's meaningful infrastructure work that helps humans understand, create, and discover.
 
 ---
 
@@ -100,7 +103,64 @@ Contemporary AI systems are powerful but structurally incomplete. They lack expl
 
 **Team-oriented:** Most meaningful work happens in teams. SIL is designed from the start as collaborative work with researchers, engineers, and contributors.
 
-**Working systems:** Code that ships—early published work, systems at Microsoft, dozens of organizations with Tiny Lizard, now TIA/Reveal/Morphogen with tests and users.
+**Working systems:** Code that ships—early published work, systems at Microsoft, dozens of organizations with Tiny Lizard, now TIA/Reveal/Morphogen/TiaCAD/GenesisGraph with tests and users.
+
+---
+
+## The Honest Position
+
+### What the world needs:
+
+**From manifesto:**
+> "Contemporary AI systems are powerful and useful, but structurally incomplete. They lack explicit meaning, inspectable reasoning, stable memory, provenance. These are symptoms of a missing layer: a semantic foundation."
+
+**SIL exists to build that missing layer.**
+
+Not because it's trendy. Because intelligent systems need semantic substrate the way networked systems needed TCP/IP. It's infrastructure work.
+
+### Who can build it:
+
+**Requires:**
+- Systems-oriented thinking (infrastructure, not applications)
+- Cross-domain foundation (distributed systems, semantics, data, execution)
+- Empathy for high-stakes work (knows the pressure, the failure modes)
+- Execution track record (ships working systems)
+- Alignment with principles (inspectable, provenance-complete, reproducible)
+
+**Plus:**
+- Team (SIL is collaborative, not solo work)
+- Funding (infrastructure takes resources)
+- Community (open contribution with stewardship)
+- Time (substrate doesn't happen overnight)
+
+**I bring:**
+- 42-year track record of infrastructure building
+- Experience with high-stakes distributed systems
+- Empathy from lived unglamorous work
+- Working systems already built (TIA, Reveal, Morphogen, TiaCAD, GenesisGraph, Beth)
+- Alignment with SIL principles (no destiny framing, systems over hype)
+
+**But we need:**
+- Team of researchers and engineers
+- Resources to build infrastructure properly
+- Community of contributors and users
+- Strategic partnerships
+
+---
+
+## The Positioning (Manifesto-Aligned)
+
+### For Collaborators
+
+"Scott Senkeresty is a systems-oriented builder who has spent 42 years making complexity inspectable and helping others through infrastructure. At Microsoft, he was part of the team that built distributed cryptographic infrastructure before Bitcoin, and later contributed to high-stakes release engineering at scale. He helped dozens of organizations understand and transform their data through Tiny Lizard. Now at SIL, he's building the semantic substrate that intelligent systems lack—not because of destiny or hype, but because it's meaningful infrastructure work that helps humans understand, create, and discover. He has working systems (Reveal, Morphogen, TIA, TiaCAD, GenesisGraph, Beth), a 42-year execution track record, and alignment with SIL's principles: inspectable reasoning, provenance everywhere, systems over ad hoc hacks."
+
+### For Technical Audience
+
+"Scott works at the intersection of distributed systems, semantic infrastructure, and reproducible workflows. His experience spans cryptographic P2P protocols, high-stakes release engineering, and helping organizations make data actionable. SIL builds the Semantic Operating System: persistent semantic memory, USIR (unified intermediate representation), domain modules, multi-agent orchestration, deterministic engines, and human interfaces for inspectable reasoning. Not replacing LLMs—grounding them in explicit semantic substrate. Not theory—working systems with 1,600+ tests, published to PyPI, indexing 14,549 files."
+
+### For General Audience
+
+"Scott builds infrastructure that makes dangerous things safe through transparency. At Microsoft, he built tools that let security researchers inspect malware without running it. Now at SIL, he's building infrastructure that makes AI reasoning inspectable instead of a black box. He's spent 42 years as a systems-oriented builder doing unglamorous work that helps others—from published work at age 13 to release engineering at global scale to helping dozens of organizations understand their data to now building the semantic substrate for inspectable intelligence."
 
 ---
 
@@ -116,9 +176,15 @@ Contemporary AI systems are powerful but structurally incomplete. They lack expl
 - Made code navigable (Reveal)
 - Making intelligence inspectable (SIL Semantic OS)
 
-Same work. Increasing scale. Consistent principles.
+**Same work. Increasing scale. Consistent principles.**
 
-That's the founder. That's the lab. That's the work.
+**No destiny framing.**
+**No myth-making.**
+**Just commitment to building rigorous substrate that helps humans understand, create, and discover.**
+
+**That's the founder.**
+**That's the lab.**
+**That's the work.**
 
 ---
 
