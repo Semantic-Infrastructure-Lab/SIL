@@ -635,7 +635,7 @@ The lab has developed **12 projects** spanning the six layers of the Semantic OS
 **Production-Ready Today:**
 - **Reveal** (v0.17.0 on PyPI) — Code exploration with 86% token reduction, Python runtime inspection, `--agent-help` standard with 3-tier progressive discovery
 - **Morphogen** (v0.11) — Cross-domain deterministic computation
-- **TiaCAD** (v3.1.1) — Declarative parametric CAD in YAML
+- **TiaCAD** (v3.1.2) — Declarative parametric CAD in YAML
 - **GenesisGraph** (v0.3.0) — Verifiable provenance with selective disclosure
 - **SIL** (v2.1) — Documentation and research hub
 

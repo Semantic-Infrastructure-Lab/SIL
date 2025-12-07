@@ -74,8 +74,8 @@ This pattern will extend across all SIL systems:
 As SIL projects mature, more production tools will be featured here:
 
 - **morphogen** - Cross-domain computation (audio, physics, circuits) - *active development*
-- **tiacad** - Declarative parametric CAD in YAML - *coming soon*
-- **genesisgraph** - Verifiable process provenance - *coming soon*
+- **tiacad** - Declarative parametric CAD in YAML - [Production v3.1.2](https://github.com/Semantic-Infrastructure-Lab/tiacad)
+- **genesisgraph** - Verifiable process provenance - [Production v0.3.0](https://github.com/Semantic-Infrastructure-Lab/genesisgraph)
 
 See all **[Projects →](../../projects/PROJECT_INDEX.md)**
 

@@ -125,8 +125,8 @@ Meta-Layer: Observability → Reveal (progressive disclosure)
 ## By Maturity
 
 ### Production (4 projects) 🟢
-- **[Reveal](/docs/innovations/PROGRESSIVE_DISCLOSURE)** - v0.16.0, PyPI published, ~2,000 downloads/month
-- **TiaCAD** - v3.1.2, 1,070 tests, 92% coverage
+- **[Reveal](/docs/innovations/PROGRESSIVE_DISCLOSURE)** - v0.17.0, PyPI published, ~2,000 downloads/month
+- **TiaCAD** - v3.1.2, 1,025 tests, 92% coverage
 - **[GenesisGraph](/docs/innovations/GENESISGRAPH)** - v0.3.0, 320 tests, production cryptography
 - **[Morphogen](/docs/innovations/MORPHOGEN)** - v0.11.0, 1,600+ tests, zero technical debt
 
