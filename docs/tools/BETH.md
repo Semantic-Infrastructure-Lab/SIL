@@ -347,7 +347,7 @@ This is semantic infrastructure in practice: substrate that enables research, no
 
 **Companion Systems:**
 - [Tia](./TIA.md) - Chief Semantic Agent who queries Beth
-- [GenesisGraph](../innovations/GENESISGRAPH.md) - Cryptographic provenance that Beth integrates
+- [GenesisGraph](https://github.com/Semantic-Infrastructure-Lab/genesisgraph) - Cryptographic provenance that Beth integrates
 
 **Philosophy:**
 - [Founder's Letter](../canonical/FOUNDERS_LETTER.md) - Glass-box laboratory principles

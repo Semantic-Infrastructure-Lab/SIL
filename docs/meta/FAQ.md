@@ -101,8 +101,8 @@ reveal your_code.py
 - [Tools Documentation](../tools/README.md) - Production systems explained
 
 **Learn the Architecture:**
-- [Quickstart](../QUICKSTART.md) - 30-minute guided tour
-- [Reading Guide](../READING_GUIDE.md) - Choose your depth
+- [Start Here](../canonical/START_HERE.md) - 30-minute guided tour
+- [FAQ](./FAQ.md) - Common questions answered
 
 ---
 
@@ -406,7 +406,7 @@ reveal morphogen/src/core.py Operator
 **Quick Paths:**
 
 **30-Minute Overview:**
-→ [Quickstart](../QUICKSTART.md) - Guided tour with hands-on example
+→ [Start Here](../canonical/START_HERE.md) - Guided tour with hands-on example
 
 **Deep Architecture:**
 → [Unified Architecture Guide](../architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (20 min)

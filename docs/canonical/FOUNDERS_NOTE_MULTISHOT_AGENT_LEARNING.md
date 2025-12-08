@@ -578,7 +578,7 @@ In 2025, with 200K+ context windows and native tool support, **dynamic documenta
 
 **Author:** Scott Senkeresty
 **Organization:** Semantic Infrastructure Lab
-**Contact:** [TBD]
+**Contact:** scott@semanticinfrastructurelab.org
 **License:** CC BY 4.0
 
 **Related Work:**

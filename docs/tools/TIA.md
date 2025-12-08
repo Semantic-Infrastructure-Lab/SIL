@@ -253,7 +253,7 @@ It's the research lab practicing what it preaches.
 
 **Architecture:**
 - [Semantic OS Architecture](../canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md) - Where Tia fits in the 7-layer stack
-- [Agent Ether](../innovations/AGENT_ETHER.md) - Multi-agent coordination principles informed by Tia's patterns
+- [Agent Ether](/projects) - Multi-agent coordination principles informed by Tia's patterns
 
 **Companion Systems:**
 - [Beth](./BETH.md) - Knowledge substrate that Tia queries

@@ -44,7 +44,7 @@ Build structures that last.**
 - [Design Principles](./SIL_PRINCIPLES.md) - The 14 constraints that guide all work
 
 **If you want to get started:**
-- [Quickstart](../QUICKSTART.md) - 30-minute guided tour with hands-on example
+- [Start Here](./START_HERE.md) - 30-minute guided tour with hands-on example
 - [FAQ](../meta/FAQ.md) - Common questions answered
 
 ---

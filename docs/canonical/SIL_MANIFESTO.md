@@ -681,7 +681,7 @@ That is the work.
 **If you want to see it in action:**
 - [Project Index](../../projects/PROJECT_INDEX.md) - All 12 projects explained
 - [Tools Documentation](../tools/README.md) - Production systems with economic impact data
-- [Quickstart](../QUICKSTART.md) - Try reveal in 10 minutes
+- [Start Here](./START_HERE.md) - Try reveal in 10 minutes
 
 **If you want deeper principles:**
 - [Design Principles](./SIL_PRINCIPLES.md) - The 14 constraints that guide all work
