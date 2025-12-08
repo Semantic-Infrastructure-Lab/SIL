@@ -97,8 +97,8 @@ reveal your_code.py
 - **genesisgraph:** Verifiable provenance ([quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart.md))
 
 **Explore the Ecosystem:**
-- [Project Index](/projects) - All 12 projects
-- [Tools Documentation](/docs/tools-overview) - Production systems explained
+- [Project Index](../innovations/INNOVATIONS.md) - All 12 projects
+- [Tools Documentation](../tools/README.md) - Production systems explained
 
 **Learn the Architecture:**
 - [Start Here](../canonical/START_HERE.md) - 30-minute guided tour
@@ -161,7 +161,7 @@ Read [SIL Principles](../canonical/SIL_PRINCIPLES.md) (10 minutes). All contribu
 
 **Step 2: Pick a Project**
 
-Browse [Project Index](/projects) and choose based on your interests:
+Browse [Project Index](../innovations/INNOVATIONS.md) and choose based on your interests:
 - **Code exploration:** reveal
 - **Cross-domain computation:** morphogen
 - **Provenance:** genesisgraph
@@ -314,7 +314,7 @@ WaterCycle(
 - Faster responses (fewer tokens to process)
 - Better results (agents see structure, not walls of text)
 
-**Read more:** [Tools Documentation](/docs/tools-overview), Economics section
+**Read more:** [Tools Documentation](../tools/README.md), Economics section
 
 ---
 
@@ -365,7 +365,7 @@ reveal morphogen/src/core.py Operator
 - [5-minute quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart.md)
 - [Example workflows](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/tree/main/examples)
 
-**All project links:** [Project Index](/projects)
+**All project links:** [Project Index](../innovations/INNOVATIONS.md)
 
 ---
 
@@ -420,8 +420,8 @@ reveal morphogen/src/core.py Operator
 → [Reading Guide](https://github.com/Semantic-Infrastructure-Lab/SIL/blob/main/docs/READING_GUIDE.md) - 4 curated reading paths
 
 **Try Production Tools:**
-→ [Tools Documentation](/docs/tools-overview)
-→ [Project Index](/projects)
+→ [Tools Documentation](../tools/README.md)
+→ [Project Index](../innovations/INNOVATIONS.md)
 
 **Research Papers:**
 → [RAG as Semantic Manifold Transport](../research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md)

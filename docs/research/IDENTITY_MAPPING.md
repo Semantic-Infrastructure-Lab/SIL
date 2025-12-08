@@ -328,7 +328,7 @@ reveal map://contacts/scott@tinylizard.com --to slack --format json
 **Internal:**
 - [SIL Manifesto](../canonical/SIL_MANIFESTO.md) - Why explicit semantics matter
 - [Unified Architecture Guide](../architecture/UNIFIED_ARCHITECTURE_GUIDE.md) - Layer structure
-- [Pantheon docs](/home/scottsen/src/projects/pantheon/docs/) - Universal Semantic IR
+- [Pantheon](../innovations/PANTHEON.md) - Universal Semantic IR
 
 **External:**
 - Berners-Lee, T. "Linked Data" (2006)

@@ -94,7 +94,7 @@ SIL builds infrastructure meant to last decades, not chase quarterly trends.
 **[Reveal](../tools/REVEAL.md)** — Code structure navigation
 **[Agent Help Standard](../research/AGENT_HELP_STANDARD.md)** — Strategic guidance for agents
 **[GenesisGraph](https://github.com/Semantic-Infrastructure-Lab/genesisgraph)** — Verifiable provenance
-**[Morphogen](/projects)** — Unified computational substrate
+**[Morphogen](../innovations/MORPHOGEN.md)** — Unified computational substrate
 
 ### For Collaborators
 **[FAQ](../meta/FAQ.md)** — Common questions answered
