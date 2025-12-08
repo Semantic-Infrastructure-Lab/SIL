@@ -360,7 +360,7 @@ Scout's multi-phase research orchestrator (developed Dec 2025) demonstrates thes
 
 **Key Insight:** Breaking deep research into focused phases (5-10 iterations each) prevents LLM early-stopping and achieves 100% reliability for Phases 1-3.
 
-**Reference:** `/home/scottsen/src/tia/sessions/noble-warrior-1203/` (Multi-phase orchestrator)
+**Reference:** TIA session documentation (Multi-phase orchestrator)
 
 ### **Semantic OS Architecture**
 

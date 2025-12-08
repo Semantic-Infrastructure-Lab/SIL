@@ -11,12 +11,12 @@
 Every semantic domain maintains its own identifier namespace:
 
 ```
-Person: "Scott"
-  contacts://        → scott@tinylizard.com (email)
+Person: "Alice"
+  contacts://        → alice@example.com (email)
   slack://          → U1234567 (user_id)
-  github://         → scottsen (username)
+  github://         → alice-dev (username)
   mysql://users     → 42 (primary_key)
-  pantheon://       → person:scott:canonical (semantic_id)
+  pantheon://       → person:alice:canonical (semantic_id)
 ```
 
 **Challenges:**
@@ -25,15 +25,15 @@ Person: "Scott"
 3. **Fragile integration** - Cross-system queries break when IDs change
 4. **Lost semantics** - Systems don't know IDs refer to same entity
 
-**Example:** Agent Ether wants to notify "scott@tinylizard.com" via Slack:
+**Example:** Agent Ether wants to notify "alice@example.com" via Slack:
 ```python
 # Current: Manual lookup required
-email = "scott@tinylizard.com"
+email = "alice@example.com"
 user = db.query("SELECT slack_id FROM users WHERE email = ?", email)
 slack.send(user.slack_id, "Task complete")
 
 # Desired: Universal resolution
-email = "scott@tinylizard.com"
+email = "alice@example.com"
 slack_id = mapper.resolve(email, target="slack")
 slack.send(slack_id, "Task complete")
 ```
@@ -84,8 +84,8 @@ slack.send(slack_id, "Task complete")
 
 **RDF/OWL `owl:sameAs` predicate:**
 ```turtle
-<http://example.com/person/scott> owl:sameAs <mailto:scott@tinylizard.com> .
-<mailto:scott@tinylizard.com> owl:sameAs <slack://U1234567> .
+<http://example.com/person/alice> owl:sameAs <mailto:alice@example.com> .
+<mailto:alice@example.com> owl:sameAs <slack://U1234567> .
 ```
 
 **Properties:**
@@ -159,22 +159,22 @@ Compression: 5.5x
 ```yaml
 # Pantheon node with identities
 node:
-  id: person:scott:canonical
+  id: person:alice:canonical
   type: Person
   properties:
-    name: "Scott Senkeresty"
+    name: "Alice Developer"
 
   identities:
     - domain: contacts
       type: email
-      identifier: scott@tinylizard.com
+      identifier: alice@example.com
       authority: user-declared
       valid_from: 2020-01-01
 
     - domain: slack
       type: user_id
       identifier: U1234567
-      display: "@scott"
+      display: "@alice"
       authority: api-verified
       verified_at: 2025-12-01
 ```
@@ -224,13 +224,13 @@ node:
 
 ```bash
 # Structure first (see all identities)
-reveal map://contacts/scott@tinylizard.com
+reveal map://contacts/alice@example.com
 
 # Drill down (specific mapping)
-reveal map://contacts/scott@tinylizard.com --to slack
+reveal map://contacts/alice@example.com --to slack
 
 # Extract (machine-readable)
-reveal map://contacts/scott@tinylizard.com --to slack --format json
+reveal map://contacts/alice@example.com --to slack --format json
 ```
 
 ---
@@ -327,8 +327,7 @@ reveal map://contacts/scott@tinylizard.com --to slack --format json
 
 **Document Status:** Proposed Research Concept
 **Last Updated:** 2025-12-02
-**Session:** foggy-blizzard-1202
-**Originated:** TIA semantic glue exploration
+**Originated:** Semantic glue exploration
 
 ---
 
@@ -336,8 +335,8 @@ reveal map://contacts/scott@tinylizard.com --to slack --format json
 
 ### Use Case 1: Cross-System Queries
 ```bash
-# Find all GitHub PRs by user with email scott@tinylizard.com
-email="scott@tinylizard.com"
+# Find all GitHub PRs by user with email alice@example.com
+email="alice@example.com"
 github_user=$(mapper resolve contacts://$email --to github)
 gh pr list --author $github_user
 ```
@@ -360,8 +359,8 @@ echo "Modified by: $email"
 
 ### Use Case 4: Universal Search
 ```bash
-# Find all mentions of Scott across all systems
-for identity in $(mapper discover scott@tinylizard.com); do
+# Find all mentions of a user across all systems
+for identity in $(mapper discover alice@example.com); do
     tia search all "$identity"
 done
 ```

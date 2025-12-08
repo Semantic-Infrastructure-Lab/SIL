@@ -615,6 +615,4 @@ Senior Agent: Checks Beth health, discovers stale index, rebuilds, finds 24 docs
 
 ---
 
-**Status**: Draft - awaiting review
-**Path**: `/home/scottsen/src/tia/sessions/burning-moon-1206/TOOL_QUALITY_MONITORING_PRINCIPLE.md`
-**Next**: Review → Edit → Integrate into SIL_CORE_PRINCIPLES.md
+**Status**: Published

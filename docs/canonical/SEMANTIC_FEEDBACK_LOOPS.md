@@ -355,7 +355,7 @@ GapAnalysis:
 ```yaml
 CorrectionStrategy:
   session_id: mighty-shaman-1204
-  target: /home/scottsen/src/tia/templates/CLAUDE.md
+  target: templates/CLAUDE.md
   corrections:
     - correction_id: C1
       addresses_gaps: [G1]

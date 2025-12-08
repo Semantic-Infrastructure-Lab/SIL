@@ -493,7 +493,7 @@ audit_entry = {
     "risk_level": "high",
     "approval_required": true,
     "approval_status": "approved",
-    "user": "scottsen",
+    "user": "developer",
     "session": "xenon-catalyst-1204",
     "details": {
         "branch": "master",

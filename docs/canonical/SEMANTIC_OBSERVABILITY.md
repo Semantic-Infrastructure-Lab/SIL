@@ -469,7 +469,7 @@ class SemanticHealthMetrics:
 > "look at tia-save. help understand how that code displays my user messages for a session"
 
 **New Execution:**
-1. `Read /home/scottsen/src/tia/bin/tia-save` - learned it uses Python ContextFormatter
+1. `Read bin/tia-save` - learned it uses Python ContextFormatter
 2. `Read context_formatter.py` - saw _format_conversation_stats method
 3. `Write /tmp/find_frustration.py` - created script using same pattern
 4. `Bash python3 /tmp/find_frustration.py` - executed successfully
