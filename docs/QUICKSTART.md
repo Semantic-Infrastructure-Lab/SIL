@@ -87,6 +87,7 @@ Now that you've experienced progressive disclosure, understand the principles:
 
 ## 4. Join the Community
 
+- **Email:** scott@semanticinfrastructurelab.org
 - **GitHub:** [github.com/semantic-infrastructure-lab](https://github.com/semantic-infrastructure-lab)
 - **Website:** [semanticinfrastructurelab.org](https://semanticinfrastructurelab.org)
 - **Documentation:** Complete documentation in [docs/](.)

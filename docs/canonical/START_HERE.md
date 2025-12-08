@@ -117,4 +117,4 @@ If this resonates with you — **welcome**.
 **Semantic Infrastructure Lab**
 Building the semantic substrate for the next generation of human-machine reasoning.
 
-[GitHub](https://github.com/Semantic-Infrastructure-Lab) | [Website](https://semanticinfrastructurelab.org)
+[Email](mailto:scott@semanticinfrastructurelab.org) | [GitHub](https://github.com/Semantic-Infrastructure-Lab) | [Website](https://semanticinfrastructurelab.org)

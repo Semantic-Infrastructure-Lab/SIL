@@ -1,6 +1,6 @@
 # SIL Frequently Asked Questions
 
-**Last Updated:** 2025-12-01
+**Last Updated:** 2025-12-07
 
 ---
 
@@ -440,7 +440,7 @@ reveal morphogen/src/core.py Operator
 - Check project-specific documentation
 
 **For general inquiries:**
-- Email: *(contact information coming soon)*
+- Email: scott@semanticinfrastructurelab.org
 
 **For contribution questions:**
 - Visit [GitHub](https://github.com/Semantic-Infrastructure-Lab)

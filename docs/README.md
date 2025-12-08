@@ -86,6 +86,7 @@ Cross-Cutting: Provenance         genesisgraph, prism
 
 ## Contact
 
+- **Email:** scott@semanticinfrastructurelab.org
 - **GitHub:** [github.com/semantic-infrastructure-lab](https://github.com/semantic-infrastructure-lab)
 - **Website:** [semanticinfrastructurelab.org](https://semanticinfrastructurelab.org)
 
