@@ -344,7 +344,7 @@ tia git make-clean  # Clean up repo
 git push origin staging  # Deploy
 
 # STEP 2: Verify deployment
-curl https://staging.sil.dev/docs/  # ✅ Live
+curl https://semanticinfrastructurelab.org/docs/  # ✅ Live
 ```
 
 ---

@@ -2,9 +2,9 @@
 
 **Tagline:** The simplest way to understand code. Point it at a directory, file, or function. Get exactly what you need.
 
-**Status:** ✅ Production v0.17.0 | Available on [PyPI](https://pypi.org/project/reveal-cli/)
+**Status:** ✅ Production v0.18.0 | Available on [PyPI](https://pypi.org/project/reveal-cli/)
 
-**Latest:** v0.17.0 adds Python runtime inspection (`python://`), redesigned help system (85% token reduction via progressive discovery), and pipeline fixes.
+**Latest:** v0.18.0 builds on v0.17.0's Python runtime inspection (`python://`) and progressive help system with continued refinements.
 
 ---
 
@@ -290,7 +290,7 @@ Reveal proves this pattern works for code exploration. As SIL evolves, this same
 **Reveal today:** Explore code semantically
 **SIM vision:** Explore ALL semantic structure (code, graphs, reasoning, provenance)
 
-See [Future Integration Vision](../../staging/vision/REVEAL_SIL_INTEGRATION.md) for detailed roadmap.
+See the [Reveal Roadmap](https://github.com/semantic-infrastructure-lab/reveal/blob/main/ROADMAP.md) for detailed plans.
 
 ---
 
@@ -326,9 +326,9 @@ reveal .                  # Explore current directory
 - [**tiacad**](https://github.com/semantic-infrastructure-lab/tiacad) - Declarative parametric CAD in YAML
 - [**genesisgraph**](https://github.com/semantic-infrastructure-lab/genesisgraph) - Verifiable process provenance
 
-See the complete [Project Index](../../projects/PROJECT_INDEX.md) for all 11 SIL projects.
+See the complete [Project Index](../../projects/PROJECT_INDEX.md) for all 12 SIL projects.
 
 ---
 
-**Last Updated:** 2025-12-07 (v0.17.0 release)
+**Last Updated:** 2025-12-08 (v0.18.0)
 **Document Version:** 1.1

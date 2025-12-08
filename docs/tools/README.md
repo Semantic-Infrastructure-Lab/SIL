@@ -30,7 +30,7 @@ Tools designed for agents from day one, with:
 
 **The simplest way to understand code.** Point it at a directory, file, or function. Get exactly what you need.
 
-**Status:** ✅ Production v0.16.0 | [PyPI](https://pypi.org/project/reveal-cli/) | [GitHub](https://github.com/semantic-infrastructure-lab/reveal)
+**Status:** ✅ Production v0.18.0 | [PyPI](https://pypi.org/project/reveal-cli/) | [GitHub](https://github.com/semantic-infrastructure-lab/reveal)
 
 ### Quick Start
 
@@ -83,7 +83,7 @@ See all **[Projects →](../../projects/PROJECT_INDEX.md)**
 
 ## The Agent-Help Standard: Implemented & Validated
 
-We've **implemented and validated** `--agent-help` in Reveal v0.16.0+ - proving the standard works at production scale.
+We've **implemented and validated** `--agent-help` in Reveal v0.17.0+ - proving the standard works at production scale.
 
 **Two-tier system:**
 - `--agent-help` - Quick strategic guide (~50 lines)
@@ -124,5 +124,5 @@ SIL tools aren't just elegant - they're economically and environmentally respons
 
 ---
 
-**Last Updated:** 2025-11-30
+**Last Updated:** 2025-12-08
 **Questions?** [GitHub Issues](https://github.com/semantic-infrastructure-lab/reveal/issues)

@@ -16,6 +16,8 @@ They apply to every layer, every domain, every operator, and every contribution.
 
 These 14 principles govern the **research infrastructure and Semantic OS architecture**. They are foundational constraints for the entire system that apply to every layer, every domain, every operator, and every contribution.
 
+**Related Document:** For practical design patterns and implementation guidance, see [SIL Design Principles](SIL_DESIGN_PRINCIPLES.md) which covers 9 applied principles for building SIL-aligned tools and systems.
+
 ---
 
 ## 1. Principles
@@ -112,7 +114,7 @@ Following these 14 principles means SIL infrastructure will still be coherent, i
 
 SIL principles are not aspirational—they're operational in production tools today.
 
-**reveal** (v0.17.0 on PyPI, 100+ downloads/day as of Dec 2025) demonstrates how these principles manifest in working software. It's proof that semantic infrastructure isn't hypothetical—it's solving real problems for developers and AI agents.
+**reveal** (v0.18.0 on PyPI, 100+ downloads/day as of Dec 2025) demonstrates how these principles manifest in working software. It's proof that semantic infrastructure isn't hypothetical—it's solving real problems for developers and AI agents.
 
 ### **Principle #1: Structure Before Heuristics**
 
@@ -251,7 +253,7 @@ $ reveal env://PATH
 /bin
 ...
 
-# Databases (planned v0.14.0)
+# Databases (planned)
 $ reveal postgres://prod
 Tables: users, posts, comments
 

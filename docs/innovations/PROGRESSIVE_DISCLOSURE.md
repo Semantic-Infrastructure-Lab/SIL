@@ -151,7 +151,7 @@ $ reveal middleware.py validate_token
 
 ## Status & Adoption
 
-**Current Version:** v0.17.0 (Production, PyPI Published - Released Dec 2025)
+**Current Version:** v0.18.0 (Production, PyPI Published)
 
 **Production Metrics:**
 - ✅ **100+ daily downloads** on PyPI
@@ -210,7 +210,6 @@ $ reveal middleware.py validate_token
 **Full Documentation:**
 - [Reveal GitHub Repository](https://github.com/Semantic-Infrastructure-Lab/reveal)
 - [PyPI Package](https://pypi.org/project/reveal-cli/)
-- [Economic Impact Analysis](https://github.com/Semantic-Infrastructure-Lab/SIL/blob/main/docs/research/ECONOMIC_IMPACT.md)
 - [Architecture Guide](https://github.com/Semantic-Infrastructure-Lab/reveal/blob/main/docs/ARCHITECTURE.md)
 
 **Example Gallery:**
@@ -326,7 +325,7 @@ Humans don't read code linearly (cat file.py → read 3000 lines). Humans naviga
 
 ---
 
-**Version:** 0.17.0 (Production - Released Dec 7, 2025)
+**Version:** 0.18.0 (Production)
 **License:** Apache 2.0
 **Status:** Production-ready, active development
 
@@ -335,5 +334,4 @@ Humans don't read code linearly (cat file.py → read 3000 lines). Humans naviga
 **Learn More:**
 - [PyPI Package](https://pypi.org/project/reveal-cli/)
 - [GitHub Repository](https://github.com/Semantic-Infrastructure-Lab/reveal)
-- [Economic Analysis](https://github.com/Semantic-Infrastructure-Lab/SIL/blob/main/docs/research/ECONOMIC_IMPACT.md)
 - [Install & Try](https://github.com/Semantic-Infrastructure-Lab/reveal#installation): `pip install reveal-cli`

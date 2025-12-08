@@ -3,7 +3,7 @@
 **Design Philosophy for Semantic Infrastructure**
 
 Version: 1.0
-Last Updated: 2025-12-04
+Last Updated: 2025-12-08
 
 ---
 
@@ -19,7 +19,9 @@ Last Updated: 2025-12-04
 
 ## Overview
 
-The Semantic Infrastructure Lab (SIL) ecosystem is built on a foundation of **8 core principles** that guide every architectural decision, implementation choice, and design pattern. These principles emerged from real development experience building TIA's semantic workspace and are proven to deliver maintainable, scalable, intelligent systems.
+The Semantic Infrastructure Lab (SIL) ecosystem is built on a foundation of **9 core design principles** that guide every architectural decision, implementation choice, and design pattern. These principles emerged from real development experience building TIA's semantic workspace and are proven to deliver maintainable, scalable, intelligent systems.
+
+**Related Document:** For foundational architectural constraints, see [SIL Principles](SIL_PRINCIPLES.md) which defines the 14 theoretical principles governing the Semantic OS architecture.
 
 **This document ranks principles by:**
 - **Impact**: How much they affect system quality and success

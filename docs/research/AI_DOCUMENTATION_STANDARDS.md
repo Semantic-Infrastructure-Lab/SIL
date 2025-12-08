@@ -139,7 +139,7 @@ SIL follows a layered architecture:
 
 ## Projects
 
-- Reveal: https://github.com/scottsen/reveal
+- Reveal: https://github.com/Semantic-Infrastructure-Lab/reveal
 - Pantheon: https://github.com/Semantic-Infrastructure-Lab/pantheon
 - SIL Core: https://github.com/Semantic-Infrastructure-Lab/SIL
 
@@ -395,7 +395,7 @@ Framework for semantic code representation...
 Open research initiative...
 
 ## Projects
-- Reveal: https://github.com/scottsen/reveal
+- Reveal: https://github.com/Semantic-Infrastructure-Lab/reveal
 - Pantheon: https://github.com/Semantic-Infrastructure-Lab/pantheon
 ```
 

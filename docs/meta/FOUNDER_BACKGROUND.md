@@ -64,7 +64,7 @@ The pattern: Infrastructure thinking applied across evolving technological lands
 ### Production Systems (Shipped)
 
 **Reveal** - Progressive Disclosure for Code
-- Version: v0.16.0 (published to PyPI)
+- Version: v0.18.0 (published to PyPI)
 - Tests: 103 passing
 - Impact: 86% token reduction (structure before content)
 - Status: Production, daily use
@@ -166,7 +166,7 @@ If an agent contributes insight, structure, or decomposition, that provenance ge
 
 **GitHub Organization:** Semantic-Infrastructure-Lab (13 repositories, public infrastructure)
 
-**Website:** sil-staging.mytia.net → semanticinfrastructurelab.org (production pending)
+**Website:** [semanticinfrastructurelab.org](https://semanticinfrastructurelab.org)
 
 **Documentation:** 7 canonical research documents, complete architecture specifications, Research Agenda Year 1
 

@@ -191,11 +191,11 @@ Together, these six documents provide everything you need to understand SIL's fo
 
 Want to go deeper after reading core docs?
 
-- **Additional research, technical details, and vision documents** are available in staging tiers
-- **Contact via GitHub** if you're interested in collaboration or accessing extended content
+- **Additional research and technical details** are available in the [research/](../research/) directory
+- **Contact via GitHub** if you're interested in collaboration
 
 ---
 
-**Last Updated:** 2025-12-04
+**Last Updated:** 2025-12-08
 **Total Documents:** 6 core + 4 research contributions = 10 canonical docs
 **Total Reading Time:** ~2 hours for foundation + 2.5 hours for research = 4.5 hours total

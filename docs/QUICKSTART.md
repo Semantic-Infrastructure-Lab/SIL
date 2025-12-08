@@ -37,9 +37,8 @@ reveal --version
 Progressive disclosure means seeing structure before detail. Let's explore code semantically:
 
 ```bash
-# Clone a project (or use your own)
-git clone https://github.com/your/project
-cd project
+# Use any project (or your own codebase)
+cd /path/to/any/project  # or: git clone https://github.com/Semantic-Infrastructure-Lab/reveal
 
 # Level 1: Directory structure
 reveal src/

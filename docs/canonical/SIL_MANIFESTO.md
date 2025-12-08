@@ -73,7 +73,7 @@ Before describing what SIL intends to build, recognize what already exists.
 
 ### Reveal: Semantic Infrastructure in Action
 
-**reveal** (v0.17.0 on PyPI, ~2,000 downloads/month as of Dec 2025) demonstrates that when you prioritize structure, meaning, and provenance, you get systems that work better—and the benefits compound.
+**reveal** (v0.18.0 on PyPI, ~2,000 downloads/month as of Dec 2025) demonstrates that when you prioritize structure, meaning, and provenance, you get systems that work better—and the benefits compound.
 
 **The Problem reveal Solves:**
 
@@ -171,7 +171,7 @@ $ reveal env://PATH
 /bin
 /home/user/.local/bin
 
-# Databases (planned v0.14.0)
+# Databases (planned)
 $ reveal postgres://prod
 Tables: users, posts, comments, sessions
 
@@ -633,7 +633,7 @@ SIL is not aspirational. It is operational.
 The lab has developed **12 projects** spanning the six layers of the Semantic OS, with **4 production-ready systems** and over **3,100 tests** ensuring reliability:
 
 **Production-Ready Today:**
-- **Reveal** (v0.17.0 on PyPI) — Code exploration with 86% token reduction, Python runtime inspection, `--agent-help` standard with 3-tier progressive discovery
+- **Reveal** (v0.18.0 on PyPI) — Code exploration with 86% token reduction, Python runtime inspection, `--agent-help` standard with 3-tier progressive discovery
 - **Morphogen** (v0.11) — Cross-domain deterministic computation
 - **TiaCAD** (v3.1.2) — Declarative parametric CAD in YAML
 - **GenesisGraph** (v0.3.0) — Verifiable provenance with selective disclosure
