@@ -1,6 +1,6 @@
 # Multi-Shot Agent Learning: Why `--agent-help` Changes Everything
 
-**Author:** Scott Senatore, Semantic Infrastructure Lab
+**Author:** Scott Senkeresty, Semantic Infrastructure Lab
 **Date:** 2025-12-04
 **Type:** Founder's Note / Blog Post
 **Status:** Draft
@@ -576,7 +576,7 @@ In 2025, with 200K+ context windows and native tool support, **dynamic documenta
 
 ---
 
-**Author:** Scott Senatore
+**Author:** Scott Senkeresty
 **Organization:** Semantic Infrastructure Lab
 **Contact:** [TBD]
 **License:** CC BY 4.0

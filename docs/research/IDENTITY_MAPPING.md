@@ -174,7 +174,7 @@ node:
   id: person:scott:canonical
   type: Person
   properties:
-    name: "Scott Senyerda"
+    name: "Scott Senkeresty"
 
   identities:
     - domain: contacts

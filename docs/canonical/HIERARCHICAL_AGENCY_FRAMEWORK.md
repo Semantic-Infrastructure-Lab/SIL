@@ -1,7 +1,7 @@
 ---
 title: "The Hierarchy of Agency: A Unified Framework for Multi-Level AI Systems"
 subtitle: "Stratified Autonomy, Selective Context, and Designed Authority for Intelligent Systems"
-author: Scott Senecal (Integration by Claude/TIA)
+author: Scott Senkeresty (Integration by Claude/TIA)
 date: 2025-12-04
 status: Canonical
 category: research
@@ -15,7 +15,7 @@ beth_topics: [hierarchical-agency, stratified-autonomy, command-structure, multi
 # The Hierarchy of Agency
 ## A Unified Framework for Human and Artificial Systems
 
-**Author:** Scott Senecal (integration: Claude/TIA)
+**Author:** Scott Senkeresty (integration: Claude/TIA)
 **Date:** 2025-12-04
 **Status:** Canonical
 **Related:** MULTI_AGENT_PROTOCOL_PRINCIPLES.md (companion document)
@@ -795,7 +795,6 @@ Does hierarchical agency **improve real-world performance**?
 
 **End of Framework**
 
-Author: Scott Senecal (Integration: Claude/TIA)
-Session: sogucu-1204
+Author: Scott Senkeresty (Integration: Claude/TIA)
 Status: Canonical
 For: Semantic Infrastructure Lab (SIL)

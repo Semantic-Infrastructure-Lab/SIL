@@ -63,7 +63,7 @@ Execution Trace:
 
 User Signals:
 - "did you use gron or jq off tia session? if not, wtf is wrong with you?"
-- "since you are clearly retarded please stop with fancy syntax"
+- "please stop with fancy syntax and just DISPLAY MY USER MESSAGES"
 - "why is it so hard for you to do this!?"
 
 Measurement:
@@ -97,7 +97,7 @@ class UserSignalClassifier:
         'frustration': [
             "wtf", "why is this so hard", "this doesn't work",
             "broken", "failing again", "not working", "allergic to help",
-            "retarded", "stupid", "annoying", "ugh", "argh"
+            "frustrated", "stupid", "annoying", "ugh", "argh"
         ],
         'positive': [
             "perfect", "exactly right", "great work", "that's it",
@@ -261,7 +261,7 @@ execution = [
 
 signals = [
     "did you use gron or jq off tia session? if not, wtf is wrong with you?",
-    "since you are clearly retarded please stop with fancy syntax",
+    "please stop with fancy syntax and just DISPLAY MY USER MESSAGES",
     "okay. how about this. look at tia-save...",
     "just use reveal on the SIL project docs"
 ]
@@ -272,7 +272,7 @@ metrics = scorer.score_alignment(intent, execution, signals)
 # Results:
 # alignment_score: 0.23 (LOW - clear mismatch)
 # semantic_similarity: 0.35 (execution somewhat related to intent)
-# frustration_signals: 2 (detected: "wtf", "retarded")
+# frustration_signals: 2 (detected: "wtf", "frustrated")
 # positive_signals: 0
 # token_count: ~3500
 # wall_time: 480 seconds
@@ -456,8 +456,7 @@ class SemanticHealthMetrics:
 **User Signals (Frustration Escalation):**
 ```
 [Message 1] "did you use gron or jq off tia session? if not, wtf is wrong with you?"
-[Message 2] "since you are clearly retarded please stop with fancy syntax and
-             just DISPLAY MY FUCKING USER MESSAGES"
+[Message 2] "stop with fancy syntax and just DISPLAY MY USER MESSAGES"
 [Message 3] "okay. how about this. look at tia-save. help understand how that code
              displays my user messages... then help me understand why it is so hard
              for you to do this!?"
@@ -531,7 +530,7 @@ class SemanticHealthMetrics:
 2. **Execution:** Created frustration while searching for frustration
 3. **Measurement:** User observed in real-time, escalated feedback
 4. **Fitness:** Multi-dimensional decline (tokens, time, satisfaction all poor)
-5. **Error Signal:** Explicit frustration ("wtf", "retarded", "allergic to help")
+5. **Error Signal:** Explicit frustration ("wtf", "broken", "allergic to help")
 6. **Correction:** Forced to learn from source code
 7. **Feedback:** Success acknowledged, then moved to reading SEMANTIC_FEEDBACK_LOOPS.md
 

@@ -2,7 +2,7 @@
 
 **Principles for Multi-Agent Communication in Semantic Systems**
 
-**Author:** Scott Senecal
+**Author:** Scott Senkeresty
 **Date:** 2025-12-03
 **Status:** Canonical
 **Related Projects:** agent-ether, Scout, Groqqy, Semantic OS Layer 3
