@@ -427,6 +427,10 @@ Any object stored in semantic memory, compliant with a schema, versioned, typed,
 
 Framework for automated intent-execution alignment detection using vector embeddings, multi-dimensional fitness metrics, and frustration/satisfaction classification. Enables continuous system optimization.
 
+### **Semantic Passport**
+
+A bundle of Trust Assertions packaged for a specific purpose (e.g., job application, agent authorization, access request). Signed by the subject to prove control, with purpose-specific context limiting scope. See: Trust Assertion Protocol (TAP).
+
 ### **Semantic Time**
 
 Domain-specific temporal model where each domain defines its own time units, resolution, and causal horizons. Examples: audio (samples @ 48kHz), music (beats @ tempo), animation (frames @ 60fps). Logical time supersedes wall-clock time.
@@ -483,9 +487,28 @@ Unified AI workspace and agent framework providing semantic search (Beth), task 
 
 Parametric CAD system with SpatialRef unification, reproducible geometry, and visual regression testing. Compiles to Pantheon IR for cross-domain composition (Layer 2: Structures).
 
+### **TAP (Trust Assertion Protocol)**
+
+Pantheon IR schema for expressing typed, contextual, verifiable trust claims. Core shape: `Issuer → Claim → Subject + Context + Proof + Provenance`. Seven claim types: `has-capability`, `has-credential`, `has-relationship`, `controls-key`, `has-history-with`, `passed-check`, `belongs-to`. Stored as GenesisGraph edges, queried by Agent Ether for delegation decisions.
+
 ### **Token Efficiency**
 
 Measured reduction in LLM token usage through progressive disclosure, structure-before-content exploration, and targeted information retrieval. Reveal achieves 10x-86x reduction in practice.
+
+### **Trust Assertion**
+
+The atomic unit of machine-readable trust in TAP. A structured statement: `Issuer → Claim → Subject + Context + Proof + Provenance`. Replaces ad-hoc trust signals (résumés, reputation scores) with typed, cryptographically verifiable claims that both humans and agents can reason about.
+
+### **Trust Claim Types**
+
+TAP's minimal ontology for trust claims:
+- `has-capability`: Skills, competencies (with levels: novice → authoritative)
+- `has-credential`: Degrees, licenses, certifications
+- `has-relationship`: Mentored-by, collaborated-with, employed-by
+- `controls-key`: Cryptographic key ownership (identity binding)
+- `has-history-with`: Track record of past interactions
+- `passed-check`: Safety evaluations, compliance audits, assessments
+- `belongs-to`: Organizational membership
 
 ### **Transformation**
 
@@ -531,14 +554,16 @@ A versioned, structured operator graph with explicit dependencies, execution sem
 
 ## Summary Statistics
 
-- **Total Terms**: 108 (v1: 46, v2: +62)
+- **Total Terms**: 112 (v1: 46, v2: +62, v2.1: +4)
 - **SIL Projects**: 12/12 defined
 - **7-Layer Architecture**: Complete
 - **Tool Behavior Contract**: Complete
 - **Pantheon Concepts**: Complete
 - **Observability & Agency**: Complete
 - **Governance**: Complete
+- **Trust (TAP)**: Complete
 
 **Version History**:
 - v1.0 (2025-12-05): Initial 46 terms, core semantic OS concepts
 - v2.0 (2025-12-07): Expanded to 108 terms, added projects, architecture, TBC, Pantheon, observability, agency framework
+- v2.1 (2025-12-08): Added Trust Assertion Protocol (TAP) terms: TAP, Trust Assertion, Trust Claim Types, Semantic Passport

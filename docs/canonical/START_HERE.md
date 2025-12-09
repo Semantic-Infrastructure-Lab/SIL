@@ -32,7 +32,7 @@ SIL is not a vision document. It's working infrastructure:
 
 ### Core Architecture
 - **7-Layer Semantic OS** — From semantic memory through agent orchestration
-- **Pantheon IR** — Universal typed semantic intermediate representation
+- **Pantheon IR** — Universal typed semantic IR (Intermediate Representation)
 - **GenesisGraph** — Cryptographically verifiable provenance with selective disclosure
 - **Morphogen** — Cross-domain unified primitives (40+ computational domains)
 
@@ -41,7 +41,7 @@ SIL is not a vision document. It's working infrastructure:
   - `pip install reveal-cli`
   - 86% token reduction for agent workflows
   - New: `python://` adapter for runtime environment analysis
-  - AST-based, correct, composable
+  - AST-based (Abstract Syntax Tree), correct, composable
 
 - **Agent Help Standard** — Strategic guidance for AI agents using CLI tools
 - **Philbrick** — Modular analog/digital hybrid computing substrate

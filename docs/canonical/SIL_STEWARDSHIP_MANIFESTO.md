@@ -1,13 +1,5 @@
 # SIL Stewardship Manifesto
 
-**Document Type:** Canonical
-**Version:** 1.0
-**Date:** 2025-11-29
-**Source:** Claude founding conversation (/tmp/convo.md, 14,484 lines)
-**Extraction:** Founding principles and stewardship commitments
-
----
-
 ## Preamble
 
 The Semantic Infrastructure Lab is founded on a simple principle:

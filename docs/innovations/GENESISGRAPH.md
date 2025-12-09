@@ -239,7 +239,53 @@ genesisgraph validate workflow.gg.yaml --verify-profile
 - **Pantheon (Layer 3):** Provenance-aware IR - Track semantic graph transformations
 - **Morphogen (Layer 1/4):** Deterministic execution - Provenance for computational workflows
 - **Agent Ether (Layer 6):** Multi-agent systems - Verifiable agent actions and decisions
+- **Semantic Trust Fabric:** Trust assertions stored as typed graph edges with full provenance
 - **All SIL projects:** Universal provenance layer enables "show your work" across the stack
+
+---
+
+## Trust Layer Integration
+
+GenesisGraph serves as the storage layer for the **Trust Assertion Protocol (TAP)**. Trust Assertions become typed edges in the graph:
+
+```yaml
+# Trust assertion as GenesisGraph edge
+edge:
+  type: trust_assertion
+  issuer: "did:key:z6Mk..."
+  subject: "did:key:z6Mn..."
+  claim:
+    type: has-capability
+    value: distributed-systems
+    level: expert
+  provenance:
+    graph_node: "gg:node:12345"
+    timestamp: "2025-02-15T12:00:00Z"
+    chain: ["gg:node:12344", "gg:node:12343"]
+  proof:
+    type: zk-snark
+    statement: ">50 commits to distributed systems repos"
+```
+
+**What this enables:**
+
+1. **Trust with Provenance** — Every trust assertion has full lineage
+2. **Multi-hop Trust Reasoning** — Query "who trusts whom, and why?"
+3. **Contextual Trust** — Filter trust by domain, scope, validity period
+4. **ZK-blinded Trust** — Prove trust relationships without revealing details
+5. **Agent Capability Verification** — Verify agent claims before delegation
+
+**Integration Points:**
+
+| Component | GenesisGraph Role |
+|-----------|------------------|
+| Trust Assertion Protocol (TAP) | Assertions stored as graph edges |
+| Agent Ether | Agent capabilities verified via graph queries |
+| Semantic Passports | Bundles of assertions with provenance chains |
+
+**See:** [Trust Assertion Protocol](../canonical/TRUST_ASSERTION_PROTOCOL.md) for the full TAP specification.
+
+---
 
 **Architectural Principle:** *Verification Without Revelation*
 

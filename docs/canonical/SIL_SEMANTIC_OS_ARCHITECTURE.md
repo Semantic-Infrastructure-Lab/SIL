@@ -1,13 +1,5 @@
 # SIL Semantic OS Architecture
 
-**Document Type:** Canonical
-**Version:** 1.0
-**Date:** 2025-11-29
-**Source:** Claude founding conversation (/tmp/convo.md, 14,484 lines)
-**Extraction:** Six-layer Semantic Operating System architecture
-
----
-
 ## TL;DR (2-minute overview)
 
 **What is the Semantic OS?** A 6-layer architecture for knowledge work—like Linux for computation, but for meaning.
@@ -96,37 +88,7 @@ Just as an operating system manages processes, memory, files, and devices, the S
 
 ## The Six-Layer Architecture
 
-```
-┌─────────────────────────────────────────────────────────┐
-│  Layer 5: Human Interfaces                              │
-│  (CLIs, GUIs, APIs, conversational agents)              │
-└─────────────────────────────────────────────────────────┘
-                           ↕
-┌─────────────────────────────────────────────────────────┐
-│  Layer 4: Deterministic Execution Engines               │
-│  (Morphogen, Nix-like hermetic builds, verification)    │
-└─────────────────────────────────────────────────────────┘
-                           ↕
-┌─────────────────────────────────────────────────────────┐
-│  Layer 3: Agent Ether (Multi-Agent Protocols)           │
-│  (Coordination, negotiation, discovery, composition)    │
-└─────────────────────────────────────────────────────────┘
-                           ↕
-┌─────────────────────────────────────────────────────────┐
-│  Layer 2: Domain-Specific Modules                       │
-│  (Water, Healthcare, Education, Governance, etc.)       │
-└─────────────────────────────────────────────────────────┘
-                           ↕
-┌─────────────────────────────────────────────────────────┐
-│  Layer 1: Pantheon IR (Intermediate Representation)     │
-│  (Universal semantic types, composition, translation)   │
-└─────────────────────────────────────────────────────────┘
-                           ↕
-┌─────────────────────────────────────────────────────────┐
-│  Layer 0: Semantic Memory (Foundation)                  │
-│  (Knowledge graphs, provenance, persistence, query)     │
-└─────────────────────────────────────────────────────────┘
-```
+Each layer below is described in detail with its purpose, core capabilities, and relationships to other layers.
 
 ---
 
