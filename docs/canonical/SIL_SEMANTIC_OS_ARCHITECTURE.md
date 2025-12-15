@@ -1,5 +1,7 @@
 # SIL Semantic OS Architecture
 
+> **Note:** This document uses an earlier 6-layer model. The current canonical layer definitions are in [SIL_GLOSSARY.md](./SIL_GLOSSARY.md) (Cognitive OSI Stack, L0-L6). The core concepts remain valid; layer numbering is being consolidated.
+
 ## TL;DR (2-minute overview)
 
 **What is the Semantic OS?** A 6-layer architecture for knowledge work—like Linux for computation, but for meaning.

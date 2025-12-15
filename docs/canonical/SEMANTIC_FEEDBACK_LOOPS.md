@@ -1,5 +1,7 @@
 # Semantic Feedback Loops: Closed-Loop Control for Semantic Systems
 
+> **Note:** Layer references in this document use an earlier model. Current canonical layer definitions are in [SIL_GLOSSARY.md](./SIL_GLOSSARY.md).
+
 **Version:** 1.0
 **Date:** 2025-12-04
 **Status:** Canonical - Foundational Theory

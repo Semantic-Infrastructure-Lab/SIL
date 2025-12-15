@@ -1,5 +1,7 @@
 # Semantic Observability: Automated Detection of Intent-Execution Alignment
 
+> **Note:** Layer references in this document (including "L4.5") use an earlier model. Current canonical layer definitions are in [SIL_GLOSSARY.md](./SIL_GLOSSARY.md). Observability is now considered a cross-cutting concern rather than a layer.
+
 **Authors:** Scott Senkeresty (Chief Architect, Semantic OS), Tia (Chief Semantic Agent)
 **Date:** 2025-12-04
 **Status:** Canonical Document v1
