@@ -41,7 +41,7 @@ Research priorities and deliverables for SIL's first year.
 
 Deep technical documents for researchers and contributors. All documents remain accessible—this organization helps you find what you need.
 
-<details>
+<details markdown="1">
 <summary><strong>Architecture & Governance (4 docs)</strong></summary>
 
 - [Semantic OS Architecture](SIL_SEMANTIC_OS_ARCHITECTURE.md) — 6-layer technical architecture (30 min)
@@ -51,7 +51,7 @@ Deep technical documents for researchers and contributors. All documents remain 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><strong>Trust & Agency (4 docs)</strong></summary>
 
 The "governance kernel" — primitives for legally-defensible, auditable agent behavior.
@@ -63,7 +63,7 @@ The "governance kernel" — primitives for legally-defensible, auditable agent b
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><strong>Research Papers (4 docs)</strong></summary>
 
 Theoretical frameworks emerging from SIL work.
@@ -75,7 +75,7 @@ Theoretical frameworks emerging from SIL work.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><strong>Implementation Guides (3 docs)</strong></summary>
 
 - [Progressive Disclosure Guide](PROGRESSIVE_DISCLOSURE_GUIDE.md) — Token-efficient delivery (20 min)
@@ -88,7 +88,7 @@ Theoretical frameworks emerging from SIL work.
 
 ## Reading Paths
 
-<details>
+<details markdown="1">
 <summary><strong>Quick Start (30 min)</strong> — First-time visitors</summary>
 
 1. Manifesto (15 min) — Why SIL exists
@@ -99,7 +99,7 @@ Theoretical frameworks emerging from SIL work.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><strong>Technical Deep Dive (2+ hours)</strong> — Engineers and architects</summary>
 
 1. All Essential Documents (1 hr)
@@ -111,7 +111,7 @@ Theoretical frameworks emerging from SIL work.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><strong>Trust & Governance (1.5 hours)</strong> — Agent builders, compliance</summary>
 
 1. Trust Assertion Protocol (25 min) — How trust claims work
