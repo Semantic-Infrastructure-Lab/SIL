@@ -30,13 +30,13 @@ Tools designed for agents from day one, with:
 
 Some tools implement specific SIL innovations:
 
-- **Reveal** → Implements [Progressive Disclosure](../innovations/PROGRESSIVE_DISCLOSURE.md) innovation
+- **Reveal** → Implements [Progressive Disclosure](/innovations/progressive-disclosure) innovation
 - **Beth** (TIA integrated) → Knowledge graph + PageRank for documentation
 - **TIA** → Application workspace applying multiple SIL innovations
 
 Some tools are applications (not innovations themselves) that demonstrate SIL principles in production.
 
-**See also:** `../innovations/README.md` for innovation descriptions and the inverse mapping
+**See also:** [Innovations](/innovations) for innovation descriptions and the inverse mapping
 
 ---
 
@@ -79,7 +79,7 @@ This pattern will extend across all SIL systems:
 - Provenance chains (GenesisGraph)
 - Multi-agent reasoning (Agent Ether)
 
-**[→ Learn more about Reveal](./REVEAL.md)** | **[Try it now](https://pypi.org/project/reveal-cli/)**
+**[→ Learn more about Reveal](/tools/reveal)** | **[Try it now](https://pypi.org/project/reveal-cli/)**
 
 ---
 
@@ -91,7 +91,7 @@ As SIL projects mature, more production tools will be featured here:
 - **tiacad** - Declarative parametric CAD in YAML - [Production v3.1.2](https://github.com/Semantic-Infrastructure-Lab/tiacad)
 - **genesisgraph** - Verifiable process provenance - [Production v0.3.0](https://github.com/Semantic-Infrastructure-Lab/genesisgraph)
 
-See all **[Projects →](../../projects/PROJECT_INDEX.md)**
+See all **[Innovations →](/innovations)**
 
 ---
 
@@ -108,7 +108,7 @@ We've **implemented and validated** `--agent-help` in Reveal v0.17.0+ - proving 
 - ✅ 86% token reduction confirmed in practice
 - ✅ Two-tier model works (agents load brief, expand as needed)
 
-**[Read the full standard →](../research/AGENT_HELP_STANDARD.md)**
+**[Read the full standard →](/research/agent-help-standard)**
 
 **Economic impact at scale:**
 - Current waste: ~$110M/year from poor agent loops

@@ -2,9 +2,46 @@
 
 **Start Here** — The single front door to SIL
 
-> **Navigation:** This is the single front door to SIL.
-> - [FAQ](../meta/FAQ.md) — Common questions answered
-> - [Glossary](SIL_GLOSSARY.md) — Terms and definitions
+> **Quick Links:**
+> - [FAQ](/meta/faq) — Common questions answered
+> - [Glossary](/canonical/glossary) — Terms and definitions
+
+---
+
+## SIL at a Glance
+
+```mermaid
+mindmap
+  root((Semantic Infrastructure Lab))
+    Production Tools
+      Reveal
+        Progressive disclosure
+        Token-efficient
+      Morphogen
+        Deterministic execution
+        40+ domains
+      GenesisGraph
+        Provenance tracking
+        Cryptographic attestation
+    Architecture
+      Semantic OS
+        7-layer model
+        Cross-cutting concerns
+      Pantheon IR
+        Universal types
+        Cross-domain composition
+      Agent Ether
+        Multi-agent protocols
+        Choreography and orchestration
+    Research
+      Progressive Disclosure
+      Semantic Transport
+      Feedback Loops
+    Foundation
+      Manifesto
+      Principles
+      Glossary
+```
 
 ---
 
@@ -37,7 +74,7 @@ SIL is not a vision document. It's working infrastructure:
 - **Morphogen** — Cross-domain unified primitives (40+ computational domains)
 
 ### Production Tools
-- **Reveal** (v0.23.0) — Progressive disclosure for code structure & Python runtime inspection
+- **Reveal** (v0.23.1) — Progressive disclosure for code structure & Python runtime inspection
   - `pip install reveal-cli`
   - 86% token reduction for agent workflows
   - New: `python://` adapter for runtime environment analysis
@@ -80,28 +117,28 @@ SIL builds infrastructure meant to last decades, not chase quarterly trends.
 ## Where to Go Next
 
 ### For the Story
-**[Founder's Letter](FOUNDERS_LETTER.md)** — Why SIL was built, the vision, and what we're inviting you to help build
+**[Founder's Letter](/canonical/founders-letter)** — Why SIL was built, the vision, and what we're inviting you to help build
 
 ### For the Personal Vision
-**[Founder Background](../meta/FOUNDER_BACKGROUND.md)** — Working systems, production metrics, and track record
-**[Influences & Acknowledgments](../meta/INFLUENCES_AND_ACKNOWLEDGMENTS.md)** — The thinkers and traditions that shaped SIL
+**[Founder Background](/meta/founder-background)** — Working systems, production metrics, and track record
+**[Influences & Acknowledgments](/meta/influences-and-acknowledgments)** — The thinkers and traditions that shaped SIL
 
 ### For the Philosophy
-**[Manifesto](SIL_MANIFESTO.md)** — The philosophical foundation
-**[Principles](SIL_PRINCIPLES.md)** — 14 foundational constraints that define SIL
+**[Manifesto](/canonical/manifesto)** — The philosophical foundation
+**[Principles](/canonical/principles)** — 14 foundational constraints that define SIL
 
 ### For the Technical Depth
-**[Technical Charter](SIL_TECHNICAL_CHARTER.md)** — Formal specification with invariants and guarantees
-**[Semantic OS Architecture](../architecture/UNIFIED_ARCHITECTURE_GUIDE.md)** — 7-layer architecture from memory to interfaces
+**[Technical Charter](/canonical/technical-charter)** — Formal specification with invariants and guarantees
+**[Semantic OS Architecture](/canonical/semantic-os-architecture)** — 7-layer architecture from memory to interfaces
 
 ### For the Tools
-**[Reveal](../tools/REVEAL.md)** — Code structure navigation
-**[Agent Help Standard](../research/AGENT_HELP_STANDARD.md)** — Strategic guidance for agents
+**[Reveal](/tools/reveal)** — Code structure navigation
+**[Agent Help Standard](/research/agent-help-standard)** — Strategic guidance for agents
 **[GenesisGraph](https://github.com/Semantic-Infrastructure-Lab/genesisgraph)** — Verifiable provenance
-**[Morphogen](../innovations/MORPHOGEN.md)** — Unified computational substrate
+**[Morphogen](/innovations/morphogen)** — Unified computational substrate
 
 ### For Collaborators
-**[FAQ](../meta/FAQ.md)** — Common questions answered
+**[FAQ](/meta/faq)** — Common questions answered
 **[GitHub](https://github.com/Semantic-Infrastructure-Lab)** — How to join us
 
 ## The Bell Labs of AI
