@@ -1,0 +1,493 @@
+# ==================================================
+# SIL Documentation Content Manifest
+# ==================================================
+#
+# PURPOSE: Glass-box transparency for documentation visibility
+#
+# PRINCIPLES:
+#   • Explicit over implicit: Every file categorized as public or internal
+#   • Rationale required: Document WHY each decision was made
+#   • Flat structure: Simple, easy to parse, hard to break
+#   • Version controlled: This file is public, demonstrating transparency
+#
+# USAGE:
+#   ./scripts/sync-docs.py              # Sync only visibility: public files
+#   ./scripts/sync-docs.py --validate   # Check for internal files in website
+#   ./scripts/sync-docs.py --clean      # Remove internal files from website
+#
+# LAST UPDATED: 2025-12-16
+# LAST AUDIT: chrome-hue-1216 (comprehensive 67-file audit)
+# MAINTAINER: Scott (SIL Founder)
+# SESSION: bronze-spark-1216
+#
+# ==================================================
+
+# ==================================================
+# FILES - All 67 documentation files
+# ==================================================
+
+files:
+  # ============================================================
+  # PUBLIC FILES - Synced to website (50 files)
+  # ============================================================
+
+  # Entry Points & Guides
+  - path: docs/START_HERE.md
+    visibility: public
+    purpose: Primary entry point for new visitors
+    note: Missing from website (molten-arc-1216), must be included in sync
+
+  - path: docs/README.md
+    visibility: public
+    purpose: Documentation index and navigation
+
+  - path: docs/QUICKSTART.md
+    visibility: public
+    purpose: Quick introduction to getting started with SIL tools
+
+  - path: docs/READING_GUIDE.md
+    visibility: public
+    purpose: Guide to navigating SIL documentation
+
+  - path: docs/BETH_FRONT_MATTER_GUIDE.md
+    visibility: public
+    purpose: Guide to using Beth frontmatter for semantic indexing
+
+  # Foundations (8 files)
+  - path: docs/foundations/README.md
+    visibility: public
+    purpose: Foundation documentation index
+
+  - path: docs/foundations/SIL_TECHNICAL_CHARTER.md
+    visibility: public
+    purpose: Technical charter defining SIL's scope and commitments
+    lines: 450
+
+  - path: docs/foundations/SIL_GLOSSARY.md
+    visibility: public
+    purpose: Canonical definitions of 108 SIL terms
+    lines: 892
+
+  - path: docs/foundations/SIL_SEMANTIC_OS_ARCHITECTURE.md
+    visibility: public
+    purpose: Semantic Operating System architecture
+
+  - path: docs/foundations/semantic-os-architecture.md
+    visibility: public
+    purpose: Semantic OS architecture (alternate version)
+
+  - path: docs/foundations/FOUNDERS_LETTER.md
+    visibility: public
+    purpose: Letter from founder explaining SIL's mission
+    tone: calibrated
+    last_reviewed: 2025-12-16
+
+  - path: docs/foundations/design-principles.md
+    visibility: public
+    purpose: Design principles guiding SIL systems
+    lines: 729
+
+  - path: docs/foundations/architectural-principles.md
+    visibility: public
+    purpose: Architectural principles for system design
+    lines: 312
+
+  # Manifesto (2 files)
+  - path: docs/manifesto/README.md
+    visibility: public
+    purpose: Manifesto index and introduction
+    tone: calibrated
+    last_reviewed: 2025-12-16
+
+  - path: docs/manifesto/YOLO.md
+    visibility: public
+    purpose: "You Only Live Once - Life is short, build things that matter"
+    tone: calibrated
+    last_reviewed: 2025-12-16
+
+  # Systems Documentation (9 files)
+  - path: docs/systems/README.md
+    visibility: public
+    purpose: Systems documentation index
+
+  - path: docs/systems/tia.md
+    visibility: public
+    purpose: TIA (The Intelligent Agent) documentation
+
+  - path: docs/systems/beth.md
+    visibility: public
+    purpose: Beth semantic search documentation
+
+  - path: docs/systems/reveal.md
+    visibility: public
+    purpose: Reveal universal resource explorer documentation
+
+  - path: docs/systems/genesisgraph.md
+    visibility: public
+    purpose: GenesisGraph semantic database documentation
+
+  - path: docs/systems/morphogen.md
+    visibility: public
+    purpose: Morphogen documentation
+
+  - path: docs/systems/pantheon.md
+    visibility: public
+    purpose: Pantheon unified semantic IR documentation
+
+  - path: docs/systems/tiacad.md
+    visibility: public
+    purpose: TiaCAD documentation
+
+  - path: docs/systems/agent-ether.md
+    visibility: public
+    purpose: Agent Ether multi-agent protocol documentation
+
+  # Research Papers (16 files)
+  - path: docs/research/README.md
+    visibility: public
+    purpose: Research documentation index
+
+  - path: docs/research/ANALOGY_DISCOVERY_IN_SEMANTIC_SPACE.md
+    visibility: public
+    purpose: Research on analogy discovery mechanisms
+    lines: 1247
+    tone: calibrated
+    last_reviewed: 2025-12-16
+    note: "Removed 'revolutionary' language, changed to 'significant advance' (chrome-hue-1216)"
+
+  - path: docs/research/AGENT_HELP_STANDARD.md
+    visibility: public
+    purpose: Standard for agent help systems
+
+  - path: docs/research/AI_DOCUMENTATION_STANDARDS.md
+    visibility: public
+    purpose: Standards for AI-readable documentation
+
+  - path: docs/research/IDENTITY_MAPPING.md
+    visibility: public
+    purpose: Research on identity mapping in semantic systems
+
+  - path: docs/research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md
+    visibility: public
+    purpose: Research on RAG systems as semantic transport
+
+  - path: docs/research/agent-infrastructure/HIERARCHICAL_AGENCY_FRAMEWORK.md
+    visibility: public
+    purpose: Framework for hierarchical agent systems
+
+  - path: docs/research/agent-infrastructure/MULTI_AGENT_PROTOCOL_PRINCIPLES.md
+    visibility: public
+    purpose: Principles for multi-agent protocols
+
+  - path: docs/research/agent-infrastructure/SEMANTIC_OBSERVABILITY.md
+    visibility: public
+    purpose: Research on observability in semantic systems
+
+  - path: docs/research/information-architecture/PROGRESSIVE_DISCLOSURE_GUIDE.md
+    visibility: public
+    purpose: Guide to progressive disclosure patterns
+
+  - path: docs/research/information-architecture/progressive-disclosure-system.md
+    visibility: public
+    purpose: Progressive disclosure system documentation
+
+  - path: docs/research/information-architecture/REVEAL_BETH_PROGRESSIVE_KNOWLEDGE_SYSTEM.md
+    visibility: public
+    purpose: Research on Reveal+Beth progressive knowledge architecture
+
+  - path: docs/research/information-architecture/SEMANTIC_FEEDBACK_LOOPS.md
+    visibility: public
+    purpose: Research on semantic feedback mechanisms
+
+  - path: docs/research/standards/AUTHORIZATION_PROTOCOL.md
+    visibility: public
+    purpose: Authorization protocol standard
+
+  - path: docs/research/standards/TRUST_ASSERTION_PROTOCOL.md
+    visibility: public
+    purpose: Trust assertion protocol standard
+
+  # Meta Documentation - Public Subset (4 files)
+  - path: docs/meta/FAQ.md
+    visibility: public
+    purpose: Frequently asked questions about SIL
+    lines: 245
+
+  - path: docs/meta/INFLUENCES_AND_ACKNOWLEDGMENTS.md
+    visibility: public
+    purpose: Acknowledge intellectual lineage (Turing, Shannon, Engelbart, etc.)
+    lines: 387
+    tone: calibrated
+    last_reviewed: 2025-12-16
+    note: "Softened 'continues Turing's unfinished research' to 'builds on Turing's research' (chrome-hue-1216)"
+
+  - path: docs/meta/SIL_STEWARDSHIP_MANIFESTO.md
+    visibility: public
+    purpose: Stewardship principles and long-term commitments
+    tone: calibrated
+    last_reviewed: 2025-12-16
+
+  - path: docs/meta/FOUNDER_BACKGROUND.md
+    visibility: public
+    purpose: Scott's background and qualifications
+    rationale: Transparency about who runs SIL
+
+  # Essays (1 file)
+  - path: docs/essays/PROGRESSIVE_DISCLOSURE_FOR_AI_AGENTS.md
+    visibility: public
+    purpose: Essay on progressive disclosure for AI agents
+
+  # Articles (2 files)
+  - path: docs/articles/README.md
+    visibility: public
+    purpose: Articles index
+
+  - path: docs/articles/reveal-introduction.md
+    visibility: public
+    purpose: Introduction to Reveal tool
+
+  # Vision (1 file)
+  - path: docs/vision/ALIGNMENT_THESIS.md
+    visibility: public
+    purpose: SIL's alignment thesis
+
+  # Architecture (10 files - currently synced, under review)
+  - path: docs/architecture/README.md
+    visibility: public
+    purpose: Architecture documentation index
+    under_review: true
+    note: May contain internal implementation details
+
+  - path: docs/architecture/ARCHITECTURE_CHEAT_SHEET.md
+    visibility: public
+    purpose: Quick reference for architecture concepts
+    under_review: true
+
+  - path: docs/architecture/DISTRIBUTED_STORAGE_ARCHITECTURE.md
+    visibility: public
+    purpose: Distributed storage architecture
+    under_review: true
+    note: May contain internal implementation details
+
+  - path: docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md
+    visibility: public
+    purpose: Unified architecture guide
+
+  - path: docs/architecture/models/README.md
+    visibility: public
+    purpose: Architecture models index
+    under_review: true
+
+  - path: docs/architecture/models/INVARIANTS_OVER_LAYERS.md
+    visibility: public
+    purpose: Layer invariants research
+
+  - path: docs/architecture/models/LAYER_MODELS_COMPARISON.md
+    visibility: public
+    purpose: Comparison of layer models
+
+  - path: docs/architecture/models/MODEL_EVALUATION.md
+    visibility: public
+    purpose: Model evaluation criteria
+
+  - path: docs/architecture/models/PROVENANCE_FIRST.md
+    visibility: public
+    purpose: Provenance-first design principle
+
+  - path: docs/architecture/models/SYNTHESIS_MAP.md
+    visibility: public
+    purpose: Conceptual synthesis map
+
+  # ============================================================
+  # INTERNAL FILES - Never synced to website (17 files)
+  # ============================================================
+
+  # Internal Meta Documentation (6 files)
+  - path: docs/meta/DEDICATION.md
+    visibility: internal
+    flagged_for_removal: true
+    purpose: Original Turing dedication
+    reason: "Grandiose tone: 'This lab exists in recognition of that loss', 'SIL ❤️ Alan'"
+    lines: 156
+    decision_date: 2025-12-16
+    decision_session: chrome-hue-1216
+    recommendation: Remove entirely - acknowledgment is in INFLUENCES_AND_ACKNOWLEDGMENTS.md with appropriate humility
+
+  - path: docs/meta/MARKDOWN_STYLE_GUIDE.md
+    visibility: internal
+    purpose: Internal writing standards and markdown conventions
+    reason: Process documentation for contributors, not public content
+    lines: 342
+
+  - path: docs/meta/SIL_TOOL_QUALITY_MONITORING.md
+    visibility: internal
+    purpose: TIA operational procedures and quality thresholds
+    reason: Internal operational documentation (618 lines), could expose internal tooling details
+    lines: 618
+
+  - path: docs/meta/FOUNDERS_NOTE_MULTISHOT_AGENT_LEARNING.md
+    visibility: internal
+    purpose: Internal design notes on multi-shot agent learning
+    reason: Work-in-progress thinking, not polished for publication
+    may_become_public: true
+
+  - path: docs/meta/SIL_RESEARCH_AGENDA_YEAR1.md
+    visibility: internal
+    purpose: Internal research planning for year 1
+    reason: Strategy document with prioritization and resource allocation
+    lines: 412
+
+  - path: docs/meta/SIL_SAFETY_THRESHOLDS.md
+    visibility: internal
+    purpose: Internal operational safety standards
+    reason: Process standards for TIA operations, operational limits, risk thresholds
+
+  # Internal Operations Documentation (2 files)
+  - path: docs/operations/WEBSITE_DEPLOYMENT_AUDIT.md
+    visibility: internal
+    purpose: Audit trail of website deployment issues and fixes
+    reason: Internal operations documentation
+
+  - path: docs/operations/WEBSITE_DEPLOYMENT_GUIDE.md
+    visibility: internal
+    purpose: Internal guide for website deployment procedures
+    reason: Contains internal-only infrastructure details
+    may_become_public: true
+    note: May publish after review if useful for external contributors
+
+  # Internal Status & Planning (5 files)
+  - path: docs/GOVERNANCE_TO_IMPLEMENTATION.md
+    visibility: internal
+    purpose: Internal notes on governance implementation
+    reason: Work-in-progress planning document
+    may_become_public: true
+
+  - path: docs/IMPLEMENTATION_STATUS.md
+    visibility: internal
+    purpose: Current implementation status tracking
+    reason: Internal status tracking, constantly changing, would be stale
+
+  - path: docs/LAYER3_AGENT_ETHER_SPECIFICATION_GAPS.md
+    visibility: internal
+    purpose: Identified gaps in Agent Ether specification
+    reason: Work-in-progress analysis, will inform future updates to public docs
+    may_become_public: true
+    note: Findings will be integrated into public agent-ether.md
+
+  - path: docs/LAYER3_SUBLAYER_ARCHITECTURE.md
+    visibility: internal
+    purpose: Layer 3 sublayer architecture notes
+    reason: Work-in-progress architectural thinking
+    may_become_public: true
+
+  - path: docs/README_SOURCE_OF_TRUTH.md
+    visibility: internal
+    purpose: Internal documentation about source of truth for various docs
+    reason: Meta-documentation explaining internal sync and versioning
+
+# ==================================================
+# METADATA
+# ==================================================
+
+stats:
+  total_files: 70
+  public_files: 57
+  internal_files: 13
+  flagged_for_removal: 1
+  under_review: 10
+
+last_audit:
+  date: 2025-12-16
+  session: chrome-hue-1216
+  auditor: TIA
+  findings: "Discovered 10 internal docs being synced to public website. Created this manifest to make visibility policy explicit."
+
+next_audit:
+  date: 2025-01-16
+  frequency: monthly
+
+tone_calibration:
+  last_review: 2025-12-16
+  sessions: [vuritixe-1216, chrome-hue-1216]
+  files_reviewed: 67
+  issues_found: 3
+  issues_fixed: 3
+
+# ==================================================
+# KEY DECISIONS
+# ==================================================
+
+decisions:
+  - date: 2025-12-16
+    session: chrome-hue-1216
+    decision: Do not sync DEDICATION.md to public website
+    reason: "Contains 'SIL ❤️ Alan' and 'this lab exists in recognition of that loss' language that contradicts tone calibration work"
+    alternatives: [Rewrite with humble tone, Remove entirely, Move to INFLUENCES_AND_ACKNOWLEDGMENTS.md]
+    chosen: Keep internal until removal decision made
+    recommendation: Remove entirely
+
+  - date: 2025-12-16
+    session: chrome-hue-1216
+    decision: Keep operational docs internal
+    reason: "MARKDOWN_STYLE_GUIDE, SIL_TOOL_QUALITY_MONITORING are process documentation, not public content"
+    impact: Prevents operational details from cluttering public documentation
+
+  - date: 2025-12-16
+    session: bronze-spark-1216
+    decision: Use CONTENT_MANIFEST.yaml not .content-manifest.yaml
+    reason: Glass-box transparency - visible over hidden, no dotfiles
+    philosophy: SIL doesn't hide decisions in dotfiles
+
+  - date: 2025-12-16
+    session: bronze-spark-1216
+    decision: Use flat YAML structure instead of nested
+    reason: Simpler to write, parse, and validate. Fewer YAML syntax errors.
+    impact: 2 levels max instead of 4+ levels of nesting
+
+# ==================================================
+# SYNC CONFIGURATION
+# ==================================================
+
+sync:
+  policy: allowlist
+  description: Only files with visibility public are synced to website
+  script: scripts/sync-docs.py
+
+  source: /home/scottsen/src/projects/SIL/docs/
+  target: /home/scottsen/src/projects/sil-website/docs/
+  website: https://semanticinfrastructurelab.org
+
+validation:
+  pre_sync:
+    - Verify all public files exist at source
+    - Check for broken links in public content
+    - Validate no files flagged_for_removal are synced
+
+  post_sync:
+    - Verify all public files copied to website
+    - Validate no internal files in website repo
+    - Check no visibility internal files accessible via web
+
+  continuous:
+    - Check on every sync for internal files in website
+    - Check on commit that new files have visibility assigned
+    - Check weekly that manifest matches filesystem reality
+
+# ==================================================
+# NOTES
+# ==================================================
+
+notes:
+  philosophy: |
+    This manifest embodies glass-box transparency. We explicitly document
+    what's internal vs public with rationale. The manifest itself is public,
+    demonstrating commitment to transparent operations.
+
+  maintenance: |
+    When adding new files to docs/, update this manifest with visibility
+    and rationale. Default to internal until reviewed for publication.
+
+  flat_structure: |
+    This manifest uses a flat structure (2 levels max) to avoid YAML
+    complexity. All file metadata is in flat fields, not nested objects.
+    This makes it easier to write, read, parse, and validate.
