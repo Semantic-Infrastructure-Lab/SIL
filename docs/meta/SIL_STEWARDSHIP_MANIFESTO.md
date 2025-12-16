@@ -524,4 +524,4 @@ We are building infrastructure that will outlive us. **It must be built on princ
 **Related Documents:**
 - SIL_MANIFESTO.md - Founding vision
 - SIL_PRINCIPLES.md - Core operating principles
-- ./ACKNOWLEDGMENTS.md - Intellectual foundations
+- ./INFLUENCES_AND_ACKNOWLEDGMENTS.md - Intellectual foundations and lineage
