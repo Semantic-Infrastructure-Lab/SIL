@@ -87,44 +87,101 @@
 
 ## Content Update Workflow
 
-### Scenario 1: Update SIL Documentation
+### ⚠️ IMPORTANT: Content Manifest System
 
-**Example**: Fix founder bio, update manifesto, add research paper
+**As of 2025-12-16**, all documentation is controlled by **CONTENT_MANIFEST.yaml**.
+
+- **Public docs** (`visibility: public`) are synced to website automatically
+- **Internal docs** (`visibility: internal`) are NOT synced, kept in SIL repo only
+- See **CONTENT_MANIFEST_GUIDE.md** for full details
+
+### Scenario 1: Update Existing Public Documentation
+
+**Example**: Fix founder bio, update manifesto, add to research paper
 
 ```bash
-# 1. Edit source files
+# 1. Edit source files in SIL repo
 cd /home/scottsen/src/projects/SIL
 vim docs/meta/FOUNDER_BACKGROUND.md
 
-# 2. Verify changes
-git diff docs/
+# 2. Verify it's marked public in manifest
+grep -A3 "FOUNDER_BACKGROUND.md" docs/CONTENT_MANIFEST.yaml
+# Should show: visibility: public
 
 # 3. Commit to source repo
 git add docs/meta/FOUNDER_BACKGROUND.md
-git commit -m "fix: Correct founder bio facts (Cal Poly SLO, Microsoft 1997-2010)"
+git commit -m "fix: Correct founder bio facts"
 git push
 
-# 4. Sync to SIL website
+# 4. Sync to SIL website (manifest-aware)
 cd /home/scottsen/src/projects/sil-website
-./scripts/sync-docs.sh
+./scripts/sync-docs.py
+# Or use backward-compatible wrapper: ./scripts/sync-docs.sh
 
-# 5. Regenerate llms-full.txt (includes all docs)
-./scripts/generate-llms-full.sh
-
-# 6. Review generated changes
+# 5. Verify sync worked
 git status
-git diff static/llms-full.txt  # Should show your edits incorporated
+git diff docs/meta/FOUNDER_BACKGROUND.md
 
-# 7. Commit website changes
-git add docs/ static/llms-full.txt
-git commit -m "sync: Update founder bio from SIL repo"
+# 6. Commit website changes
+git add docs/
+git commit -m "docs: Sync founder bio updates from SIL repo"
 git push
 
-# 8. Deploy (see Deployment Workflow section)
-./deploy/deploy-container.sh staging --fresh
+# 7. Deploy (see Deployment Workflow section)
+./deploy/deploy-container.sh staging
 ```
 
-**Time**: ~15 minutes (edit to deployed)
+**Time**: ~10 minutes (edit to deployed)
+
+### Scenario 1b: Add New Documentation File
+
+**Example**: Write new research paper
+
+```bash
+# 1. Create file in SIL repo
+cd /home/scottsen/src/projects/SIL
+vim docs/research/NEW_PAPER.md
+
+# 2. Add to CONTENT_MANIFEST.yaml
+vim docs/CONTENT_MANIFEST.yaml
+```
+
+Add entry:
+```yaml
+  - path: docs/research/NEW_PAPER.md
+    visibility: internal  # Start internal, promote after review
+    purpose: Research on [topic]
+    decision_date: 2025-12-XX
+    recommendation: Review for publication after peer feedback
+```
+
+Update stats:
+```yaml
+stats:
+  total_files: 71  # Increment
+  internal_files: 14  # Increment
+```
+
+```bash
+# 3. Commit both files
+git add docs/research/NEW_PAPER.md docs/CONTENT_MANIFEST.yaml
+git commit -m "docs: Add new research paper (internal for review)"
+
+# 4. When ready to publish, change visibility to public
+vim docs/CONTENT_MANIFEST.yaml
+# Change: visibility: public
+
+# 5. Update stats and commit
+git commit -am "docs: Make NEW_PAPER public after review"
+
+# 6. Sync to website
+cd /home/scottsen/src/projects/sil-website
+./scripts/sync-docs.py
+git add docs/research/NEW_PAPER.md
+git commit -m "docs: Add NEW_PAPER (approved for publication)"
+```
+
+**See**: CONTENT_MANIFEST_GUIDE.md for detailed workflow
 
 ---
 

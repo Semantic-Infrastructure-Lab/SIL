@@ -487,7 +487,19 @@ notes:
     When adding new files to docs/, update this manifest with visibility
     and rationale. Default to internal until reviewed for publication.
 
+    See docs/operations/CONTENT_MANIFEST_GUIDE.md for complete workflows.
+
   flat_structure: |
     This manifest uses a flat structure (2 levels max) to avoid YAML
     complexity. All file metadata is in flat fields, not nested objects.
     This makes it easier to write, read, parse, and validate.
+
+  documentation: |
+    Complete documentation for this system:
+
+    - CONTENT_MANIFEST_GUIDE.md (full guide, 600+ lines)
+    - CONTENT_MANIFEST_QUICK_REF.md (one-page cheat sheet)
+    - WEBSITE_DEPLOYMENT_GUIDE.md (deployment workflows)
+    - README_SYNCED_CONTENT.md (website repo sync docs)
+
+    All in docs/operations/ directory.
