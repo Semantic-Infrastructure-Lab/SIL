@@ -172,7 +172,7 @@ Instead of asking "what layer does X go in?", ask "what invariants must always h
 | Invariant | What It Prevents | How It's Enforced | Status |
 |-----------|------------------|-------------------|--------|
 | **Everything has lineage** | Epistemic collapse | GenesisGraph - cryptographic provenance | **Production** (v0.3.0) |
-| **Reasoning is inspectable** | Black box dictatorship | Reveal - progressive disclosure | **Production** (v0.23.1) |
+| **Reasoning is inspectable** | Black box dictatorship | Reveal - progressive disclosure | **Production** (v0.24.0) |
 | **Computation is grounded** | Hallucinated science | Morphogen - semantic correctness | **Prototype** (v0.12.0) |
 | **Contracts are explicit** | Brittle complexity | Agent Ether - typed assumptions | **Design** (spec only) |
 | **Efficiency is sustainable** | Compute as privilege | Reveal + Beth - 100x reduction | **Production** |

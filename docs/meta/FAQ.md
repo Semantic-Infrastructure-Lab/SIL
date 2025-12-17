@@ -42,7 +42,7 @@ We're not building another LLM or agent framework. We're building the **semantic
 
 **Yes - 4 projects are in production:**
 
-1. **[reveal](https://pypi.org/project/reveal-cli/)** (v0.23.1 on PyPI) - Code exploration, 86% token reduction
+1. **[reveal](https://pypi.org/project/reveal-cli/)** (v0.24.0 on PyPI) - Code exploration, 86% token reduction
 2. **morphogen** - Cross-domain computation (audio + physics + circuits)
 3. **tiacad** - Declarative parametric CAD in YAML
 4. **genesisgraph** (v0.3.0) - Verifiable process provenance
@@ -125,7 +125,7 @@ reveal your_code.py
 **It depends on what you're asking about:**
 
 **Production-Ready (Mature):**
-- reveal (v0.23.1) - In production, PyPI published
+- reveal (v0.24.0) - In production, PyPI published
 - morphogen (v0.11) - Used daily in cross-domain workflows
 - tiacad (v3.1.2) - Declarative CAD, stable API
 - genesisgraph (v0.3.0) - Provenance tracking

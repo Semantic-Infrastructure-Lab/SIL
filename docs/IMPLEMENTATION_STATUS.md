@@ -76,7 +76,7 @@ projects/pantheon/pantheon-core/pantheon/
 
 ### Reveal v0.19.0 ✅
 **Status:** Production on PyPI
-**Metrics:** ~2,000 downloads/month
+**Metrics:** 3K+ downloads/month
 **Evidence:** https://pypi.org/project/reveal-cli/
 **Innovation:** 86% token reduction (structure before content)
 **Location:** https://github.com/scottsen/reveal
