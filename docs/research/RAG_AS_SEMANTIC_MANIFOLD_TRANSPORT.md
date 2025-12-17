@@ -26,7 +26,7 @@ This framework provides rigorous foundations for designing RAG systems that mini
 
 **Keywords:** semantic manifolds, retrieval-augmented generation, meaning transport, geometric distortion, semantic memory, USIR
 
-> 💡 **New to SIL terminology?** Keep the [Glossary](../canonical/SIL_GLOSSARY.md) open in another tab.
+> 💡 **New to SIL terminology?** Keep the [Glossary](/foundations/SIL_GLOSSARY) open in another tab.
 
 ---
 

@@ -1474,10 +1474,10 @@ def retrieve_document(cid):
 ## References
 
 ### SIL Architecture Documents
-- [SIL Semantic OS Architecture](../canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md) - 6-layer architecture
-- [GenesisGraph Innovation](../innovations/GENESISGRAPH.md) - Provenance with selective disclosure
-- [Trust Assertion Protocol](../canonical/TRUST_ASSERTION_PROTOCOL.md) - Typed trust claims
-- [SIL Core Principles](../../lab/architecture/SIL_CORE_PRINCIPLES.md) - Progressive disclosure, composability
+- [SIL Semantic OS Architecture](/foundations/SIL_SEMANTIC_OS_ARCHITECTURE) - 6-layer architecture
+- [GenesisGraph Innovation](/systems/GENESISGRAPH) - Provenance with selective disclosure
+- [Trust Assertion Protocol](/foundations/TRUST_ASSERTION_PROTOCOL) - Typed trust claims
+- [SIL Core Principles](../../lab/architecture/SIL_CORE_PRINCIPLES) - Progressive disclosure, composability
 
 ### External Resources
 - [IPFS Documentation](https://docs.ipfs.tech/) - InterPlanetary File System

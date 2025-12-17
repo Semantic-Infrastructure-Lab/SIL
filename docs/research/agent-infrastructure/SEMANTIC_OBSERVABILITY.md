@@ -1029,7 +1029,7 @@ class AdaptiveFitnessLearner:
 
 ## Integration with Semantic OS Architecture
 
-**Observability as a cross-cutting concern** (see [SIL_GLOSSARY.md](./SIL_GLOSSARY.md) for canonical definitions):
+**Observability as a cross-cutting concern** (see [SIL_GLOSSARY.md](/foundations/SIL_GLOSSARY) for canonical definitions):
 
 ```
 Layer 6: Intelligence    (Agent Ether, BrowserBridge)
@@ -1050,7 +1050,7 @@ Cross-cutting concerns (not layers):
 
 - **Applies to all layers:** You can inspect L0 hardware, L3 composition, or L6 agents
 - **Implemented by Reveal:** Universal inspection via progressive disclosure
-- **Feeds into Layer 5:** Observability data drives intent-execution alignment (see [SEMANTIC_FEEDBACK_LOOPS.md](./SEMANTIC_FEEDBACK_LOOPS.md))
+- **Feeds into Layer 5:** Observability data drives intent-execution alignment (see [SEMANTIC_FEEDBACK_LOOPS.md](./SEMANTIC_FEEDBACK_LOOPS))
 - **No "Layer 4.5" needed:** Cross-cutting concerns span the stack, they don't sit between layers
 
 ---
@@ -1091,10 +1091,10 @@ Cross-cutting concerns (not layers):
 ## References & Further Reading
 
 **Related SIL Documents:**
-- [SIL Glossary](./SIL_GLOSSARY.md) — Canonical layer definitions (L0-L6), Meta-Layer: Observability
-- [Semantic Feedback Loops](./SEMANTIC_FEEDBACK_LOOPS.md) — Theoretical foundation for closed-loop control
-- [Semantic OS Architecture](./SIL_SEMANTIC_OS_ARCHITECTURE.md) — Layer structure and system design
-- [Multi-Agent Protocol Principles](./MULTI_AGENT_PROTOCOL_PRINCIPLES.md) — Agent coordination patterns
+- [SIL Glossary](/foundations/SIL_GLOSSARY) — Canonical layer definitions (L0-L6), Meta-Layer: Observability
+- [Semantic Feedback Loops](./SEMANTIC_FEEDBACK_LOOPS) — Theoretical foundation for closed-loop control
+- [Semantic OS Architecture](/foundations/SIL_SEMANTIC_OS_ARCHITECTURE) — Layer structure and system design
+- [Multi-Agent Protocol Principles](/research/MULTI_AGENT_PROTOCOL_PRINCIPLES) — Agent coordination patterns
 
 **Case Studies:**
 - Session badero-1204 - Meta-feedback loop demonstrating observability principles
@@ -1118,4 +1118,4 @@ Cross-cutting concerns (not layers):
 
 ---
 
-*This document is part of the Semantic Infrastructure Lab (SIL) canonical documentation set. For questions or contributions, see [SIL contribution guidelines](../README.md).*
+*This document is part of the Semantic Infrastructure Lab (SIL) canonical documentation set. For questions or contributions, see [SIL contribution guidelines](/README).*

@@ -373,7 +373,7 @@ The Semantic Infrastructure Lab is implementing `--agent-help` in Reveal as the 
 3. **Environmental impact** - Lower energy consumption through efficiency
 4. **Practical utility** - Tools that work, not just theory
 
-**See Reveal:** [Tools →](../tools/REVEAL.md)
+**See Reveal:** [Tools →](/systems/REVEAL)
 
 ---
 

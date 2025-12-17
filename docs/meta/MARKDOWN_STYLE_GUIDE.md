@@ -111,7 +111,7 @@ Style tips:
 
 ```markdown
 # Internal links (relative paths)
-[See Principles](./SIL_PRINCIPLES.md)
+[See Principles](/meta/SIL_PRINCIPLES)
 
 # External links (full URLs)
 [Reveal on PyPI](https://pypi.org/project/reveal-cli/)

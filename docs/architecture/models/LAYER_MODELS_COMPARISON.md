@@ -323,7 +323,7 @@ To decide on a canonical model, evaluate against:
 4. **Extension path** - Can new projects find their place?
 5. **Implementation guidance** - Does it help developers?
 
-See [MODEL_EVALUATION.md](MODEL_EVALUATION.md) for detailed analysis.
+See [MODEL_EVALUATION.md](MODEL_EVALUATION) for detailed analysis.
 
 ---
 

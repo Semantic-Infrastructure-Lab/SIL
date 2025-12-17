@@ -634,7 +634,7 @@ Best sessions:
 
 ### 4. Feedback as First-Class Infrastructure
 
-**Semantic OS layer architecture** (see [SIL_GLOSSARY.md](./SIL_GLOSSARY.md) for canonical definitions):
+**Semantic OS layer architecture** (see [SIL_GLOSSARY.md](/foundations/SIL_GLOSSARY) for canonical definitions):
 ```
 Layer 6: Intelligence    (Agent Ether, BrowserBridge)
 Layer 5: Intent          (Pantheon validation, FEEDBACK LOOPS)  ← This document
@@ -661,7 +661,7 @@ Cross-cutting: Observability (Reveal), Provenance (GenesisGraph), Trust (TAP)
 
 **Why feedback is infrastructure:** Every layer benefits from feedback. Making it a first-class primitive means:
 - Reusable feedback patterns across all SIL projects
-- Consistent fitness functions (see [SEMANTIC_OBSERVABILITY.md](./SEMANTIC_OBSERVABILITY.md))
+- Consistent fitness functions (see [SEMANTIC_OBSERVABILITY.md](/research/SEMANTIC_OBSERVABILITY))
 - Shared reflection tooling (tia session read, beth explore)
 - Systematic improvement methodology
 
@@ -848,10 +848,10 @@ Semantic infrastructure where feedback loops are first-class primitives, fitness
 ## References & Further Reading
 
 **Within SIL:**
-- [SIL Glossary](./SIL_GLOSSARY.md) — Canonical layer definitions (L0-L6)
-- [Semantic Observability](./SEMANTIC_OBSERVABILITY.md) — Fitness functions and intent-execution alignment
-- [Semantic OS Architecture](./SIL_SEMANTIC_OS_ARCHITECTURE.md) — Full architecture with layer details
-- [Multi-Agent Protocol Principles](./MULTI_AGENT_PROTOCOL_PRINCIPLES.md) — Agent coordination patterns
+- [SIL Glossary](/foundations/SIL_GLOSSARY) — Canonical layer definitions (L0-L6)
+- [Semantic Observability](/research/SEMANTIC_OBSERVABILITY) — Fitness functions and intent-execution alignment
+- [Semantic OS Architecture](/foundations/SIL_SEMANTIC_OS_ARCHITECTURE) — Full architecture with layer details
+- [Multi-Agent Protocol Principles](/research/MULTI_AGENT_PROTOCOL_PRINCIPLES) — Agent coordination patterns
 
 **Case Studies:**
 - Session mighty-shaman-1204: CLAUDE.md reflection loop (this document's genesis)

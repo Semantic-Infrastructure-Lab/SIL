@@ -852,8 +852,8 @@ if phase == "execution" and agents_created > EXECUTION_PHASE_AGENT_BUDGET:
 **Quality**: Forces explicit planning phase with clear deliverables
 
 **Related SIL Principles**:
-- [SIL Principles](./SIL_PRINCIPLES.md) - Using examples in prompts improves agent planning quality
-- [Progressive Disclosure Guide](./PROGRESSIVE_DISCLOSURE_GUIDE.md) - Planning explores broadly (L1), execution focuses narrowly (L3)
+- [SIL Principles](./SIL_PRINCIPLES) - Using examples in prompts improves agent planning quality
+- [Progressive Disclosure Guide](/research/PROGRESSIVE_DISCLOSURE_GUIDE) - Planning explores broadly (L1), execution focuses narrowly (L3)
 
 ---
 

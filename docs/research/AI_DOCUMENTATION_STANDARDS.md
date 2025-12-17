@@ -160,7 +160,7 @@ Apache 2.0
 
 The `--agent-help` standard provides AI agents with CLI-specific usage patterns, workflows, and optimization techniques. This is distinct from `--help` (syntax reference) and `llms.txt` (project overview).
 
-**Full specification**: [AGENT_HELP_STANDARD.md](./AGENT_HELP_STANDARD.md)
+**Full specification**: [AGENT_HELP_STANDARD.md](./AGENT_HELP_STANDARD)
 
 ### When to Use
 
@@ -191,7 +191,7 @@ Served via CLI flag, version-locked to tool version.
 
 ### Content Structure
 
-See [AGENT_HELP_STANDARD.md](./AGENT_HELP_STANDARD.md) for full format.
+See [AGENT_HELP_STANDARD.md](./AGENT_HELP_STANDARD) for full format.
 
 **Key sections**:
 - Core Purpose (1 sentence)
@@ -461,8 +461,8 @@ While SIL establishes these patterns, we invite the broader community to adopt, 
 
 ## Related Documents
 
-- [AGENT_HELP_STANDARD.md](./AGENT_HELP_STANDARD.md) - Full CLI standard specification
-- [REVEAL.md](../tools/REVEAL.md) - Reference implementation
+- [AGENT_HELP_STANDARD.md](./AGENT_HELP_STANDARD) - Full CLI standard specification
+- [REVEAL.md](/systems/REVEAL) - Reference implementation
 - [llmstxt.org](https://llmstxt.org/) - Original llms.txt specification
 
 ---

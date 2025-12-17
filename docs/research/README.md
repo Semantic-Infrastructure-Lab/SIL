@@ -22,7 +22,7 @@ These papers are **working research documents**—they evolve as we implement, t
 
 ## Current Papers
 
-### [RAG as Semantic Manifold Transport](RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md)
+### [RAG as Semantic Manifold Transport](RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT)
 
 **Authors:** Scott Senkeresty (Chief Architect, Semantic OS), Tia (Chief Semantic Agent)
 **Date:** 2025-11-30

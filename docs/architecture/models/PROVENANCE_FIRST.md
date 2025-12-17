@@ -288,7 +288,7 @@ Score this model against:
 
 **Weighted Total: 4.15** (highest of all 5 models evaluated)
 
-See [MODEL_EVALUATION.md](MODEL_EVALUATION.md) for full comparison and rationale.
+See [MODEL_EVALUATION.md](MODEL_EVALUATION) for full comparison and rationale.
 
 ---
 

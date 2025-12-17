@@ -24,16 +24,16 @@
 
 | Document | Purpose |
 |----------|---------|
-| [LAYER_MODELS_COMPARISON.md](LAYER_MODELS_COMPARISON.md) | Side-by-side comparison of 5 layer models |
-| [MODEL_EVALUATION.md](MODEL_EVALUATION.md) | Scoring criteria, analysis, and recommendation |
-| [PROVENANCE_FIRST.md](PROVENANCE_FIRST.md) | Deep dive on the winning layer model |
+| [LAYER_MODELS_COMPARISON.md](LAYER_MODELS_COMPARISON) | Side-by-side comparison of 5 layer models |
+| [MODEL_EVALUATION.md](MODEL_EVALUATION) | Scoring criteria, analysis, and recommendation |
+| [PROVENANCE_FIRST.md](PROVENANCE_FIRST) | Deep dive on the winning layer model |
 
 ### Synthesis Documents
 
 | Document | Purpose |
 |----------|---------|
-| [INVARIANTS_OVER_LAYERS.md](INVARIANTS_OVER_LAYERS.md) | **NEW** Mission-centric reframe: guarantees over structure |
-| [SYNTHESIS_MAP.md](SYNTHESIS_MAP.md) | **NEW** Meta-doc: which sources contribute which insights |
+| [INVARIANTS_OVER_LAYERS.md](INVARIANTS_OVER_LAYERS) | **NEW** Mission-centric reframe: guarantees over structure |
+| [SYNTHESIS_MAP.md](SYNTHESIS_MAP) | **NEW** Meta-doc: which sources contribute which insights |
 
 ---
 
@@ -123,7 +123,7 @@
 
 ## For Future Sessions
 
-**Start here:** [SYNTHESIS_MAP.md](SYNTHESIS_MAP.md) - Reading paths by goal
+**Start here:** [SYNTHESIS_MAP.md](SYNTHESIS_MAP) - Reading paths by goal
 
 **The Chief Scientist Test** (from INVARIANTS_OVER_LAYERS.md):
 1. Does this maintain traceable lineage?

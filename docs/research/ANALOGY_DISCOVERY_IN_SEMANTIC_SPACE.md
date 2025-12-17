@@ -26,7 +26,7 @@ We connect this work to SIL's broader research on semantic manifold transport (R
 
 **Keywords:** semantic analogies, cross-domain reasoning, manifold transport, vector embeddings, relational structure preservation, computational creativity
 
-> 💡 **New to SIL terminology?** Keep the [Glossary](../canonical/SIL_GLOSSARY.md) open in another tab.
+> 💡 **New to SIL terminology?** Keep the [Glossary](/foundations/SIL_GLOSSARY) open in another tab.
 
 ---
 
@@ -195,7 +195,7 @@ Given a concept `a` in domain D_A, find its analogy `c` in domain D_B:
 
 ### 3.1 RAG as Semantic Manifold Transport
 
-SIL's existing research on [RAG as Semantic Manifold Transport](RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md) identifies four misaligned manifolds:
+SIL's existing research on [RAG as Semantic Manifold Transport](RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT) identifies four misaligned manifolds:
 
 - M_H: Human conceptual space
 - M_E: Embedding space
@@ -211,7 +211,7 @@ The **centroid-based transport** method proposed here is a structured way to min
 
 ### 3.2 Semantic Observability: Analogy as Alignment Detection
 
-SIL's work on [Semantic Observability](../canonical/SEMANTIC_OBSERVABILITY.md) measures alignment between intent and execution.
+SIL's work on [Semantic Observability](/foundations/SEMANTIC_OBSERVABILITY) measures alignment between intent and execution.
 
 **Analogies reveal alignment across domains:**
 
@@ -223,7 +223,7 @@ This can be measured through:
 
 ### 3.3 Hierarchical Agency: Multi-Agent Analogy Search
 
-From the [Hierarchical Agency Framework](../canonical/HIERARCHICAL_AGENCY_FRAMEWORK.md), analogy discovery can be orchestrated across multiple agents:
+From the [Hierarchical Agency Framework](/foundations/HIERARCHICAL_AGENCY_FRAMEWORK), analogy discovery can be orchestrated across multiple agents:
 
 - **Sage:** Explores high-level cross-domain patterns
 - **Beth:** Provides domain concept graphs for neighborhood analysis
@@ -238,7 +238,7 @@ From the [Hierarchical Agency Framework](../canonical/HIERARCHICAL_AGENCY_FRAMEW
 
 ### 3.4 USIR: Encoding Analogies as Operators
 
-The [Universal Semantic IR](../canonical/SIL_TECHNICAL_CHARTER.md#layer-1-usir) provides structured representation.
+The [Universal Semantic IR](/foundations/SIL_TECHNICAL_CHARTER.md#layer-1-usir) provides structured representation.
 
 **Discovered analogies become USIR operators:**
 
@@ -556,11 +556,11 @@ The work ahead is methodical, long-term, and necessary. As semantic systems beco
 ## References
 
 **SIL Internal Research:**
-- [RAG as Semantic Manifold Transport](RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md)
-- [Semantic Observability](../canonical/SEMANTIC_OBSERVABILITY.md)
-- [Hierarchical Agency Framework](../canonical/HIERARCHICAL_AGENCY_FRAMEWORK.md)
-- [SIL Technical Charter](../canonical/SIL_TECHNICAL_CHARTER.md)
-- [SIL Glossary](../canonical/SIL_GLOSSARY.md)
+- [RAG as Semantic Manifold Transport](RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT)
+- [Semantic Observability](/foundations/SEMANTIC_OBSERVABILITY)
+- [Hierarchical Agency Framework](/foundations/HIERARCHICAL_AGENCY_FRAMEWORK)
+- [SIL Technical Charter](/foundations/SIL_TECHNICAL_CHARTER)
+- [SIL Glossary](/foundations/SIL_GLOSSARY)
 
 **External Work** (for formal publication):
 - Gentner, D. (1983). Structure-mapping: A theoretical framework for analogy. *Cognitive Science*.

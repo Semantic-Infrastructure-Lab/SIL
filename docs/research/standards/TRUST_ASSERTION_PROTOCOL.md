@@ -733,10 +733,10 @@ TAP assertions use JSON-LD for semantic interoperability:
 
 ## Related Documentation
 
-- **[GenesisGraph](../innovations/GENESISGRAPH.md)** — Provenance substrate and trust storage
-- **[Agent Ether](../innovations/AGENT_ETHER.md)** — Multi-agent coordination using TAP
-- **[SIL Glossary](./SIL_GLOSSARY.md)** — Term definitions
-- **[Semantic OS Architecture](./SIL_SEMANTIC_OS_ARCHITECTURE.md)** — Layer definitions
+- **[GenesisGraph](/systems/GENESISGRAPH)** — Provenance substrate and trust storage
+- **[Agent Ether](/systems/AGENT_ETHER)** — Multi-agent coordination using TAP
+- **[SIL Glossary](/foundations/SIL_GLOSSARY)** — Term definitions
+- **[Semantic OS Architecture](/foundations/SIL_SEMANTIC_OS_ARCHITECTURE)** — Layer definitions
 
 ---
 

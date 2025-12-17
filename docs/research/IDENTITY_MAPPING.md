@@ -314,9 +314,9 @@ reveal map://contacts/alice@example.com --to slack --format json
 ## 📖 References
 
 **Internal:**
-- [SIL Manifesto](../canonical/SIL_MANIFESTO.md) - Why explicit semantics matter
-- [Unified Architecture Guide](../architecture/UNIFIED_ARCHITECTURE_GUIDE.md) - Layer structure
-- [Pantheon](../innovations/PANTHEON.md) - Universal Semantic IR
+- [SIL Manifesto](/foundations/SIL_MANIFESTO) - Why explicit semantics matter
+- [Unified Architecture Guide](/architecture/UNIFIED_ARCHITECTURE_GUIDE) - Layer structure
+- [Pantheon](/systems/PANTHEON) - Universal Semantic IR
 
 **External:**
 - Berners-Lee, T. "Linked Data" (2006)

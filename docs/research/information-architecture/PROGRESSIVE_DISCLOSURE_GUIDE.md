@@ -6,9 +6,9 @@ Version: 1.0
 Last Updated: 2025-12-04
 
 **Related Documentation:**
-- [Progressive Disclosure Innovation](../innovations/PROGRESSIVE_DISCLOSURE.md) - High-level innovation description with token economics
-- [Reveal](../tools/REVEAL.md) - Production implementation for code exploration
-- [Reveal Introduction Article](../articles/reveal-introduction.md) - Accessible introduction to progressive disclosure in practice
+- [Progressive Disclosure Innovation](/systems/PROGRESSIVE_DISCLOSURE) - High-level innovation description with token economics
+- [Reveal](/systems/REVEAL) - Production implementation for code exploration
+- [Reveal Introduction Article](../articles/reveal-introduction) - Accessible introduction to progressive disclosure in practice
 
 ---
 
@@ -449,7 +449,7 @@ def run_research(topic: str, config_path: str = "scout_config.yaml") -> Research
 2. **Workflow example** - Multi-step showing typical patterns
 3. **Complete example** - Full context with edge cases
 
-See: [SIL Principles](./SIL_PRINCIPLES.md) - Examples as Multi-Shot Reasoning Anchors
+See: [SIL Principles](./SIL_PRINCIPLES) - Examples as Multi-Shot Reasoning Anchors
 
 ---
 
@@ -462,9 +462,9 @@ See: [SIL Principles](./SIL_PRINCIPLES.md) - Examples as Multi-Shot Reasoning An
 Core semantic layer for cognitive architecture
 
 ## Quick Links
-- [Documentation Index](docs/INDEX.md)
-- [Getting Started](docs/GETTING_STARTED.md)
-- [Architecture Overview](docs/ARCHITECTURE.md)
+- [Documentation Index](docs/INDEX)
+- [Getting Started](docs/GETTING_STARTED)
+- [Architecture Overview](docs/ARCHITECTURE)
 ```
 → User learns: What SIL is, where to go next
 → Read time: 30 seconds
@@ -474,15 +474,15 @@ Core semantic layer for cognitive architecture
 # Documentation Index
 
 ## Core Concepts
-- [SIL Core Principles](docs/SIL_CORE_PRINCIPLES.md)
-- [Progressive Disclosure](docs/PROGRESSIVE_DISCLOSURE.md)
+- [SIL Core Principles](docs/SIL_CORE_PRINCIPLES)
+- [Progressive Disclosure](docs/PROGRESSIVE_DISCLOSURE)
 
 ## Guides
-- [Deployment Guide](docs/guides/DEPLOYMENT.md)
-- [Development Setup](docs/guides/SETUP.md)
+- [Deployment Guide](docs/guides/DEPLOYMENT)
+- [Development Setup](docs/guides/SETUP)
 
 ## Reference
-- [API Documentation](docs/reference/API.md)
+- [API Documentation](docs/reference/API)
 ```
 → User learns: Documentation structure, picks relevant guide
 → Read time: 2 minutes
@@ -887,8 +887,8 @@ If yes, add Progressive Disclosure.
 
 ## Related Documentation
 
-- [SIL Principles](./SIL_PRINCIPLES.md) - Full principle hierarchy
-- [SIL Design Principles](./SIL_DESIGN_PRINCIPLES.md) - Detailed design guidance
+- [SIL Principles](./SIL_PRINCIPLES) - Full principle hierarchy
+- [SIL Design Principles](./SIL_DESIGN_PRINCIPLES) - Detailed design guidance
 - reveal: `reveal --agent-help-full` - See Progressive Disclosure in action
 
 ---

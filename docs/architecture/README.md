@@ -8,7 +8,7 @@ This guide explains **how to think architecturally** about semantic systems. It 
 
 ## Essential Reading
 
-### [Unified Architecture Guide](UNIFIED_ARCHITECTURE_GUIDE.md) ⭐⭐⭐ The Rosetta Stone
+### [Unified Architecture Guide](UNIFIED_ARCHITECTURE_GUIDE) ⭐⭐⭐ The Rosetta Stone
 **30-45 minutes** | The canonical framework for understanding all SIL projects
 
 **This is THE most important document.** It:
@@ -39,7 +39,7 @@ This guide explains **how to think architecturally** about semantic systems. It 
 
 ---
 
-### [Distributed Storage Architecture](DISTRIBUTED_STORAGE_ARCHITECTURE.md) ⭐⭐ Infrastructure Design
+### [Distributed Storage Architecture](DISTRIBUTED_STORAGE_ARCHITECTURE) ⭐⭐ Infrastructure Design
 **20-30 minutes** | IPFS integration strategy for semantic memory, identity, and provenance
 
 **Research & Planning** - Explores content-addressed distributed storage for SIL infrastructure.
@@ -64,11 +64,11 @@ This guide explains **how to think architecturally** about semantic systems. It 
 ```
 UNIFIED_ARCHITECTURE_GUIDE.md (The Pattern)
     ↓ Applies
-../canonical/SIL_PRINCIPLES.md (The Principles)
+/foundations/SIL_PRINCIPLES.md (The Principles)
     ↓ Implements
-../canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md (The 6-Layer Stack)
+/foundations/SIL_SEMANTIC_OS_ARCHITECTURE.md (The 6-Layer Stack)
     ↓ Realized in
-../../projects/PROJECT_INDEX.md (Concrete Implementations)
+/projects/PROJECT_INDEX.md (Concrete Implementations)
 ```
 
 **Reading order:**
@@ -88,16 +88,16 @@ UNIFIED_ARCHITECTURE_GUIDE.md (The Pattern)
 - Decision criteria
 - "How to think about semantic systems"
 
-**Canonical documents** (`../canonical/`):
+**Canonical documents** (`/foundations/`):
 - Formal specifications
 - Definitive reference
 - Principles and foundations
 
-**Tools** (`../tools/`):
+**Tools** (`/systems/`):
 - Production implementations
 - See principles in action
 
-**Research papers** (`../research/`):
+**Research papers** (`/research/`):
 - Why things are designed this way
 - Theoretical foundations
 
@@ -140,27 +140,27 @@ UNIFIED_ARCHITECTURE_GUIDE.md (The Pattern)
 After reading this guide:
 
 **To understand the principles:**
-→ Read [SIL Principles](../canonical/SIL_PRINCIPLES.md)
+→ Read [SIL Principles](/foundations/SIL_PRINCIPLES)
 
 **To understand the 6-layer stack:**
-→ Read [Semantic OS Architecture](../canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md)
+→ Read [Semantic OS Architecture](/foundations/SIL_SEMANTIC_OS_ARCHITECTURE)
 
 **To see concrete implementations:**
-→ Read [Project Index](../../projects/PROJECT_INDEX.md)
+→ Read [Project Index](/projects/PROJECT_INDEX)
 
 **To try working tools:**
-→ Try [Reveal](../tools/REVEAL.md)
+→ Try [Reveal](/systems/REVEAL)
 
 **To understand the research:**
-→ Read [Research Papers](../research/)
+→ Read [Research Papers](/research/)
 
 ---
 
 ## Navigation
 
-- **Parent:** [Start Here](../canonical/START_HERE.md)
-- **Related:** [Canonical Documents](../canonical/), [Tools](../tools/)
-- **Projects:** [Project Index](../../projects/PROJECT_INDEX.md)
+- **Parent:** [Start Here](/foundations/START_HERE)
+- **Related:** [Canonical Documents](/foundations/), [Tools](/systems/)
+- **Projects:** [Project Index](/projects/PROJECT_INDEX)
 
 ---
 

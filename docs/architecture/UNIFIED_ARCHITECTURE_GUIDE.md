@@ -21,7 +21,7 @@ This is the **Rosetta Stone** for SIL architecture. It:
 
 **Read this first** before diving into individual project docs.
 
-> 💡 **New to SIL terminology?** Keep the [Glossary](../canonical/SIL_GLOSSARY.md) open in another tab.
+> 💡 **New to SIL terminology?** Keep the [Glossary](/foundations/SIL_GLOSSARY) open in another tab.
 
 ---
 
@@ -40,7 +40,7 @@ This is the **Rosetta Stone** for SIL architecture. It:
 - Implementation guides
 
 ### **Read this AFTER:**
-- `../canonical/SIL_MANIFESTO.md` (optional, 15 min - gives you context on "why")
+- `/foundations/SIL_MANIFESTO.md` (optional, 15 min - gives you context on "why")
 
 ### **Time Required:** 30-45 minutes
 
@@ -49,13 +49,13 @@ This is the **Rosetta Stone** for SIL architecture. It:
 ## 📖 Related Documents Navigation
 
 ### **"I need something simpler first"**
-→ Start with **`../canonical/SIL_MANIFESTO.md`** (15 min) for the high-level vision
+→ Start with **`/foundations/SIL_MANIFESTO.md`** (15 min) for the high-level vision
 
 ### **"I need the formal specification"**
-→ After reading this, go to **`../canonical/SIL_TECHNICAL_CHARTER.md`** (2 hours)
+→ After reading this, go to **`/foundations/SIL_TECHNICAL_CHARTER.md`** (2 hours)
 
 ### **"I need to look up terminology"**
-→ Keep **`../canonical/SIL_GLOSSARY.md`** open while reading this
+→ Keep **`/foundations/SIL_GLOSSARY.md`** open while reading this
 
 ### **"I need design principles"**
 → Read **`./DESIGN_PRINCIPLES.md`** (15 min) for evaluation criteria
@@ -64,7 +64,7 @@ This is the **Rosetta Stone** for SIL architecture. It:
 → See Pantheon's documentation for concrete 7-layer Cognitive OSI Stack implementation
 
 ### **"I need the entry point"**
-→ See **[Start Here](../canonical/START_HERE.md)** for the front door to SIL
+→ See **[Start Here](/foundations/START_HERE)** for the front door to SIL
 
 ### **"I'm looking for examples of how to use this"**
 → See Part 8 (Quick Reference Examples) and Part 10 (The Meta-Pattern) below
@@ -522,8 +522,8 @@ prism --parser=setlang --scheduler=mesh query.sql
 ## 📚 Part 12: Related Documentation
 
 **Core SIL:**
-- [SIL Design Principles](../canonical/SIL_DESIGN_PRINCIPLES.md) - The 5 principles
-- [Project Index](../../projects/PROJECT_INDEX.md) - All projects mapped
+- [SIL Design Principles](/foundations/SIL_DESIGN_PRINCIPLES) - The 5 principles
+- [Project Index](/projects/PROJECT_INDEX) - All projects mapped
 
 **Concrete Implementations:**
 - Pantheon - Adapter architecture (USIR implementation)

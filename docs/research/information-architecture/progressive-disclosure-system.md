@@ -3,8 +3,8 @@
 > *Structure before content - navigate codebases efficiently*
 
 **Related Documentation:**
-- [Progressive Disclosure Guide](../canonical/PROGRESSIVE_DISCLOSURE_GUIDE.md) - Comprehensive tutorial on implementing progressive disclosure across SIL systems
-- [Reveal](../tools/REVEAL.md) - Tool implementing progressive disclosure for code exploration
+- [Progressive Disclosure Guide](/foundations/PROGRESSIVE_DISCLOSURE_GUIDE) - Comprehensive tutorial on implementing progressive disclosure across SIL systems
+- [Reveal](/systems/REVEAL) - Tool implementing progressive disclosure for code exploration
 
 ---
 
@@ -216,7 +216,7 @@ $ reveal middleware.py validate_token
 **Full Documentation:**
 - [Reveal GitHub Repository](https://github.com/Semantic-Infrastructure-Lab/reveal)
 - [PyPI Package](https://pypi.org/project/reveal-cli/)
-- [Architecture Guide](https://github.com/Semantic-Infrastructure-Lab/reveal/blob/main/docs/ARCHITECTURE.md)
+- [Architecture Guide](https://github.com/Semantic-Infrastructure-Lab/reveal/blob/main/docs/ARCHITECTURE)
 
 **Example Gallery:**
 ```bash

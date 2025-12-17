@@ -93,15 +93,15 @@ reveal your_code.py
 **Try Production Projects:**
 - **reveal:** Progressive code exploration
 - **morphogen:** Cross-domain computation ([examples](https://github.com/Semantic-Infrastructure-Lab/morphogen/tree/main/examples))
-- **tiacad:** Declarative CAD ([tutorial](https://github.com/Semantic-Infrastructure-Lab/tiacad/blob/main/docs/user/TUTORIAL.md))
-- **genesisgraph:** Verifiable provenance ([quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart.md))
+- **tiacad:** Declarative CAD ([tutorial](https://github.com/Semantic-Infrastructure-Lab/tiacad/blob/main/docs/user/TUTORIAL))
+- **genesisgraph:** Verifiable provenance ([quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart))
 
 **Explore the Ecosystem:**
 - [Systems Documentation](/systems/) - Production systems explained
 
 **Learn the Architecture:**
-- [Start Here](/START_HERE.md) - 30-minute guided tour
-- [FAQ](./FAQ.md) - Common questions answered
+- [Start Here](/START_HERE) - 30-minute guided tour
+- [FAQ](/meta/FAQ) - Common questions answered
 
 ---
 
@@ -170,8 +170,8 @@ Browse [Systems Documentation](/systems/) and choose based on your interests:
 **Step 3: Check Project Guidelines**
 
 Each project has a CONTRIBUTING.md in its repository:
-- [reveal/CONTRIBUTING.md](https://github.com/Semantic-Infrastructure-Lab/reveal/blob/master/CONTRIBUTING.md)
-- [morphogen/CONTRIBUTING.md](https://github.com/Semantic-Infrastructure-Lab/morphogen/blob/main/CONTRIBUTING.md)
+- [reveal/CONTRIBUTING.md](https://github.com/Semantic-Infrastructure-Lab/reveal/blob/master/CONTRIBUTING)
+- [morphogen/CONTRIBUTING.md](https://github.com/Semantic-Infrastructure-Lab/morphogen/blob/main/CONTRIBUTING)
 - *(Check individual repos for others)*
 
 **Step 4: Start Small**
@@ -355,11 +355,11 @@ reveal morphogen/src/core.py Operator
 - [Circuit design examples](https://github.com/Semantic-Infrastructure-Lab/morphogen/tree/main/examples/circuit)
 
 **tiacad (Declarative CAD):**
-- [Full tutorial](https://github.com/Semantic-Infrastructure-Lab/tiacad/blob/main/docs/user/TUTORIAL.md)
+- [Full tutorial](https://github.com/Semantic-Infrastructure-Lab/tiacad/blob/main/docs/user/TUTORIAL)
 - [Example models](https://github.com/Semantic-Infrastructure-Lab/tiacad/tree/main/examples)
 
 **genesisgraph (Provenance):**
-- [5-minute quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart.md)
+- [5-minute quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart)
 - [Example workflows](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/tree/main/examples)
 
 **All systems:** [Systems Documentation](/systems/)
@@ -403,7 +403,7 @@ reveal morphogen/src/core.py Operator
 **Quick Paths:**
 
 **30-Minute Overview:**
-→ [Start Here](/START_HERE.md) - Guided tour with hands-on example
+→ [Start Here](/START_HERE) - Guided tour with hands-on example
 
 **Deep Architecture:**
 → [Unified Architecture Guide](/architecture/UNIFIED_ARCHITECTURE_GUIDE) (20 min)
@@ -414,7 +414,7 @@ reveal morphogen/src/core.py Operator
 → [Manifesto](/manifesto/YOLO) (15 min)
 
 **Choose Your Path:**
-→ [Reading Guide](https://github.com/Semantic-Infrastructure-Lab/SIL/blob/main/docs/READING_GUIDE.md) - 4 curated reading paths
+→ [Reading Guide](https://github.com/Semantic-Infrastructure-Lab/SIL/blob/main/docs/READING_GUIDE) - 4 curated reading paths
 
 **Try Production Tools:**
 → [Systems Documentation](/systems/)
@@ -445,5 +445,5 @@ reveal morphogen/src/core.py Operator
 ---
 
 *Created: 2025-12-01*
-*Part of: [SIL Documentation](../README.md)*
+*Part of: [SIL Documentation](/README)*
 *License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)*

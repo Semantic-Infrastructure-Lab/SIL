@@ -317,8 +317,8 @@ These must be built regardless of model choice:
 
 ## References
 
-- [LAYER_MODELS_COMPARISON.md](LAYER_MODELS_COMPARISON.md) - Side-by-side view
-- [PROVENANCE_FIRST.md](PROVENANCE_FIRST.md) - Provenance proposal detail
+- [LAYER_MODELS_COMPARISON.md](LAYER_MODELS_COMPARISON) - Side-by-side view
+- [PROVENANCE_FIRST.md](PROVENANCE_FIRST) - Provenance proposal detail
 - Source documents in canonical/ and pantheon/docs/
 
 ---
@@ -353,8 +353,8 @@ The five invariants that must hold everywhere:
 
 ### New Documents
 
-- [INVARIANTS_OVER_LAYERS.md](INVARIANTS_OVER_LAYERS.md) - Full proposal
-- [SYNTHESIS_MAP.md](SYNTHESIS_MAP.md) - Meta-navigation for future sessions
+- [INVARIANTS_OVER_LAYERS.md](INVARIANTS_OVER_LAYERS) - Full proposal
+- [SYNTHESIS_MAP.md](SYNTHESIS_MAP) - Meta-navigation for future sessions
 
 ### The Chief Scientist Test
 
@@ -366,4 +366,4 @@ Before approving architectural decisions:
 5. Is this sustainable at scale?
 6. Does this keep humans as conductors?
 
-See [INVARIANTS_OVER_LAYERS.md](INVARIANTS_OVER_LAYERS.md) for full rationale.
+See [INVARIANTS_OVER_LAYERS.md](INVARIANTS_OVER_LAYERS) for full rationale.

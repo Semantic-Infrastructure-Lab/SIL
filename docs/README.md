@@ -3,7 +3,7 @@
 **Making AI systems transparent and reliable through open infrastructure**
 
 > **Navigation:** This is the repository overview.
-> - [Start Here](START_HERE.md) — The single front door to SIL
+> - [Start Here](START_HERE) — The single front door to SIL
 
 [![Projects](https://img.shields.io/badge/Projects-12-blue)]()
 [![Production Ready](https://img.shields.io/badge/Production-4-green)]()
@@ -50,10 +50,10 @@ Contemporary AI systems are powerful but lack:
 **[→ Complete Documentation](.)** - Philosophy, architecture, research, and guides
 
 **Quick links:**
-- [Founder's Letter](foundations/FOUNDERS_LETTER.md) (5 min) - Why SIL exists
-- [Manifesto](manifesto/YOLO.md) (10 min) - You Only Live Once - Why we build
-- [FAQ](meta/FAQ.md) - Common questions answered
-- [Unified Architecture Guide](architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (30 min) - How it all fits together
+- [Founder's Letter](foundations/FOUNDERS_LETTER) (5 min) - Why SIL exists
+- [Manifesto](manifesto/YOLO) (10 min) - You Only Live Once - Why we build
+- [FAQ](meta/FAQ) - Common questions answered
+- [Unified Architecture Guide](architecture/UNIFIED_ARCHITECTURE_GUIDE) (30 min) - How it all fits together
 
 ### Systems & Tools
 **[→ Production Tools](systems/)** - Working systems you can use today
@@ -76,13 +76,13 @@ Layer 0: Semantic Memory          semantic-memory
 Cross-Cutting: Provenance         genesisgraph, prism
 ```
 
-**[Read the complete architecture →](architecture/UNIFIED_ARCHITECTURE_GUIDE.md)**
+**[Read the complete architecture →](architecture/UNIFIED_ARCHITECTURE_GUIDE)**
 
 ---
 
 ## License
 
-- **Code:** [Apache 2.0](../LICENSE) - Use commercially, fork, modify
+- **Code:** [Apache 2.0](/LICENSE) - Use commercially, fork, modify
 - **Documentation:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) - Share freely with attribution
 
 ---

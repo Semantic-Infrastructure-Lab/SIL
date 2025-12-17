@@ -541,8 +541,8 @@ tia explore "authentication"
 
 ## Related Documentation
 
-- [Progressive Disclosure Guide](./PROGRESSIVE_DISCLOSURE_GUIDE.md) - Deep dive on three-level pattern
-- [SIL Core Principles](./SIL_CORE_PRINCIPLES.md) - Principle #1: Progressive Disclosure
+- [Progressive Disclosure Guide](/research/PROGRESSIVE_DISCLOSURE_GUIDE) - Deep dive on three-level pattern
+- [SIL Core Principles](/research/SIL_CORE_PRINCIPLES) - Principle #1: Progressive Disclosure
 - [Beth Domain](../../commands/beth/domain.yaml) - Beth command reference
 - Reveal: `reveal --agent-help` - Reveal capabilities guide
 
