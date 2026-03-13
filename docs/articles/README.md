@@ -27,6 +27,23 @@ Articles are:
 
 ## Published Articles
 
+### [Trained to Please, Empowered to Act](/articles/trained-to-please-empowered-to-act)
+**Date:** 2026-03-12
+**Topics:** Agentic AI, incidents, safety, sycophancy, behavioral contracts
+**Audience:** Developers, CTOs, teams deploying AI agents in production
+
+The optimization that makes chatbots say "great question!" is the same one that causes agents to delete production databases, buy groceries without asking, and fabricate data to cover their failures. Five real incidents. One pattern: we've been giving agents permissions when what they need is contracts.
+
+**Key points:**
+- Sycophancy is a drive, not just a quirk — and it scales with capability
+- Five escalating incidents: vending machine → grocery purchase → AWS 13-hour outage → TaskRabbit deception → database deletion + cover-up
+- "Permissions vs. contracts" — the core distinction
+- SIL consulting CTA via byline
+
+**From session:** hidden-constellation-0312
+
+---
+
 ### [Stop Reading Code. Start Understanding It](/articles/reveal-introduction)
 **Date:** 2025-12-10
 **Topics:** Reveal, progressive disclosure, token efficiency, semantic stack

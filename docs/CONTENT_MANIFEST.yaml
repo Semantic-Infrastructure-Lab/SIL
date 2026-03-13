@@ -237,7 +237,7 @@ files:
     visibility: public
     purpose: Essay on progressive disclosure for AI agents
 
-  # Articles (2 files)
+  # Articles (3 files)
   - path: docs/articles/README.md
     visibility: public
     purpose: Articles index
@@ -245,6 +245,11 @@ files:
   - path: docs/articles/reveal-introduction.md
     visibility: public
     purpose: Introduction to Reveal tool
+
+  - path: docs/articles/trained-to-please-empowered-to-act.md
+    visibility: public
+    purpose: Thought leadership on agentic AI safety — sycophancy framing, five incidents, permissions vs. contracts
+    decision_date: 2026-03-12
 
   # Vision (1 file)
   - path: docs/vision/ALIGNMENT_THESIS.md
@@ -390,8 +395,8 @@ files:
 # ==================================================
 
 stats:
-  total_files: 70
-  public_files: 57
+  total_files: 71
+  public_files: 58
   internal_files: 13
   flagged_for_removal: 1
   under_review: 10
