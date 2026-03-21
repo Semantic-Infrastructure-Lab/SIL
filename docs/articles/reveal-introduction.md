@@ -121,47 +121,34 @@ This isn't an aesthetic choice. It's what makes everything composable. The outpu
 
 You're about to refactor `validate_token`. Before you touch it, you want to know: what else in this codebase depends on it?
 
-With traditional tools, you'd run `grep -r "validate_token" src/` and manually parse the results to figure out what's a call versus a comment versus a string literal. In a large codebase, this quickly becomes noise.
+With traditional tools, you'd run `grep -r "validate_token" src/` and manually parse the results to figure out what's a call versus a comment versus a string literal. Reveal's `calls://` adapter does this at the AST level — it actually walks each function's body and builds an inverted call index, so it distinguishes call expressions from string occurrences.
 
 ```bash
 # Who calls validate_token — anywhere in the project?
 reveal 'calls://src/?target=validate_token'
 
-# Output:
-# validate_token — called by 6 functions across 4 files
-#   src/middleware/auth.py:42  check_request_auth
-#   src/api/routes.py:118      require_login (via decorator)
-#   src/api/routes.py:203      require_fresh_token
-#   src/tests/test_auth.py:67  test_expired_token
-#   src/tests/test_auth.py:89  test_invalid_token
-#   src/tests/test_auth.py:134 test_fresh_requirement
-```
-
-That's the immediate callers. But what if you want the full impact radius — callers of callers?
-
-```bash
-# Two levels deep — what calls the things that call validate_token?
-reveal 'calls://src/?target=validate_token&depth=3'
-```
-
-This is the kind of analysis that normally requires an IDE with a language server running. Here it's a CLI query on any codebase, zero configuration.
-
-```bash
 # What does validate_token call? (dependency surface)
 reveal 'calls://src/?callees=validate_token'
 
+# Callers of callers — two levels deep
+reveal 'calls://src/?target=validate_token&depth=3'
+
 # Most architecturally load-bearing functions in the whole project
-# (not "who calls this" but "what is called by the most things")
+# (not "who calls this one" but "what is called by the most things")
 reveal 'calls://src/?rank=callers&top=20'
 
-# Rough dead code detection — functions with no callers in the index
+# Dead code candidates — functions with no callers in the index
 reveal 'calls://src/?uncalled&type=function'
 
 # Visual call graph
 reveal 'calls://src/?target=validate_token&format=dot' | dot -Tsvg > callgraph.svg
 ```
 
-The `?rank=callers` metric is the one I find most useful. It surfaces architecturally load-bearing functions before you know to look for them — the functions everything depends on, not just the ones you happen to be thinking about.
+**Honest limitations worth knowing:** This is static analysis, not a language server. It works by name — so if two functions in different files share the same name, their callers get merged in the index. Method calls written as `self.validate_token()` index under `self.validate_token`, not `validate_token`, so you'd need to search for the qualified form. Dynamic dispatch — `getattr(obj, method)()`, callbacks stored in dicts, framework routing — won't appear.
+
+Where it reliably delivers: uniquely-named utility functions, `?rank=callers` coupling metrics (name collisions don't skew relative rankings much), and impact-radius checks before refactoring a function you're confident is called by name.
+
+The `?rank=callers` metric is the one I find most useful. It surfaces architecturally load-bearing functions before you know to look for them — not by searching for a specific name, but by asking the whole codebase what it depends on most.
 
 ---
 
@@ -315,7 +302,7 @@ This is how the architecture of progressive disclosure becomes the default behav
 
 After using Reveal daily for months, here are the capabilities I haven't found elsewhere in a CLI tool:
 
-**`?rank=callers`** — coupling metrics from the command line. Not "who calls this specific function" but "what functions in this project are called by the most other things." Graph analysis, not search.
+**`?rank=callers`** — coupling metrics from the command line. Not "who calls this specific function" but "what functions in this project are called by the most other things." Static analysis, so dynamic dispatch won't appear — but for the purpose of finding architecturally load-bearing functions in a typical Python codebase, it's reliably useful.
 
 **`reveal health` spanning code + certs + DB + DNS** — a genuine category collapse. One command, one JSON blob, one exit code, four different infrastructure domains.
 
@@ -323,7 +310,7 @@ After using Reveal daily for months, here are the capabilities I haven't found e
 
 **`reveal pack --since <branch> --budget N`** — PR-aware codebase snapshots that boost changed files to priority tier 0. Built for AI agents; the token budget is a first-class parameter.
 
-**`?depth=N` transitive call graphs** — callers-of-callers up to 5 levels deep. Impact radius before a refactor, not just immediate callers.
+**`?depth=N` transitive call graphs** — callers-of-callers up to 5 levels deep. Useful for impact-radius checks on well-named, unambiguous functions.
 
 **`?decorator=*cache*` wildcard matching** — finds all functions with `@lru_cache`, `@cached_property`, `@cache`, or any decorator matching the pattern, without knowing exact names.
 
