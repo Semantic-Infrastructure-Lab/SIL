@@ -1,12 +1,20 @@
-# Reveal - Semantic Code Explorer
+---
+title: "Reveal - Universal Resource Explorer"
+type: reference
+beth_topics:
+  - reveal
+  - progressive-disclosure
+  - uri-adapters
+  - agent-help
+  - code-analysis
+  - sil-production
+---
 
-**Tagline:** The simplest way to understand code. Point it at a directory, file, or function. Get exactly what you need.
+# Reveal - Universal Resource Explorer
 
-**Status:** ✅ Production v0.24.0 | Available on [PyPI](https://pypi.org/project/reveal-cli/)
+**Status:** ✅ Production v0.66.0 | Available on [PyPI](https://pypi.org/project/reveal-cli/)
 
-**Latest:** v0.24.0 adds enhanced statistics adapter, code quality metrics, improved error handling, and performance optimizations.
-
-**Coming in v0.26+:** `.reveal.yaml` configuration standard for project-specific semantics (architecture validation, custom patterns, team rules).
+**Tagline:** A semantic query layer — one consistent syntax for asking questions about code, infrastructure, documentation, and data.
 
 ---
 
@@ -20,393 +28,269 @@ pip install reveal-cli
 **Use:**
 ```bash
 reveal src/                    # Directory → tree view
-reveal app.py                  # File → structure
-reveal app.py load_config      # Element → extraction
+reveal app.py                  # File → structure (imports, functions, classes)
+reveal app.py load_config      # Element → exact function extraction
 ```
 
-That's it. No flags, no configuration, just works.
+Zero configuration. Works immediately on any codebase, 190+ languages.
 
 ---
 
 ## The Problem
 
-Developers and AI agents waste time reading entire files when they only need to understand structure or extract specific functions.
+Developers and AI agents waste tokens reading entire files when they only need structure or a single function. Traditional tools force you to choose between "nothing" and "everything."
 
-**Example:** You want to see what's in `app.py` - do you really need to read all 500 lines?
-
-**Agent inefficiency:**
-- Reads entire file: 500 tokens × $0.003/1K = $0.0015
-- Does this 100x/day across 1000 agents = **$54,750/year**
-- Plus energy: ~2M kWh/year (190 US homes equivalent)
+**The deeper problem:** There's no consistent way to query code, infrastructure, databases, and documentation. You learn `git blame`, `openssl s_client`, `mysql SHOW STATUS`, and `grep` as separate mental models that don't compose.
 
 ---
 
-## The Solution: Progressive Disclosure
+## The Solution: Progressive Disclosure + URI Architecture
 
-**Reveal** provides three levels of detail - start broad, drill down as needed:
+### Progressive Disclosure
 
-### 1. Directory Structure
+Three levels of detail — start broad, drill down as needed:
+
 ```bash
-$ reveal src/
-📁 src/
-├── app.py (247 lines, Python)
-├── database.py (189 lines, Python)
-└── models/
-    ├── user.py (156 lines, Python)
-    └── post.py (203 lines, Python)
+reveal src/              # ~100 tokens — directory tree
+reveal app.py            # ~200-500 tokens — outline: imports, functions, classes
+reveal app.py load_config  # ~50-300 tokens — exact code
 ```
 
-### 2. File Structure
+**The key property:** This is architecturally enforced, not suggested. Reveal defaults you into efficient behavior. You cannot accidentally dump 7,000 tokens of raw code.
+
+**Token reduction:** 10–150x vs reading files directly. The 10-150x claim is structurally guaranteed — structure output is always smaller than content output.
+
+### URI Architecture: Everything Is a Resource
+
+Most tools expose features as subcommands (`git log`, `git blame`). Reveal exposes *resources* as URIs:
+
 ```bash
-$ reveal app.py
-app.py (247 lines, Python)
-├── Imports (5)
-├── Classes (2)
-│   ├── Config (lines 15-34)
-│   └── Application (lines 36-198)
-└── Functions (6)
-    ├── load_config (lines 201-215)
-    ├── init_database (lines 217-230)
-    └── ...
+reveal ast://src/?complexity>10&sort=-complexity
+reveal calls://src/?target=validate_token&depth=3
+reveal ssl://api.example.com
+reveal mysql://prod/?type=replication
+reveal markdown://docs/?aggregate=type
 ```
 
-### 3. Element Extraction
+Same syntax. Same operators. Same output format. Whether querying code, certificates, databases, or docs — the mental model doesn't change. New capabilities drop in as new adapters without touching core code.
+
+---
+
+## Core Capabilities
+
+### 1. Progressive Code Exploration (the day-to-day core)
+
 ```bash
-$ reveal app.py load_config
-app.py:201-215
-def load_config(config_path: str) -> Config:
-    """Load configuration from YAML file."""
-    with open(config_path) as f:
-        data = yaml.safe_load(f)
-    return Config(**data)
+reveal src/                              # What's in this directory?
+reveal src/auth.py                       # What's in this file?
+reveal src/auth.py validate_token        # What does this function do?
+reveal 'ast://src/?complexity>10'        # Find complex functions
+reveal 'ast://src/?decorator=*cache*'   # Find cached functions (wildcard)
+reveal 'git://src/auth.py?type=blame&element=validate_token'  # Semantic blame
 ```
 
-**Result:** 10x more efficient than reading full files. Perfect for AI agents working within token budgets.
+### 2. Cross-File Call Graph Analysis (`calls://`)
+
+```bash
+reveal 'calls://src/?target=validate_token'          # Who calls this function?
+reveal 'calls://src/?target=validate_token&depth=3'  # Callers-of-callers (impact radius)
+reveal 'calls://src/?callees=process_payment'        # What does this call?
+reveal 'calls://src/?rank=callers&top=20'            # Most-coupled functions
+reveal 'calls://src/?uncalled&type=function'         # Dead code candidates
+reveal 'calls://src/?format=dot' | dot -Tsvg > callgraph.svg  # Visual graph
+```
+
+No IDE. No language server. No configuration. Call-graph analysis from the CLI.
+
+### 3. Token-Budgeted Context Snapshots (`reveal pack`)
+
+```bash
+reveal pack src/ --budget 8000                        # Snapshot within token budget
+reveal pack src/ --focus "authentication" --budget 6000  # Focus-matched snapshot
+reveal pack src/ --since main --budget 8000           # PR review: changed files first
+```
+
+Gives AI agents the right code in the right order at the right size. Changed files are boosted to priority tier 0 (above entry points). Solves agents burning context on stub `__init__.py` files before reaching actual logic.
+
+### 4. Automated PR Review (`reveal review`)
+
+```bash
+reveal review main..HEAD                  # Full review: diff + checks + hotspots + complexity delta
+reveal review main..HEAD --select B,S     # Security and bugs only (fast)
+reveal review main..HEAD --format json    # CI/automated processing
+reveal review main..HEAD || exit 1        # CI gate
+```
+
+Composes structural diff, quality checks, hotspot detection, and complexity analysis under consistent exit codes. Every changed function carries `complexity_before`, `complexity_after`, and `complexity_delta`.
+
+### 5. Unified Health Checks (`reveal health`)
+
+```bash
+reveal health                                                # Full: code + infra + certs
+reveal health ./src ssl://api.example.com domain://example.com  # Mix and match
+reveal health ./src --format json | jq '.overall_exit'       # Monitoring
+```
+
+Code quality + SSL certificates + MySQL replication + domain DNS — all in one invocation, all under unified exit codes and JSON output.
+
+### 6. Codebase Dashboard
+
+```bash
+reveal overview .    # File count, language breakdown, quality score, git activity
+reveal deps .        # Circular import chains, unused imports, top importers
+reveal hotspots src/ # Worst files by combined complexity + violations
+```
+
+### 7. Composable Pipelines
+
+```bash
+# nginx config → extract all domains → check each SSL cert
+reveal nginx.conf --extract domains | sed 's/^/ssl:\/\//' | reveal --stdin --check
+
+# Structural diff between branches
+reveal diff://git://main/.:git://HEAD/.
+
+# Find circular imports
+reveal 'imports://src/?circular'
+```
+
+### 8. Documentation as a Queryable Graph (`markdown://`)
+
+```bash
+reveal 'markdown://docs/?aggregate=type'             # Document type taxonomy
+reveal 'markdown://docs/?beth_topics~=authentication'  # Find by topic
+reveal 'markdown://docs/?link-graph'                 # Bidirectional link graph
+reveal 'markdown://docs/?body-contains=retry&type=procedure'  # Full-text + metadata
+```
+
+### 9. Session Archaeology (`claude://`)
+
+```bash
+reveal claude://sessions/                          # List sessions
+reveal claude://session/my-session-0316/files      # Files touched in a session
+reveal 'claude://sessions/?search=validate_token'  # Search across sessions
+```
+
+AI work history as queryable structured data. Useful for auditing what a session actually changed.
+
+---
+
+## 23 URI Adapters
+
+| Domain | Adapters |
+|--------|----------|
+| Code semantics | `ast://`, `calls://`, `imports://`, `diff://`, `python://` |
+| Data systems | `mysql://`, `sqlite://`, `json://`, `xlsx://` |
+| Infrastructure | `ssl://`, `nginx://`, `domain://`, `cpanel://`, `autossl://`, `letsencrypt://`, `env://` |
+| Documents | `markdown://`, `stats://`, `git://` |
+| Meta / self-referential | `help://`, `reveal://`, `claude://`, `demo://` |
+
+Same query operators (`=`, `~=`, `>`, `!`, `..`, `*`) across all adapters. Filter expressions learned once, applied everywhere.
+
+---
+
+## Quality Rules (69 rules, 14 categories)
+
+| Category | Code | What it finds |
+|----------|------|---------------|
+| Bugs | B | Bare excepts, invalid decorators, broken imports |
+| Complexity | C | Cyclomatic complexity, function length, nesting depth |
+| Duplicates | D | Duplicate code blocks |
+| Errors | E | Line length, style violations |
+| Frontmatter | F | Missing/invalid YAML front matter in markdown |
+| Imports | I | Unused imports, circular dependencies, layer violations |
+| Links | L | Broken markdown links, anchor mismatches |
+| Maintainability | M | Long parameter lists, deep inheritance |
+| Infrastructure | N | nginx config issues, SSL misconfig, security headers |
+| Refactoring | R | Refactor candidates |
+| Security | S | Insecure protocols, Docker :latest tags |
+| Types | T | Type annotation issues |
+| URLs | U | Insecure URL patterns |
+| Validation | V | Adapter contract validation (reveal's own rules) |
+
+```bash
+reveal src/ --check              # All rules
+reveal src/ --check --select B,S # Bugs + security only
+reveal --rules                   # Full list with descriptions
+reveal --explain B001            # Explain one rule
+```
+
+---
+
+## Language Support
+
+**190+ languages total:**
+- 37 built-in analyzers (Python, JavaScript, TypeScript, Rust, Go, Ruby, Elixir, Bash, YAML, JSON, TOML, Markdown, Nginx, Dockerfile, GDScript, Jupyter, and more)
+- 165 additional languages via Tree-sitter fallback (AST-accurate, not regex)
+
+---
+
+## MCP Server (`reveal-mcp`)
+
+```bash
+pip install reveal-mcp
+```
+
+Exposes all reveal capabilities as MCP tools for Claude Code, Cursor, and Windsurf. Five tools: `reveal_structure`, `reveal_element`, `reveal_query`, `reveal_pack`, `reveal_check`. Agents get progressive disclosure and call-graph analysis without subprocess overhead.
+
+---
+
+## Agent-Help System
+
+Three-tier discovery designed for AI agents:
+
+```bash
+reveal --agent-help       # Tier 1: Strategic guide — decision trees, when to use what (~1,500 tokens)
+reveal help://            # Tier 2: Dynamic self-documentation — never goes stale, auto-discovers adapters
+reveal --agent-help-full  # Tier 3: Comprehensive offline reference (~12,000 tokens)
+```
+
+Also: `help://schemas/<adapter>` gives agents machine-readable JSON schemas for every adapter — enabling safe exploration without external documentation. This **self-describing infrastructure** property drops adoption friction to near zero.
 
 ---
 
 ## SIL Principles in Action
 
-Reveal demonstrates SIL's core principles ([see design-principles](/foundations/design-principles)):
+Reveal demonstrates SIL's core research pillar — **Progressive Disclosure**:
 
-✅ **Clarity** - Structure is visible, not hidden (see what's in a file without reading it)
-✅ **Simplicity** - Zero configuration, smart defaults (just works)
-✅ **Composability** - Unix tool composition (pipes to grep, jq, vim)
-✅ **Correctness** - Reliable parsing via Tree-sitter (AST-based, not regex)
-✅ **Verifiability** - Precise `filename:line` format (vim/git/grep compatible)
+✅ **Clarity** — Structure is visible, not hidden
+✅ **Simplicity** — Zero configuration; just works
+✅ **Composability** — URI output pipes to the next query
+✅ **Correctness** — Tree-sitter AST parsing, not regex
+✅ **Verifiability** — Precise `filename:line` output (vim/git/grep compatible)
+✅ **Self-describing** — `help://schemas/<adapter>` makes the tool introspectable without docs
 
-**Layer in Semantic OS:** Layer 5 (Human Interfaces / SIM) - makes structure visible and navigable
+**Layer in Semantic OS:** Layer 5 (Human Interfaces / SIM) — makes all semantic structure visible and navigable.
 
----
-
-## Supported Languages (18 built-in)
-
-**Programming:**
-- 🐍 Python (.py)
-- 📜 JavaScript (.js) - ES6+, classes, arrow functions, async/await
-- 🔷 TypeScript (.ts, .tsx) - Type annotations, interfaces, React/TSX
-- 🦀 Rust (.rs)
-- 🔷 Go (.go)
-- 🎮 GDScript (.gd) - Godot game engine
-
-**Scripts & DevOps:**
-- 🐚 Bash/Shell (.sh, .bash)
-- 🐳 Docker (Dockerfile)
-
-**Data & Docs:**
-- 📓 Jupyter (.ipynb)
-- 📝 Markdown (.md)
-- 📋 JSON (.json)
-- 📋 YAML (.yaml, .yml)
-- 📋 TOML (.toml)
-
-Run `reveal --list-supported` to see the current list.
+The same progressive disclosure pattern Reveal proves for code will extend to: Semantic graphs (Pantheon IR), Provenance chains (GenesisGraph), Multi-agent reasoning (Agent Ether), Domain schemas (Morphogen).
 
 ---
 
-## Advanced Features
-
-### Pattern Detection (v0.16.0+)
-Check code quality with industry-aligned rules:
-
-```bash
-reveal app.py --check              # All rules
-reveal app.py --check --select B,S # Bugs + Security only
-reveal --rules                     # List available rules
-reveal --explain B001              # Explain specific rule
-```
-
-**Built-in rules:** Bare excepts, Docker :latest tags, function complexity, line length, insecure URLs
-
-**Extensible:** Drop custom rules in `~/.reveal/rules/` - zero configuration!
-
-### Python Runtime Adapter (v0.17.0+)
-Inspect Python runtime environments with progressive disclosure:
-
-```bash
-reveal python://                      # Overview of Python environment
-reveal python://version               # Python version info
-reveal python://env                   # Environment variables (Python-filtered)
-reveal python://venv                  # Virtual environment status
-reveal python://packages              # Installed packages
-reveal python://imports               # Module import analysis
-reveal python://debug/bytecode        # Bytecode inspection
-```
-
-**Self-documenting:** `reveal help://python` shows all available endpoints with examples.
-
-**Use cases:**
-- Debug dependency conflicts
-- Verify environment setup before deployment
-- Inspect production Python environments
-- Analyze import dependencies
-
-### URI Adapters (Experimental)
-Explore beyond files and Python runtimes:
-
-```bash
-reveal env://PATH              # Environment variables
-reveal postgres://prod users   # Database schema (coming soon)
-reveal https://api.github.com  # REST APIs (coming soon)
-```
-
-See [Reveal Roadmap](https://github.com/semantic-infrastructure-lab/reveal/blob/main/ROADMAP) for adapter evolution.
-
----
-
-## Agent-Help Implementation (v0.16.0+, Enhanced v0.17.0)
-
-Reveal validates SIL's proposed [agent-help standard](/research/AGENT_HELP_STANDARD) with a production three-tier implementation:
-
-```bash
-reveal --agent-help          # Quick strategic guide (~1,500 tokens)
-reveal help://               # Progressive discovery system (50-500 tokens as needed)
-reveal --agent-help-full     # Comprehensive reference (~12,000 tokens offline)
-```
-
-**What agents get:**
-- **Decision trees** - When to use reveal vs alternatives (cat, grep, etc.)
-- **Token efficiency analysis** - 7-150x reduction patterns with real examples
-- **Anti-patterns** - What NOT to do (e.g., reading full file before checking structure)
-- **Workflow sequences** - Codebase exploration, PR review, refactoring patterns
-- **Pipeline composition** - Integrate with git, find, jq, vim
-- **Self-documenting adapters** - `help://python`, `help://ast` auto-discovered from registry
-
-### Three-Tier Progressive Discovery (v0.17.0)
-
-**Tier 1 (`--agent-help`):** Strategic guide that teaches discovery (~1,500 tokens)
-- Use when: Agent first encounters reveal
-- Teaches: Use `help://` for progressive discovery
-- Token cost: ~1,500 tokens (one-time load)
-
-**Tier 2 (`help://`):** Dynamic self-documenting system (50-500 tokens)
-- Use when: Agent needs specific adapter or feature docs
-- Examples: `help://python`, `help://ast`, `help://check`
-- Token cost: 50-500 tokens per topic (progressive loading)
-- **Key innovation:** Auto-discovers from adapter registry - never goes stale
-
-**Tier 3 (`--agent-help-full`):** Complete offline reference (~12,000 tokens)
-- Use when: Offline environments or comprehensive analysis needed
-- Token cost: ~12,000 tokens (comprehensive)
-
-**Result:** 85% token reduction for typical usage (1,500 + 200 vs 11,000 tokens)
-
-### Production Validated
-
-After 3 months in production (v0.16.0 released Nov 2025, v0.17.0 Dec 2025):
-- ✅ Agents adopt reveal-first pattern (check structure before reading)
-- ✅ Token reduction matches predictions (7-150x measured in practice)
-- ✅ Three-tier system prevents documentation drift (help:// auto-discovers adapters)
-- ✅ 85% token efficiency gain over static full docs
-- ✅ Agents naturally use progressive discovery (brief → help:// → full as needed)
-
-**Conclusion:** The agent-help standard works. The three-tier progressive model is recommended for complex evolving CLI tools.
-
-**See the full standard:** [AGENT_HELP_STANDARD.md](/research/AGENT_HELP_STANDARD)
-
----
-
-## Use Cases
-
-### For Developers
-- **Quick file overview** without opening editor
-- **Find functions/classes** rapidly (`reveal file.py | grep "def "`)
-- **Jump to code** with vim integration (`vim $(reveal app.py | grep load_config)`)
-- **Terminal workflows** - perfect for SSH sessions
-
-### For AI Agents
-- **Token efficiency** - See structure (50 tokens) before reading full file (500 tokens)
-- **Context gathering** - Extract only relevant functions
-- **Codebase exploration** - Discover structure progressively
-- **Integration** - Works with LangChain, Claude Code, etc.
-
-### For Teams
-- **Code reviews** - Understand structure before detailed review
-- **Onboarding** - New team members explore codebase efficiently
-- **Documentation** - Generate structure docs automatically
-- **Refactoring** - See dependencies before changes
-
----
-
-## Economic Impact
-
-### Agent Efficiency at Scale
-
-**Without Reveal (traditional approach):**
-- Read 500-line file: 500 tokens
-- Cost: 500 × $0.003/1K = $0.0015 per operation
-- At 100x/day per agent: $0.15/day = $54.75/year per agent
-- **1000 agents: $54,750/year**
-
-**With Reveal (progressive disclosure):**
-- Structure view: 50 tokens
-- Extract specific function: 20 tokens
-- Total: 70 tokens
-- Cost: 70 × $0.003/1K = $0.00021 per operation
-- At 100x/day per agent: $0.021/day = $7.67/year per agent
-- **1000 agents: $7,670/year**
-
-**Savings: $47,080/year (86% reduction)**
-
-### Environmental Impact
-
-**Energy waste from poor agent loops:**
-- Traditional approach: ~2M kWh/year per 1000 agents
-- Equivalent to: 190 US homes annual consumption
-- Reveal + progressive disclosure: **86% reduction** (~280,000 kWh saved)
-
-Scale this to millions of agents globally = **massive economic and environmental impact**.
-
----
-
-## Why Reveal Matters for SIL
-
-**Progressive disclosure** is a core SIL principle - start broad, drill down as needed.
-
-Reveal proves this pattern works for code exploration. As SIL evolves, this same pattern will extend to:
-- **Semantic graphs** (Pantheon IR)
-- **Provenance chains** (GenesisGraph)
-- **Multi-agent reasoning** (Agent Ether)
-- **Domain schemas** (Morphogen, TiaCAD, SUP)
-
-**Reveal today:** Explore code semantically
-**SIM vision:** Explore ALL semantic structure (code, graphs, reasoning, provenance)
-
-See the [Reveal Roadmap](https://github.com/semantic-infrastructure-lab/reveal/blob/main/ROADMAP) for detailed plans.
-
----
-
-## Get Started
-
-**Install from PyPI:**
-```bash
-pip install reveal-cli
-```
-
-**Try it:**
-```bash
-reveal --version          # Check installation
-reveal --list-supported   # See supported file types
-reveal .                  # Explore current directory
-```
-
-**Learn more:**
-- [GitHub Repository](https://github.com/semantic-infrastructure-lab/reveal)
-- [Full Documentation](https://github.com/semantic-infrastructure-lab/reveal/blob/main/README)
-- [Changelog](https://github.com/semantic-infrastructure-lab/reveal/blob/main/CHANGELOG)
-- [PyPI Package](https://pypi.org/project/reveal-cli/)
-
-**Report issues or contribute:**
-- [GitHub Issues](https://github.com/semantic-infrastructure-lab/reveal/issues)
-- [Contributing Guide](https://github.com/semantic-infrastructure-lab/reveal/blob/main/CONTRIBUTING)
-
----
-
-## Configuration Philosophy (v0.26+)
-
-### Progressive Configuration Pattern
-
-Reveal implements the **Progressive Configuration Pattern**—a three-level system that scales complexity with project needs:
-
-**Level 1: Zero Config (Intelligent Defaults)**
-```bash
-reveal app.py --check           # Works immediately, no setup
-```
-- Sensible built-in rules (bugs, security, complexity)
-- Works for 80% of projects without configuration
-- Safe defaults based on industry best practices
-
-**Level 2: Project Overrides (`.reveal.yaml`)**
-```yaml
-# .reveal.yaml - Team-shared configuration
-architecture:
-  layers:
-    - name: routes
-      path: app/routes/**
-      cannot_import: [repositories/**]  # Enforce clean architecture
-
-semantic:
-  custom_patterns:
-    - name: uses_stripe_api
-      description: "Track payment code"
-      patterns: ["stripe\\..*\\("]
-```
-- Version-controlled team configuration
-- Declare project-specific architecture rules
-- Define custom semantic patterns
-
-**Level 3: Custom Extensions (`~/.reveal/rules/`)**
-```python
-# ~/.reveal/rules/payment_security.py
-# Organization-wide custom rules
-from reveal.rules import Rule
-
-class PaymentSecurityRule(Rule):
-    name = "track-payments"
-    # ... custom logic
-```
-- Full language power for complex checks
-- Organization-wide standards
-- Auto-discovered plugins
-
-### Configuration as Semantic Contract
-
-Reveal's configuration system treats config files as **executable documentation of project semantics**:
-
-- **Architecture rules** declare layer boundaries (not just document them)
-- **Entry points** teach tools about framework patterns (FastAPI routes, pytest tests)
-- **Custom patterns** codify domain knowledge (e.g., "what touches our payment API?")
-- **Quality rules** enforce team standards (different rules for different layers)
-
-**Example: Queryable Domain Knowledge**
-```yaml
-semantic:
-  custom_patterns:
-    - name: uses_email
-      patterns: ["send.*email", "EmailMessage"]
-```
-
-```bash
-reveal 'semantic://app?uses_email'    # Query your domain semantics
-```
-
-**Research context:** This demonstrates SIL's principle "Meaning Must Be Explicit"—configuration declares what code _means_ in your system, not just how to analyze it.
-
-**Documentation:**
-- Research essay: [Configuration as Semantic Contract](/research/information-architecture/CONFIGURATION_AS_SEMANTIC_CONTRACT)
-- Technical note: [Progressive Configuration Pattern](/research/information-architecture/PROGRESSIVE_CONFIGURATION_PATTERN)
+## Production Stats (v0.66.0)
+
+| Metric | Value |
+|--------|-------|
+| Tests | 6,861 passing |
+| Quality score | 99.8/100 |
+| Coverage | 68% overall |
+| CI platforms | Linux / macOS / Windows |
+| Downloads/month | 3.1K (100% organic) |
+| URI adapters | 23 |
+| Quality rules | 69 across 14 categories |
+| Languages | 190+ (37 built-in + tree-sitter) |
+| Subcommands | check, review, pack, health, hotspots, overview, deps |
 
 ---
 
 ## Related SIL Projects
 
-- [**morphogen**](https://github.com/semantic-infrastructure-lab/morphogen) - Cross-domain computation (audio, physics, circuits)
-- [**tiacad**](https://github.com/semantic-infrastructure-lab/tiacad) - Declarative parametric CAD in YAML
-- [**genesisgraph**](https://github.com/semantic-infrastructure-lab/genesisgraph) - Verifiable process provenance
-
-See the complete [Project Index](/projects/PROJECT_INDEX) for all 12 SIL projects.
+- [**morphogen**](https://github.com/semantic-infrastructure-lab/morphogen) — Cross-domain deterministic computation
+- [**tiacad**](https://github.com/semantic-infrastructure-lab/tiacad) — Declarative parametric CAD in YAML
+- [**genesisgraph**](https://github.com/semantic-infrastructure-lab/genesisgraph) — Cryptographic provenance verification
+- [**agent-help standard**](../research/AGENT_HELP_STANDARD.md) — The standard Reveal validates
 
 ---
 
-**Last Updated:** 2025-12-17 (v0.24.0)
-**Document Version:** 1.3
+**GitHub:** https://github.com/Semantic-Infrastructure-Lab/reveal
+**PyPI:** https://pypi.org/project/reveal-cli/
+**Last Updated:** 2026-03-20 (v0.66.0)

@@ -184,6 +184,44 @@ reveal json://config.json?flatten
 
 ---
 
+### 5. Cross-File Call Graph Analysis
+
+Before you refactor a function, wouldn't you want to know exactly what calls it — across every file in the project?
+
+```bash
+# Who calls validate_token? (anywhere in the project)
+reveal 'calls://src/?target=validate_token'
+
+# Callers-of-callers — full impact radius
+reveal 'calls://src/?target=validate_token&depth=3'
+
+# Most architecturally load-bearing functions
+reveal 'calls://src/?rank=callers&top=20'
+
+# Dead code candidates
+reveal 'calls://src/?uncalled&type=function'
+```
+
+No IDE. No language server. Cross-file call graph analysis from the CLI.
+
+---
+
+### 6. Token-Budgeted Codebase Snapshots for AI Agents
+
+Giving an AI agent codebase context is usually "read everything" or "let the agent figure it out." There's a better way:
+
+```bash
+# Fit the most important code in 8000 tokens
+reveal pack src/ --budget 8000
+
+# PR review context: changed files first, then key dependencies
+reveal pack src/ --since main --budget 8000
+```
+
+Changed files are boosted to priority tier 0. Entry points fill the rest. The agent gets the right code in the right order at the right size — not a random dump.
+
+---
+
 ## The Design Philosophy Nobody Asked For (But Everyone Needs)
 
 Reveal is built on three principles that make AI agents 10x more effective:
@@ -420,14 +458,17 @@ reveal --agent-help            # Quick start (~1,500 tokens)
 ## The Stuff That Makes It Awesome
 
 ### Multi-Language Support
-Python, JavaScript, TypeScript, Rust, Go, Bash, YAML, JSON, Markdown, Dockerfile, Nginx, TOML, JSONL, GDScript, Jupyter notebooks... **plus 37 more via TreeSitter fallback**.
+190+ languages total: 37 built-in analyzers (Python, JavaScript, TypeScript, Rust, Go, Bash, YAML, JSON, Markdown, Dockerfile, Nginx, TOML, JSONL, GDScript, Jupyter notebooks...) plus 165 additional languages via Tree-sitter fallback (AST-accurate, not regex).
 
 ### Pipeline Integration
 ```bash
-# PR review workflow
-git diff --name-only | reveal --stdin --outline
+# Full PR review: structural diff + quality violations + complexity delta
+reveal review main..HEAD
 
-# Find issues across codebase
+# PR review CI gate
+reveal review main..HEAD || exit 1
+
+# Manual composition: find issues across codebase
 find src/ -name "*.py" | reveal --stdin --check
 
 # Copy output for sharing
@@ -443,15 +484,27 @@ reveal file.py --copy          # Copy to clipboard
 ```
 
 ### Quality Checks
-- **B** (Bugs): bare except clauses, unused variables
-- **C** (Complexity): cyclomatic complexity warnings
-- **E** (Errors): line length, trailing whitespace
-- **N** (Nginx): duplicate upstreams, SSL issues, missing headers
+
+69 rules across 14 categories:
+- **B** (Bugs): bare excepts, invalid decorators, broken imports
+- **C** (Complexity): cyclomatic complexity, function length, nesting depth
+- **D** (Duplicates): duplicate code blocks
+- **E** (Errors): line length, style violations
+- **F** (Frontmatter): missing/invalid YAML front matter in markdown
+- **I** (Imports): unused imports, circular dependencies, layer violations
+- **L** (Links): broken markdown links, anchor mismatches
+- **M** (Maintainability): long parameter lists, deep inheritance
+- **N** (Nginx): config issues, SSL misconfig, security headers
+- **R** (Refactoring): refactor candidates
 - **S** (Security): insecure protocols, Docker `:latest` tags
+- **T** (Types): type annotation issues
+- **U** (URLs): insecure URL patterns
+- **V** (Validation): adapter contract validation (reveal's own rules)
 
 ```bash
-reveal file.py --check              # All checks
-reveal file.py --check --select B,S # Bugs + security only
+reveal src/ --check              # All rules
+reveal src/ --check --select B,S # Bugs + security only
+reveal --rules                   # Full list with descriptions
 ```
 
 ---
@@ -480,19 +533,22 @@ At scale (100 reviews/month):
 
 ---
 
-## What's Next
+## What's Shipped Since This Was Written
 
-Reveal is **actively developed** and used in production by:
-- **TIA** (The Intelligent Agent) - Scott's semantic infrastructure system
-- **Scout** - AI-powered code review agent (10x token efficiency measured)
-- **SIL** (Semantic Infrastructure Lab) - Research project for AI-native tooling
+This article was written at v0.24.0. A lot has landed since then (now at v0.66.0):
 
-**Roadmap highlights:**
-- `reveal diff://` - Compare files, environments, API responses
-- `reveal stats://` - Codebase health metrics
-- `--watch` mode - Live updates on file changes
-- VS Code extension - Bring reveal to your IDE
-- GitHub Action - Automated PR quality checks
+- ✅ `diff://` — Structural diff between branches, commits, files; carries `complexity_delta` per function
+- ✅ `stats://` — Codebase health metrics and hotspot detection
+- ✅ `calls://` — Cross-file call graph with `?rank=callers`, `?uncalled`, `?depth=N`
+- ✅ `reveal review` — Full PR review: structural diff + quality + hotspots + complexity delta under consistent exit codes
+- ✅ `reveal pack` — Token-budgeted context snapshots for AI agents; `--since <branch>` boosts changed files
+- ✅ `reveal health` — Unified health checks spanning code + SSL + DNS + MySQL
+- ✅ `reveal overview` / `reveal deps` — Codebase dashboard and dependency health
+- ✅ `reveal-mcp` — MCP server exposing all capabilities to Claude Code, Cursor, Windsurf
+- ✅ 23 URI adapters total (ssl://, nginx://, mysql://, sqlite://, xlsx://, markdown://, claude://, letsencrypt://, and more)
+- ✅ 69 quality rules across 14 categories
+
+Reveal is actively developed and used in production by TIA, Scout, and SIL.
 
 ---
 
