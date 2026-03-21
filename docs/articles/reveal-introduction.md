@@ -16,7 +16,7 @@ canonical_url: "https://semanticinfrastructurelab.org/articles/reveal-introducti
 reading_time: "18 minutes"
 beth_topics: [reveal, progressive-disclosure, token-efficiency, uri-adapters, call-graph, pack, code-review, agent-help, mcp-server, sil, imports, semantic-blame, structural-analysis]
 session_provenance: "crackling-drought-0320"
-version: "v0.66.0"
+version: "v0.66.1"
 ---
 
 # Reveal: A Semantic Query Layer for Code, Infrastructure, and Docs
@@ -639,4 +639,4 @@ Progressive disclosure is one piece of that. The same pattern that makes Reveal 
 
 ---
 
-*Reveal v0.66.0 — 6,861 tests, 23 URI adapters, 69 quality rules, 190+ languages. MIT license.*
+*Reveal v0.66.1 — 6,871 tests, 23 URI adapters, 69 quality rules, 190+ languages. MIT license.*
