@@ -1131,4 +1131,4 @@ Cross-cutting concerns (not layers):
 
 ---
 
-*This document is part of the Semantic Infrastructure Lab (SIL) canonical documentation set. For questions or contributions, see [SIL contribution guidelines](/README).*
+*This document is part of the Semantic Infrastructure Lab (SIL) canonical documentation set. For questions or contributions, see [SIL contribution guidelines](/).*

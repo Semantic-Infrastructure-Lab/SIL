@@ -3,7 +3,7 @@
 > *Structure before content - navigate codebases efficiently*
 
 **Related Documentation:**
-- [Progressive Disclosure Guide](/foundations/PROGRESSIVE_DISCLOSURE_GUIDE) - Comprehensive tutorial on implementing progressive disclosure across SIL systems
+- [Progressive Disclosure Guide](/research/progressive-disclosure-guide) - Comprehensive tutorial on implementing progressive disclosure across SIL systems
 - [Reveal](/systems/REVEAL) - Tool implementing progressive disclosure for code exploration
 
 ---

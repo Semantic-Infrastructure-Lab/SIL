@@ -158,7 +158,7 @@ After reading this guide:
 
 ## Navigation
 
-- **Parent:** [Start Here](/foundations/START_HERE)
+- **Parent:** [Start Here](/start)
 - **Related:** [Canonical Documents](/foundations/), [Tools](/systems/)
 - **Projects:** [Project Index](/projects/PROJECT_INDEX)
 
