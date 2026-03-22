@@ -713,8 +713,8 @@ This is the technical core of SIL's mission: **building Timeline B (Glass Box fu
 **Related Documents:**
 - [SIL Glossary](/foundations/SIL_GLOSSARY) — Canonical terminology
 - [Architecture Decision Record](/architecture/decisions/ARCHITECTURE_DECISION) — Why Provenance-First
-- [The Fork: Two Futures for AI](/foundation/pitch/THE_FORK) — Five structural failures to fix
-- [Scope of Hope](/foundation/SCOPE_OF_HOPE) — Five pillars of semantic infrastructure
+- The Fork: Two Futures for AI — Five structural failures to fix
+- Scope of Hope — Five pillars of semantic infrastructure
 - [Invariants Over Layers](/architecture/models/INVARIANTS_OVER_LAYERS) — Mission-centric frame
 - [Model Evaluation](/architecture/models/MODEL_EVALUATION) — Scoring rationale (4.15)
 
