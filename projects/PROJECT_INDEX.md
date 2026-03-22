@@ -15,7 +15,7 @@
 
 This index maps all SIL projects to the **6-Layer Semantic OS Architecture**. Each project embodies SIL principles (Clarity, Simplicity, Composability, Correctness, Verifiability) and contributes to building the semantic substrate for intelligent systems.
 
-**Architecture Reference:** [Unified Architecture Guide](../docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md)
+**Architecture Reference:** [Unified Architecture Guide](/architecture/unified-architecture-guide)
 
 ### 🔒 Repository Status
 
@@ -104,8 +104,7 @@ Private repos are in active development and will be made public when ready for b
 
 **Links:**
 - Repository: `semantic-infrastructure-lab/morphogen`
-- [Documentation](https://github.com/semantic-infrastructure-lab/morphogen/docs)
-- [Examples](https://github.com/semantic-infrastructure-lab/morphogen/examples)
+- [Morphogen Repository](https://github.com/Semantic-Infrastructure-Lab/morphogen)
 
 ---
 
@@ -148,8 +147,8 @@ Private repos are in active development and will be made public when ready for b
 
 **Links:**
 - Repository: `semantic-infrastructure-lab/tiacad`
-- [Tutorial](https://github.com/semantic-infrastructure-lab/tiacad/TUTORIAL.md)
-- [Examples](https://github.com/semantic-infrastructure-lab/tiacad/examples)
+- [Tutorial](https://github.com/Semantic-Infrastructure-Lab/tiacad/blob/main/docs/user/TUTORIAL.md)
+- [Examples](https://github.com/Semantic-Infrastructure-Lab/tiacad/tree/main/examples)
 
 ---
 
@@ -170,8 +169,8 @@ Private repos are in active development and will be made public when ready for b
 
 **Links:**
 - Repository: `semantic-infrastructure-lab/genesisgraph`
-- [5-Minute Quickstart](https://github.com/semantic-infrastructure-lab/genesisgraph/docs/getting-started/quickstart.md)
-- [Use Cases](https://github.com/semantic-infrastructure-lab/genesisgraph/docs/use-cases.md)
+- [GenesisGraph Repository](https://github.com/Semantic-Infrastructure-Lab/genesisgraph)
+- [Use Cases](https://github.com/Semantic-Infrastructure-Lab/genesisgraph)
 
 ---
 
@@ -215,11 +214,11 @@ Private repos are in active development and will be made public when ready for b
 **What it is:** The Semantic Infrastructure Lab itself - vision, principles, research agenda, and unified architecture for the entire ecosystem.
 
 **Key documents:**
-- [Manifesto](../docs/canonical/SIL_MANIFESTO.md) - Why SIL exists
-- [Technical Charter](../docs/canonical/SIL_TECHNICAL_CHARTER.md) - System specification
-- [Principles](../docs/canonical/SIL_PRINCIPLES.md) - The 14 principles
-- [Unified Architecture Guide](../docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md) - The framework
-- [Research Agenda Year 1](../docs/canonical/SIL_RESEARCH_AGENDA_YEAR1.md) - Current focus
+- [Manifesto](/manifesto) - Why SIL exists
+- [Technical Charter](/foundations/technical-charter) - System specification
+- [Principles](/foundations/design-principles) - The 14 principles
+- [Unified Architecture Guide](/architecture/unified-architecture-guide) - The framework
+- [Research Agenda Year 1](/research) - Current focus
 
 ---
 
@@ -271,7 +270,7 @@ Private repos are in active development and will be made public when ready for b
 
 ---
 
-### [SUP](https://github.com/semantic-infrastructure-lab/sup) - Semantic UI Platform
+### SUP (private) - Semantic UI Platform
 **Status:** 🚧 **Alpha** | **Maturity:** Early development | **Repo:** 🔒 Private
 
 **Layer:** 2 (Domain Module - UI/interaction)
@@ -294,7 +293,7 @@ Private repos are in active development and will be made public when ready for b
 
 ---
 
-### [BrowserBridge](https://github.com/semantic-infrastructure-lab/browserbridge) - Browser Automation
+### BrowserBridge (private) - Browser Automation
 **Status:** 🚧 **Alpha** | **Maturity:** Early development
 
 **Layer:** 5 (Human Interfaces - browser state extraction)
@@ -317,7 +316,7 @@ Private repos are in active development and will be made public when ready for b
 
 ---
 
-### [TIA Browser Reveal](https://github.com/semantic-infrastructure-lab/tia-browser-reveal) - Browser Extension
+### TIA Browser Reveal (private) - Browser Extension
 **Status:** ✅ **Production-Ready** | **Maturity:** v0.1.0 | **Repo:** 🔒 Private
 
 **Layer:** 5 (Human Interfaces - browser integration)
@@ -341,7 +340,7 @@ Private repos are in active development and will be made public when ready for b
 
 ## 📋 Planned / Specification Phase
 
-### [Prism](https://github.com/semantic-infrastructure-lab/prism) - Microkernel Query Engine
+### Prism (private) - Microkernel Query Engine
 **Status:** 📋 **Specification Complete** | **Maturity:** Architecture design complete, implementation pending | **Repo:** 🌍 Public
 
 **Layer:** Cross-Cutting (Microkernel research) + Layer 1 Frontend (Analytical/Relational domain)
@@ -393,7 +392,7 @@ Domain constraints (TimeOps, UnitOps) map to Pantheon metadata. Prism trace exte
 
 ---
 
-### [Agent Ether](https://github.com/scottsen/agent-ether) - Agent Protocols
+### Agent Ether (private) - Agent Protocols
 **Status:** 📋 **Specification** | **Maturity:** Planning | **Repo:** 🔒 Private
 
 **Layer:** 3 (Multi-Agent Orchestration)
@@ -415,7 +414,7 @@ Domain constraints (TimeOps, UnitOps) map to Pantheon metadata. Prism trace exte
 
 ---
 
-### [Semantic Memory](https://github.com/semantic-infrastructure-lab/semantic-memory) - Persistent Semantic Graph
+### Semantic Memory (planned) - Persistent Semantic Graph
 **Status:** 📋 **Planned** | **Maturity:** Concept
 
 **Layer:** 0 (Foundation - persistent semantic substrate)

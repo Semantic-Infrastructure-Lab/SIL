@@ -22,7 +22,7 @@ These papers are **working research documents**—they evolve as we implement, t
 
 ## Current Papers
 
-### [Symbolic Computation in the Semantic Infrastructure Lab Stack](/research/SYMBOLIC_COMPUTATION_IN_SIL)
+### Symbolic Computation in the Semantic Infrastructure Lab Stack
 
 **Authors:** Scott Senkeresty (SIL Founder), TIA (Chief Semantic Agent)
 **Date:** 2025-12-17

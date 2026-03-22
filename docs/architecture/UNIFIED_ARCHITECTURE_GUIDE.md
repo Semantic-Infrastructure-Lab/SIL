@@ -64,7 +64,7 @@ This is the **Rosetta Stone** for SIL architecture. It:
 → See Pantheon's documentation for concrete 7-layer Cognitive OSI Stack implementation
 
 ### **"I need the entry point"**
-→ See **[Start Here](/foundations/START_HERE)** for the front door to SIL
+→ See **[Start Here](/start)** for the front door to SIL
 
 ### **"I'm looking for examples of how to use this"**
 → See Part 8 (Quick Reference Examples) and Part 10 (The Meta-Pattern) below
@@ -522,7 +522,7 @@ prism --parser=setlang --scheduler=mesh query.sql
 ## 📚 Part 12: Related Documentation
 
 **Core SIL:**
-- [SIL Design Principles](/foundations/SIL_DESIGN_PRINCIPLES) - The 5 principles
+- [SIL Design Principles](/foundations/design-principles) - The 5 principles
 - [Project Index](/projects/PROJECT_INDEX) - All projects mapped
 
 **Concrete Implementations:**

@@ -92,15 +92,15 @@ reveal your_code.py
 
 **Try Production Projects:**
 - **reveal:** Progressive code exploration
-- **morphogen:** Cross-domain computation ([examples](https://github.com/Semantic-Infrastructure-Lab/morphogen/tree/main/examples))
-- **tiacad:** Declarative CAD ([tutorial](https://github.com/Semantic-Infrastructure-Lab/tiacad/blob/main/docs/user/TUTORIAL))
-- **genesisgraph:** Verifiable provenance ([quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart))
+- **morphogen:** Cross-domain computation ([repository](https://github.com/Semantic-Infrastructure-Lab/morphogen))
+- **tiacad:** Declarative CAD ([repository](https://github.com/Semantic-Infrastructure-Lab/tiacad))
+- **genesisgraph:** Verifiable provenance ([repository](https://github.com/Semantic-Infrastructure-Lab/genesisgraph))
 
 **Explore the Ecosystem:**
 - [Systems Documentation](/systems/) - Production systems explained
 
 **Learn the Architecture:**
-- [Start Here](/START_HERE) - 30-minute guided tour
+- [Start Here](/start) - 30-minute guided tour
 - [FAQ](/meta/FAQ) - Common questions answered
 
 ---
@@ -170,8 +170,8 @@ Browse [Systems Documentation](/systems/) and choose based on your interests:
 **Step 3: Check Project Guidelines**
 
 Each project has a CONTRIBUTING.md in its repository:
-- [reveal/CONTRIBUTING.md](https://github.com/Semantic-Infrastructure-Lab/reveal/blob/master/CONTRIBUTING)
-- [morphogen/CONTRIBUTING.md](https://github.com/Semantic-Infrastructure-Lab/morphogen/blob/main/CONTRIBUTING)
+- [reveal/CONTRIBUTING.md](https://github.com/Semantic-Infrastructure-Lab/reveal/blob/main/CONTRIBUTING.md)
+- [morphogen/CONTRIBUTING.md](https://github.com/Semantic-Infrastructure-Lab/morphogen)
 - *(Check individual repos for others)*
 
 **Step 4: Start Small**
@@ -350,16 +350,14 @@ reveal morphogen/src/core.py Operator
 ```
 
 **morphogen (Cross-Domain Computation):**
-- [Audio synthesis examples](https://github.com/Semantic-Infrastructure-Lab/morphogen/tree/main/examples/audio)
-- [Physics simulation examples](https://github.com/Semantic-Infrastructure-Lab/morphogen/tree/main/examples/rigidbody_physics)
-- [Circuit design examples](https://github.com/Semantic-Infrastructure-Lab/morphogen/tree/main/examples/circuit)
+- [Morphogen examples](https://github.com/Semantic-Infrastructure-Lab/morphogen) - audio, physics, circuit design
 
 **tiacad (Declarative CAD):**
-- [Full tutorial](https://github.com/Semantic-Infrastructure-Lab/tiacad/blob/main/docs/user/TUTORIAL)
+- [TiaCAD Repository](https://github.com/Semantic-Infrastructure-Lab/tiacad)
 - [Example models](https://github.com/Semantic-Infrastructure-Lab/tiacad/tree/main/examples)
 
 **genesisgraph (Provenance):**
-- [5-minute quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart)
+- [GenesisGraph Repository](https://github.com/Semantic-Infrastructure-Lab/genesisgraph)
 - [Example workflows](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/tree/main/examples)
 
 **All systems:** [Systems Documentation](/systems/)
@@ -403,7 +401,7 @@ reveal morphogen/src/core.py Operator
 **Quick Paths:**
 
 **30-Minute Overview:**
-→ [Start Here](/START_HERE) - Guided tour with hands-on example
+→ [Start Here](/start) - Guided tour with hands-on example
 
 **Deep Architecture:**
 → [Unified Architecture Guide](/architecture/UNIFIED_ARCHITECTURE_GUIDE) (20 min)
@@ -414,7 +412,7 @@ reveal morphogen/src/core.py Operator
 → [Manifesto](/manifesto/YOLO) (15 min)
 
 **Choose Your Path:**
-→ [Reading Guide](https://github.com/Semantic-Infrastructure-Lab/SIL/blob/main/docs/READING_GUIDE) - 4 curated reading paths
+→ [Foundations](/foundations) - 4 curated reading paths
 
 **Try Production Tools:**
 → [Systems Documentation](/systems/)
@@ -445,5 +443,5 @@ reveal morphogen/src/core.py Operator
 ---
 
 *Created: 2025-12-01*
-*Part of: [SIL Documentation](/README)*
+*Part of: [SIL Documentation](/)*
 *License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)*
