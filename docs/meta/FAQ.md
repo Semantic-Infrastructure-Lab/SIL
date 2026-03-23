@@ -170,7 +170,7 @@ Browse [Systems Documentation](/systems/) and choose based on your interests:
 **Step 3: Check Project Guidelines**
 
 Each project has a CONTRIBUTING.md in its repository:
-- [reveal/CONTRIBUTING.md](https://github.com/Semantic-Infrastructure-Lab/reveal/blob/main/CONTRIBUTING.md)
+- [reveal/CONTRIBUTING.md](https://github.com/Semantic-Infrastructure-Lab/reveal/blob/master/CONTRIBUTING.md)
 - [morphogen/CONTRIBUTING.md](https://github.com/Semantic-Infrastructure-Lab/morphogen)
 - *(Check individual repos for others)*
 

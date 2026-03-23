@@ -287,7 +287,7 @@ The same progressive disclosure pattern Reveal proves for code will extend to: S
 - [**morphogen**](https://github.com/semantic-infrastructure-lab/morphogen) — Cross-domain deterministic computation
 - [**tiacad**](https://github.com/semantic-infrastructure-lab/tiacad) — Declarative parametric CAD in YAML
 - [**genesisgraph**](https://github.com/semantic-infrastructure-lab/genesisgraph) — Cryptographic provenance verification
-- [**agent-help standard**](../research/AGENT_HELP_STANDARD.md) — The standard Reveal validates
+- [**agent-help standard**](/research/agent-help-standard) — The standard Reveal validates
 
 ---
 

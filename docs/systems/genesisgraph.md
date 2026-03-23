@@ -198,10 +198,10 @@ gg.save_yaml("ai_pipeline.gg.yaml")
 
 **Full Documentation:**
 - [GenesisGraph GitHub Repository](https://github.com/Semantic-Infrastructure-Lab/genesisgraph)
-- [Complete Specification](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/specifications/main-spec)
-- [Disclosure Levels Guide](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/user-guide/disclosure-levels) - A/B/C model explained
-- [Selective Disclosure Cryptography](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/user-guide/selective-disclosure) - SD-JWT, BBS+, ZKP
-- [Profile Validators](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/user-guide/profile-validators) - Industry compliance
+- [Complete Specification](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/specifications/main-spec.md)
+- [Disclosure Levels Guide](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/user-guide/disclosure-levels.md) - A/B/C model explained
+- [Selective Disclosure Cryptography](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/user-guide/selective-disclosure.md) - SD-JWT, BBS+, ZKP
+- [Profile Validators](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/user-guide/profile-validators.md) - Industry compliance
 
 **Example Gallery:**
 - [AI/ML Pipelines](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/examples/level-a-full-disclosure.gg.yaml)
@@ -284,7 +284,7 @@ edge:
 | Agent Ether | Agent capabilities verified via graph queries |
 | Semantic Passports | Bundles of assertions with provenance chains |
 
-**See:** [Trust Assertion Protocol](/foundations/TRUST_ASSERTION_PROTOCOL) for the full TAP specification.
+**See:** the Trust Assertion Protocol (TAP) specification in the GenesisGraph repository for the full TAP details.
 
 ---
 
@@ -350,5 +350,5 @@ This solves adoption blockers in regulated industries where existing provenance 
 
 **Learn More:**
 - [GitHub Repository](https://github.com/Semantic-Infrastructure-Lab/genesisgraph)
-- [5-Minute Quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart)
-- [Vision & Roadmap](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/strategic/vision)
+- [5-Minute Quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart.md)
+- [Vision & Roadmap](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/strategic/vision.md)

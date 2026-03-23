@@ -62,7 +62,7 @@ This document reflects the **Provenance-First architecture** adopted December 15
 - **Founder intuition** — "Provenance when I hear Semantic OS"
 - **Problem-centric** — Solves "how do we trust AI?" not "where do projects fit?"
 
-**Decision rationale**: See [ARCHITECTURE_DECISION.md](/architecture/decisions/ARCHITECTURE_DECISION)
+**Decision rationale**: See ARCHITECTURE_DECISION.md (internal)
 
 ---
 
@@ -712,11 +712,11 @@ This is the technical core of SIL's mission: **building Timeline B (Glass Box fu
 
 **Related Documents:**
 - [SIL Glossary](/foundations/SIL_GLOSSARY) — Canonical terminology
-- [Architecture Decision Record](/architecture/decisions/ARCHITECTURE_DECISION) — Why Provenance-First
+- Architecture Decision Record — Why Provenance-First
 - The Fork: Two Futures for AI — Five structural failures to fix
 - Scope of Hope — Five pillars of semantic infrastructure
-- [Invariants Over Layers](/architecture/models/INVARIANTS_OVER_LAYERS) — Mission-centric frame
-- [Model Evaluation](/architecture/models/MODEL_EVALUATION) — Scoring rationale (4.15)
+- Invariants Over Layers — Mission-centric frame
+- Model Evaluation — Scoring rationale (4.15)
 
 **Last Updated:** 2025-12-20
 **Architecture Version:** 3.0 (Provenance-First)

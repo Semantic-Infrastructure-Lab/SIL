@@ -17,7 +17,7 @@ Version: 1.0
 Last Updated: 2025-12-04
 
 **Related Documentation:**
-- [Progressive Disclosure Innovation](/systems/PROGRESSIVE_DISCLOSURE) - High-level innovation description with token economics
+- [Progressive Disclosure Innovation](/essays/progressive-disclosure-for-ai-agents) - High-level innovation description with token economics
 - [Reveal](/systems/REVEAL) - Production implementation for code exploration
 - [Reveal Introduction Article](../articles/reveal-introduction) - Accessible introduction to progressive disclosure in practice
 
@@ -486,7 +486,7 @@ Core semantic layer for cognitive architecture
 
 ## Core Concepts
 - [SIL Core Principles](docs/SIL_CORE_PRINCIPLES)
-- [Progressive Disclosure](docs/PROGRESSIVE_DISCLOSURE)
+- [Progressive Disclosure](/essays/progressive-disclosure-for-ai-agents)
 
 ## Guides
 - [Deployment Guide](docs/guides/DEPLOYMENT)
@@ -899,7 +899,7 @@ If yes, add Progressive Disclosure.
 ## Related Documentation
 
 - [SIL Principles](/foundations/design-principles) - Full principle hierarchy
-- [SIL Design Principles](./SIL_DESIGN_PRINCIPLES) - Detailed design guidance
+- [SIL Design Principles](/foundations/design-principles) - Detailed design guidance
 - reveal: `reveal --agent-help-full` - See Progressive Disclosure in action
 
 ---
