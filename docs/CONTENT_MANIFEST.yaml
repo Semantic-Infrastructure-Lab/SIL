@@ -237,7 +237,7 @@ files:
     visibility: public
     purpose: Essay on progressive disclosure for AI agents
 
-  # Articles (3 files)
+  # Articles (4 files)
   - path: docs/articles/README.md
     visibility: public
     purpose: Articles index
@@ -250,6 +250,11 @@ files:
     visibility: public
     purpose: Thought leadership on agentic AI safety — sycophancy framing, five incidents, permissions vs. contracts
     decision_date: 2026-03-12
+
+  - path: docs/articles/claude-session-archaeology.md
+    visibility: public
+    purpose: Article on excavating Claude Code session history using reveal claude://
+    decision_date: 2026-03-31
 
   # Vision (1 file)
   - path: docs/vision/ALIGNMENT_THESIS.md
@@ -395,8 +400,8 @@ files:
 # ==================================================
 
 stats:
-  total_files: 71
-  public_files: 58
+  total_files: 72
+  public_files: 59
   internal_files: 13
   flagged_for_removal: 1
   under_review: 10
