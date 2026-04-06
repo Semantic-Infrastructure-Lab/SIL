@@ -256,6 +256,61 @@ files:
     purpose: Article on excavating Claude Code session history using reveal claude://
     decision_date: 2026-03-31
 
+  - path: docs/articles/information-retrieval-history-and-agentic-future.md
+    visibility: public
+    purpose: History of information retrieval and the agentic future
+    decision_date: 2026-04-06
+
+  - path: docs/articles/rfq-matching-modern-architecture.md
+    visibility: public
+    purpose: RFQ matching with modern architecture
+    decision_date: 2026-04-06
+
+  - path: docs/articles/reveal-call-graphs.md
+    visibility: public
+    purpose: Call graph queries with calls:// for impact analysis and dead code detection
+    decision_date: 2026-04-06
+
+  - path: docs/articles/reveal-pack-and-review.md
+    visibility: public
+    purpose: Two commands — pack and review — for code understanding and quality
+    decision_date: 2026-04-06
+
+  - path: docs/articles/reveal-surprising-recipes.md
+    visibility: public
+    purpose: Surprising and powerful reveal recipes and usage patterns
+    decision_date: 2026-04-06
+
+  - path: docs/articles/reveal-what-it-makes-possible.md
+    visibility: public
+    purpose: What reveal makes possible — capabilities and use cases
+    decision_date: 2026-04-06
+
+  - path: docs/articles/configuration-semantic-contract.md
+    visibility: public
+    purpose: Configuration as a semantic contract between code and environment
+    decision_date: 2026-04-06
+
+  - path: docs/articles/progressive-disclosure-agents.md
+    visibility: public
+    purpose: Progressive disclosure patterns for AI agents
+    decision_date: 2026-04-06
+
+  - path: docs/articles/reveal-nav-flags.md
+    visibility: public
+    purpose: Navigation flags — stop scrolling, start navigating with reveal
+    decision_date: 2026-04-06
+
+  - path: docs/articles/reveal-diff.md
+    visibility: public
+    purpose: Structural diffs with diff:// — what actually changed, not just lines
+    decision_date: 2026-04-06
+
+  - path: docs/articles/reveal-project-api.md
+    visibility: public
+    purpose: Your project has an API now — the full reveal query layer flagship article
+    decision_date: 2026-04-06
+
   # Vision (1 file)
   - path: docs/vision/ALIGNMENT_THESIS.md
     visibility: public
