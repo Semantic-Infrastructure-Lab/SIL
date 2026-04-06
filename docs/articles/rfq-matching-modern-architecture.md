@@ -5,6 +5,7 @@ author: "Scott Senkeresty"
 date: "2026-03-23"
 type: "article"
 status: "published"
+linkedin_posted: true
 audience: "ML engineers, software engineers, technical leaders in manufacturing and distribution"
 reading_time: "25 minutes"
 canonical_url: "https://semanticinfrastructurelab.org/articles/rfq-matching-modern-architecture"
@@ -962,6 +963,4 @@ A small fraction of procurement operations have deployed AI matching at scale â€
 That work is tractable. And the systems it produces are, by any honest measure, a different category of thing than what came before.
 
 ---
-
-*Written in sessions lingering-ice-0322, mountain-whirlwind-0322, oceanic-sea-0322, and expanding-meteorite-0322 | March 2026*
 *See also: [From Filing Cabinets to Agentic Minds](/articles/information-retrieval-history-and-agentic-future) â€” a companion overview of how IR evolved from inverted indexes to RAG to agentic systems*
