@@ -311,6 +311,16 @@ files:
     purpose: Your project has an API now — the full reveal query layer flagship article
     decision_date: 2026-04-06
 
+  - path: docs/articles/reveal-inside-the-function.md
+    visibility: public
+    purpose: Inside the function — nav flags, control flow, and data flow with reveal
+    decision_date: 2026-04-20
+
+  - path: docs/articles/reveal-subagents.md
+    visibility: public
+    purpose: Agents that don't read everything — progressive disclosure for Claude subagents, four production principles
+    decision_date: 2026-04-26
+
   # Vision (1 file)
   - path: docs/vision/ALIGNMENT_THESIS.md
     visibility: public
