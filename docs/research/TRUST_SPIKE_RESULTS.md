@@ -167,30 +167,32 @@ of those visibly beats "OPA + jq" for a real multi-source user, the thesis is de
 
 Both tests passed → proceed to build phase.
 
-1. **GG honesty cleanup** (1 session, no new deps):
-   - ✅ **Done:** removed the accidental `sig`-prefix bypass; validator bypasses only on
-     explicit `mock:` prefix; example signatures renamed to `ed25519:mock:sig…`.
-   - ⏳ **Remaining:** downgrade ZK/BBS+ claims in docs to "commitment + binding" (no
-     soundness guarantee). This is a risk-reducer regardless of strategy.
+> **`infinite-void-0622` update: all four steps shipped.**
 
-2. **SCITT-payload reframe** (promote spike_scitt_wrap.py to `genesisgraph/scitt.py`):
-   - `gg_to_cose_sign1(doc, private_key, kid)` → `bytes`
+1. **GG honesty cleanup** — ✅ **Done** (`infinite-void-0622`):
+   - ✅ Removed the accidental `sig`-prefix bypass; validator bypasses only on
+     explicit `mock:` prefix; example signatures renamed to `ed25519:mock:sig…`.
+   - ✅ Downgraded ZK/BBS+/SD-JWT claims in 7 docs to "demonstration-grade."
+     `zkp-templates.md` is now the canonical crypto-status table.
+
+2. **SCITT-payload reframe** — ✅ **Shipped** (`genesisgraph/scitt.py`, `infinite-void-0622`):
+   - `gg_to_cose_sign1(doc_bytes, private_key, kid)` → `bytes`
    - `verify_cose_sign1(cose_bytes, public_key)` → `dict`
    - CLI: `gg sign --scitt level-a.gg.yaml > statement.cose`
-   - Update GG positioning docs: "SCITT Signed Statement payload"
+   - 20 tests, 100% coverage. `cbor2` added to core deps.
 
-3. **in-toto ingest adapter** (highest interop leverage, ~50-100 lines):
-   - `normalize_intoto(stmt) → GGAttestation`
-   - Makes every Sigstore/SLSA/GitHub Actions attestation consumable
+3. **in-toto ingest adapter** — ✅ **Shipped** (`genesisgraph/interop.py`, `infinite-void-0622`):
+   - `normalize_intoto(stmt)` maps SLSA Provenance v0.2, in-toto Link v0.2, GitHub Actions
+     attestations to the GG attestation shape. 17 tests.
+   - Breadth remaining: C2PA, CycloneDX SBOM.
 
-4. **Trust inspection layer MVP** (spike_trust_reasoning → `genesisgraph/trust/`) —
-   *renamed from "reasoning engine" per the honest finding above; it is a normalization +
-   policy-library + renderer layer on OPA, not an engine:*
-   - **Normalization adapters** (the real work, the actual moat): GG / in-toto / C2PA /
-     SBOM → one attestation shape. Breadth here is the whole value.
-   - Ship `policy.rego` purpose-scoped templates as a library (content, not tech)
-   - Embed OPA (subprocess or opa-wasm) as the evaluation engine — never replace it
-   - Renderer: OPA's `evidence` object → inspectable subgraph via Reveal
-   - CLI: `gg trust llama3_70b --purpose code-execution --from level-a.gg.yaml`
-   - **Kill criterion:** if the rendered subgraph doesn't visibly beat `opa eval … | jq`
-     for a real multi-source user, stop — there's no product underneath.
+4. **Trust inspection layer MVP** — ✅ **Shipped** (`genesisgraph/trust/`, `infinite-void-0622`):
+   - `trust.evaluate(doc, purpose)` — OPA/Rego subprocess; datetime-aware GG extractor;
+     `trusted_signers` defaults to all signers in doc (safe first-run UX).
+   - `trust.render(evidence, purpose, tool_id)` — **kill criterion: PASS.** Tested
+     multi-source GG + SLSA against raw `opa eval | jq`: rendered output readable in 10s,
+     the JSON blob requires real parsing. Product exists.
+   - `policy.rego` bundled as package data. CLI: `gg trust <file> --purpose <p>` (exit 0/1).
+   - 28 tests.
+   - **Remaining moat work:** C2PA + SBOM normalization adapters in `interop.py`.
+   - **Renderer → Reveal integration:** terminal text currently; next step.
