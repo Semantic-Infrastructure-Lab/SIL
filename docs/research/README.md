@@ -22,6 +22,25 @@ These papers are **working research documents**—they evolve as we implement, t
 
 ## Current Papers
 
+### Trust Infrastructure for the AI Era (research cluster)
+
+**Authors:** Scott Senkeresty (SIL Founder), TIA (Chief Semantic Agent)
+**Date:** 2026-06-22 (sessions `mint-crystal-0622` → `topaz-ray-0622`)
+**Status:** Idea-capture → determination → **falsified (both go/no-go spikes ran; thesis survives, narrowed)**
+
+**Abstract:** How software (human- and agent-authored) earns trust as AI drives the cost of software creation toward zero. Started from a concrete Reveal-CLI Windows code-signing problem and expanded into a landscape + determination + two falsification spikes. **Current conclusion (post-spike):** provenance is crowded (SCITT, Sigstore, C2PA, EU DPP) and policy evaluation is mature (OPA/Sigstore/Kyverno); GenesisGraph reframes as a **SCITT statement payload** (keystone spike confirmed the round-trip). The surviving build opportunity is **not a "trust-reasoning engine"** — the falsification spike showed OPA/Rego itself produces the evidence subgraph — but a thinner **normalization (GG/in-toto/C2PA/SBOM → one shape) + Rego-policy-library + inspectable Reveal renderer** layer sitting on OPA. Its moat is cross-domain breadth + the inspection brand, not reasoning cleverness. Read the upstream landscape/determination docs as the reasoning trail; read [`TRUST_SPIKE_RESULTS.md`](TRUST_SPIKE_RESULTS.md) for where it actually landed.
+
+**Documents:**
+- [`SOFTWARE_TRUST_AI_ERA.md`](SOFTWARE_TRUST_AI_ERA.md) — landscape, the three nested problems, white-space bets
+- [`TRUST_MINIMUM_SEMANTIC_MODEL.md`](TRUST_MINIMUM_SEMANTIC_MODEL.md) — the 7-element trust atom (MVP-of-trust)
+- [`TRUST_TOOLING_PLACEMENT.md`](TRUST_TOOLING_PLACEMENT.md) — separate tool, re-exposed via Reveal
+- [`TRUST_CONSUME_VS_BUILD_DETERMINATION.md`](TRUST_CONSUME_VS_BUILD_DETERMINATION.md) — **the decision** (consume/build/don't-build + falsify-first next steps)
+- [`TRUST_SPIKE_RESULTS.md`](TRUST_SPIKE_RESULTS.md) — **falsification results** (session `topaz-ray-0622`): both go/no-go spikes ran. SCITT keystone PASS (corrected to a faithful Signed Statement); MCP-trust falsification PASS but narrowing — OPA itself produces the evidence subgraph, so the honest product is a *normalization + Rego-policy-library + renderer* layer on OPA, not a "reasoning engine"
+- Companion (GenesisGraph): `../../../genesisgraph/docs/strategic/TRUST_INTEROP_MATRIX.md`
+- Companion (Reveal): `../../../reveal/internal-docs/releasing/WINDOWS_TRUST_AND_DISTRIBUTION.md`
+
+---
+
 ### Symbolic Computation in the Semantic Infrastructure Lab Stack
 
 **Authors:** Scott Senkeresty (SIL Founder), TIA (Chief Semantic Agent)
