@@ -238,7 +238,7 @@ From the [Hierarchical Agency Framework](/foundations/HIERARCHICAL_AGENCY_FRAMEW
 
 ### 3.4 USIR: Encoding Analogies as Operators
 
-The [Universal Semantic IR](/foundations/SIL_TECHNICAL_CHARTER.md#layer-1-usir) provides structured representation.
+The [Universal Semantic IR](/foundations/SIL_TECHNICAL_CHARTER#layer-1-usir) provides structured representation.
 
 **Discovered analogies become USIR operators:**
 

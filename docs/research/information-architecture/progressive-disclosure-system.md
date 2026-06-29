@@ -216,7 +216,7 @@ $ reveal middleware.py validate_token
 **Full Documentation:**
 - [Reveal GitHub Repository](https://github.com/Semantic-Infrastructure-Lab/reveal)
 - [PyPI Package](https://pypi.org/project/reveal-cli/)
-- [Architecture Guide](https://github.com/Semantic-Infrastructure-Lab/reveal/blob/main/docs/ARCHITECTURE)
+- [Architecture Guide](https://github.com/Semantic-Infrastructure-Lab/reveal/blob/master/ARCHITECTURE.md)
 
 **Example Gallery:**
 ```bash
