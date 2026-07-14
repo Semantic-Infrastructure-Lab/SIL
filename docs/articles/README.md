@@ -31,7 +31,7 @@ Articles are:
 
 ### [The Hard Part Isn't Reasoning — It's Grounding](/articles/grounding-not-reasoning)
 **Date:** 2026-07-13
-**LinkedIn:** ⬜ Not yet posted
+**LinkedIn:** ✅ Posted
 **Topics:** Grounding, progressive disclosure, token efficiency, context management, agent orientation, Reveal
 **Audience:** Developers, AI engineers, agent builders
 
