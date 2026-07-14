@@ -242,6 +242,11 @@ files:
     visibility: public
     purpose: Articles index
 
+  - path: docs/articles/grounding-not-reasoning.md
+    visibility: public
+    purpose: Synthesis of four grounding pillars for token-efficient agents — continuity, doc-finding, progressive disclosure, externalized tasks; reveal CTA
+    decision_date: 2026-07-13
+
   - path: docs/articles/reveal-introduction.md
     visibility: public
     purpose: Introduction to Reveal tool
@@ -465,8 +470,8 @@ files:
 # ==================================================
 
 stats:
-  total_files: 72
-  public_files: 59
+  total_files: 73
+  public_files: 60
   internal_files: 13
   flagged_for_removal: 1
   under_review: 10
